@@ -1,6 +1,6 @@
 ---
 name: Isabel Wilson
-image: 
+image: images/Isabel-people.jpg
 role: RA
 group: Research Assistant    
 description: Research Assistant 
