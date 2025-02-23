@@ -3,7 +3,7 @@ name: Freya Chaytor
 image: images/Freya-people.jpeg
 role: RA
 group: Research Assistant  
-description: 
+description: Research Assistant
 links:
   email: freyachayts@gmail.com
 ---
