@@ -1,6 +1,6 @@
 ---
 name: Zohreh Soleimani
-image: 
+image: images/ZohrehSoleimani.jpg
 role: GA 
 description: PhD student
 group: phd
