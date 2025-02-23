@@ -1,6 +1,6 @@
 ---
 name: Freya Chaytor
-image: 
+image: images/Freya-people.jpeg
 role: RA
 group: Research Assistant  
 description: 
