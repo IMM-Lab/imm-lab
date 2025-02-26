@@ -2,8 +2,8 @@
 name: Isabel Wilson
 image: images/Isabel-people.jpg
 role: RA
-group: Research Assistant    
-description: Research Assistant 
+group: Research Technician    
+description: Research Technician
 links:
   email: isabelsienw@gmail.com
 ---
