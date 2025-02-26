@@ -2,8 +2,8 @@
 name: Luke Huang
 image: images/luke-people.jpg
 role: RA
-group: Work-Learn Student 
-description: Work-Learn Student
+group: COGS 402 student 
+description: COGS 402 student
 links:
   email: lhuangce@gmail.com
 ---
