@@ -2,8 +2,8 @@
 name: Luke Huang
 image: images/luke-people.jpg
 role: RA
-group: COGS 402 student 
-description: COGS 402 student
+group: Neuroscience Capstone student  
+description: Neuroscience Capstone student
 links:
   email: lhuangce@gmail.com
 ---
