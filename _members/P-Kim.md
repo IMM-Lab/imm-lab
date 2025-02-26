@@ -1,6 +1,6 @@
 ---
 name: Peter Kim
-image: 
+image: Peter-People.jpg
 role: RA
 group: Research Assistant  
 description: Research Assistant
