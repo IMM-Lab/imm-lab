@@ -1,9 +1,9 @@
 ---
 name: Hayoung Cho
-image: images/hayoung-people.png
+image: 
 role: Al
-group: Co-op Student
-description: Co-op Student
+group: 
+description: 
 links:
   email: hayoungc@student.ubc.ca
 ---
