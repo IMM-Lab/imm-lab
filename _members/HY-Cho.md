@@ -2,8 +2,8 @@
 name: Hayoung Cho
 image: 
 role: Al
-group: 
-description: 
+group: Co-op Student
+description: Co-op Student 
 links:
   email: hayoungc@student.ubc.ca
 ---
