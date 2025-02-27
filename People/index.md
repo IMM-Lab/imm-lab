@@ -32,7 +32,7 @@ nav:
 <!-- Section for Alumni -->
 {% include section.html %}
 ## Previous Members
-{% include list.html data="members" filters="role: Al" background="gray" %}
+{% include list.html data="members" filters="role: AI"}
 
 ## Our Affiliations 
 We are proud to be affiliated with these esteemed organizations and institutes.
