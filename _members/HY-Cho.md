@@ -1,6 +1,6 @@
 ---
 name: Hayoung Cho
-image: 
+image: images/heeyeon-people.png
 role: Al
 group: Co-op Student
 description: Co-op Student 
