@@ -3,7 +3,7 @@ name: Amy Chan
 image: images/Amy-people.jpeg
 role: RA
 group: Research Assistant  
-description: Research Assistant
+description: COGS402 student
 links:
   email: cwtamy021217@gmail.com 
 ---
