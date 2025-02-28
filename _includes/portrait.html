@@ -13,12 +13,20 @@
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
   >
+
+
+
+     {% if member.role != 'Al' %}
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
     >
+     {% endif %}
+
+
+    
     {% if member.name %}
       <span class="portrait-text">
         <span class="portrait-name">
