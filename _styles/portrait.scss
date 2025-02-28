@@ -48,6 +48,7 @@
 .portrait-text {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
   line-height: calc(var(--spacing) - 3);
 }
 
