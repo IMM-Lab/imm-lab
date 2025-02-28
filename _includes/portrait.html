@@ -57,11 +57,15 @@
       {% if member.role or member.description %}
         <span class="portrait-role">
           {% assign type = site.data.types[member.role] %}
-          <span>{{ member.subtitle | default: type.subtitle }} <br> </span>
-          {% include icon.html icon=type.icon %}
-          <span>{{ member.description | default: type.description }}</span>
-        </span>
+
+          {% if member.subtitle == "Lab Director"%}
+          <span class="portrait-subtitle director">{{member.subtitle | default: type.subtitle }} <br></span>
+          <span class="portrait-description director">{{member.subtitle | default: type.description }} </span>
+          {% else %}
+          <span class="portrait-subtitle">{{ member.subtitle | default: type.subtitle }} <br> </span>
+          <span class="portrait-description">{{member.description | default: type.description }}</span>
       {% endif %}
+          
     </span>
   {% endif %}
 
