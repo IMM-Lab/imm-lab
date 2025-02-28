@@ -1,6 +1,6 @@
 ---
 name: Amy Chan
-image: 
+image: images/Amy-people.jpeg
 role: RA
 group: Research Assistant  
 description: Research Assistant
