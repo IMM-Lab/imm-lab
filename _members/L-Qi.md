@@ -1,7 +1,7 @@
 ---
 name: Leo Qi
 image: images/leo-people.png
-role: AI
+role: Al
 group: Research Assistant 
 description: Research Assistant
 links:
