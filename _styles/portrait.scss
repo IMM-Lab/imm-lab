@@ -48,7 +48,8 @@
 .portrait-text {
   display: flex;
   flex-direction: column;
-  line-height: calc(var(--spacing) - 0.4);
+  white-space: nowrap;
+  line-height: calc(var(--spacing) - 3);
 }
 
 .portrait-name {
@@ -74,4 +75,7 @@
 .portrait[data-style="small"] .portrait-role .icon {
   left: -2px;
   top: -2px;
+}
+.portrait-description.director {
+  line-height: 4; 
 }

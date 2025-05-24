@@ -13,12 +13,20 @@
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" }}"
   >
+
+
+
+     {% if member.role != 'Al' %}
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
     >
+  {% endif %}
+
+
+    
     {% if member.name %}
       <span class="portrait-text">
         <span class="portrait-name">
@@ -43,19 +51,41 @@
       </span>
     {% endif %}
 
-
+<!--
     {% if member.name or member.role or member.description %}
     <span class="portrait-text">
       {% if member.role or member.description %}
         <span class="portrait-role">
           {% assign type = site.data.types[member.role] %}
-          <span>{{ member.subtitle | default: type.subtitle }} <br> </span>
+          <span class="portrait-subtitle">{{ member.subtitle | default: type.subtitle }} <br></span>
           {% include icon.html icon=type.icon %}
-          <span>{{ member.description | default: type.description }}</span>
+          <span class="portrait-description">{{ member.description | default: type.description }}</span>
         </span>
       {% endif %}
     </span>
   {% endif %}
+-->
+  
+{% if member.name or member.role or member.description %}
+  <span class="portrait-text">
+    {% if member.role or member.description %}
+      <span class="portrait-role">
+        {% assign type = site.data.types[member.role] %}
+        
+        {% if member.subtitle == "Lab Director" %}
+          <span class="portrait-subtitle director">{{ member.subtitle | default: type.subtitle }} <br></span>
+          <span class="portrait-description director">{{ member.description | default: type.description }}</span>
+        {% else %}
+          <span class="portrait-subtitle">{{ member.subtitle | default: type.subtitle }} <br></span>
+          <span class="portrait-description">{{ member.description | default: type.description }}</span>
+        {% endif %}
+        
+      </span>
+    {% endif %}
+  </span>
+{% endif %}
+
 
   </a>
 </div>
+
