@@ -294,7 +294,7 @@ async function saveResultsOnline(results, participantId) {
       const res = await fetch(SHEET_API, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify({ data: payload })
+        body: JSON.stringify({ data: [payload] }) 
       });
       const json = await res.json();
       console.log('Sheet response:', json);
