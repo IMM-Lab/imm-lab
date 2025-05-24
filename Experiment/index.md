@@ -79,7 +79,9 @@ nav:
             justify-content: center;
             z-index: 99999;
             overflow-y: auto;
-            padding: 20px;                 
+            padding: 20px;
+            padding-top: 60;
+            padding-bottom: 100;              
             box-sizing: border-box;
         }
 
