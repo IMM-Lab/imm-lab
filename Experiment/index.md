@@ -229,7 +229,7 @@ nav:
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         try {
-            const module = await import('../_scripts/experiment.js');
+            const module = await import('/_scripts/experiment.js');
             module.runExperiment(participantId);
         } catch (err) {
             console.error("Error loading experiment script:", err);
