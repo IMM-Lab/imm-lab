@@ -283,11 +283,11 @@ const SHEET_API = 'https://sheetdb.io/api/v1/5uzg1s1qcb9om';
 async function saveResultsOnline(results, participantId) {
   for (const r of results) {
     const payload = {
-      participantId: participantId,
-      stimulus:      r.stimulus,
-      userResponse:  r.userResponse || '',
-      correct:       r.correct,
-      timestamp:     new Date().toISOString()
+      ParticipantID: participantId,
+      Stimulus:      r.stimulus,
+      UserResponse:  r.userResponse || '',
+      Correct:       r.correct,
+      Timestamp:     new Date().toISOString()
     };
 
     try {
