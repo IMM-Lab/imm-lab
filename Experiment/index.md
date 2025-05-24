@@ -15,6 +15,9 @@ nav:
             text-align: center;
             background-color: #28282B;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
         }
         #experimentContainer {
             display: block;
@@ -66,111 +69,143 @@ nav:
 
         #consent-modal {
             position: fixed;
-            top: 0; right: 0; bottom: 0; left: 0;
-            background: rgba(0, 0, 0, 0.5);
+            top: 0; 
+            right: 0; 
+            bottom: 0; 
+            left: 0;
+            background-color: #28282B;
             display: flex;
             align-items: flex-start;   
             justify-content: center;
             z-index: 99999;
             overflow-y: auto;          
-            padding-top: 5vh;          
-            padding-bottom: 100px;    
-        }
-
-        .dark #consent-box {
-            background: #1e1e1e;
-            color: #f0f0f0;
-        }
-
-        .dark #consent-box a {
-            color: #91d1f8;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         #consent-box {
-            background: white;
+            background-color: #B2BEB5;
             color: black;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
             max-width: 800px;
-            max-height: 60vh;
-            overflow-y: auto;
-            margin-top: 20vh;
-            margin-bottom: 20vh;
+            width: 100%;
+            margin: auto;
             box-sizing: border-box;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
         }
 
         #consent-box h2,
         #consent-box h3 {
-            margin-top: 1em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        #consent-box h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #consent-box h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #consent-box p {
+            margin-bottom: 1em;
+            line-height: 1.4;
         }
 
         #consent-box .header {
             font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        #consent-box a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        #consent-box a:hover {
+            color: #004499;
+        }
+
+        .consent-instruction {
+            background-color: #91d1f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
     <div id="consent-modal">
-    <div id="consent-box">
-        <div class="header">
-            <strong>Department of Psychology</strong><br/>
-            2136 West Mall<br/>
-            Vancouver, BC V6T 1Z4<br/>
-            <a href="https://www.imm-lab.ca/" target="_blank">https://www.imm-lab.ca/</a>
-        </div>
+        <div id="consent-box">
+            <div class="header">
+                <strong>Department of Psychology</strong><br/>
+                2136 West Mall<br/>
+                Vancouver, BC V6T 1Z4<br/>
+                <a href="https://www.imm-lab.ca/" target="_blank">https://www.imm-lab.ca/</a>
+            </div>
 
-        <h2>Consent for Participation</h2>
-        <p><strong>Ethics ID#: [ ]</strong></p>
-        <p><strong>Study Title:</strong> Seeing the man: The properties of ensemble coding</p>
+            <h2>Consent for Participation</h2>
+            <p><strong>Ethics ID#: [ ]</strong></p>
+            <p><strong>Study Title:</strong> Seeing the man: The properties of ensemble coding</p>
 
-        <h3>Principal Investigator</h3>
-        <p>
-            Hee-Yeon Im (<a href="mailto:heeyeon.im@ubc.ca">heeyeon.im@ubc.ca</a>)<br/>
-            Assistant Professor, Department of Psychology
-        </p>
+            <h3>Principal Investigator</h3>
+            <p>
+                Hee-Yeon Im (<a href="mailto:heeyeon.im@ubc.ca">heeyeon.im@ubc.ca</a>)<br/>
+                Assistant Professor, Department of Psychology
+            </p>
 
-        <h3>Co-Investigators</h3>
-        <p>
-            Alexis Fong (<a href="mailto:alexisfong01@gmail.com">alexisfong01@gmail.com</a>), Research Assistant, Cognitive Systems
-        </p>
-        <p>
-            Victor Cui (<a href="mailto:csq2002@student.ubc.ca">csq2002@student.ubc.ca</a>), Directed Studies Student, Psychology
-        </p>
+            <h3>Co-Investigators</h3>
+            <p>
+                Alexis Fong (<a href="mailto:alexisfong01@gmail.com">alexisfong01@gmail.com</a>), Research Assistant, Cognitive Systems
+            </p>
+            <p>
+                Victor Cui (<a href="mailto:csq2002@student.ubc.ca">csq2002@student.ubc.ca</a>), Directed Studies Student, Psychology
+            </p>
 
-        <h3>Research Study Summary, Risks, and Benefits</h3>
-        <p>
-            Thank you for your willingness to participate in this research study.
-            Please take a moment to review the following information, and feel free to ask any questions you may have. Your participation is entirely voluntary—you may choose to take part or decline, and you are free to withdraw at any time without any consequences.
-        </p>
-        <p>
-            This study aims to enhance our understanding of human perception and cognition. You will be presented with stimuli containing dots, lines, faces, or gratings and will respond by pressing specific keys on your keyboard.
-        </p>
-        <p>
-            These tasks involve everyday cognitive processes and present no known risks. While there may be no direct benefit to you, your participation will contribute to scientific research.
-        </p>
+            <h3>Research Study Summary, Risks, and Benefits</h3>
+            <p>
+                Thank you for your willingness to participate in this research study.
+                Please take a moment to review the following information, and feel free to ask any questions you may have. Your participation is entirely voluntary—you may choose to take part or decline, and you are free to withdraw at any time without any consequences.
+            </p>
+            <p>
+                This study aims to enhance our understanding of human perception and cognition. You will be presented with stimuli containing dots, lines, faces, or gratings and will respond by pressing specific keys on your keyboard.
+            </p>
+            <p>
+                These tasks involve everyday cognitive processes and present no known risks. While there may be no direct benefit to you, your participation will contribute to scientific research.
+            </p>
 
-        <h3>Duration</h3>
-        <p>If you agree to take part, the study will last approximately 5 minutes.</p>
+            <h3>Duration</h3>
+            <p>If you agree to take part, the study will last approximately 5 minutes.</p>
 
-        <h3>Costs and Compensation</h3>
-        <p>There are no costs associated with participation in this study. You will receive $[ ] as compensation.</p>
+            <h3>Costs and Compensation</h3>
+            <p>There are no costs associated with participation in this study. You will receive $[ ] as compensation.</p>
 
-        <h3>Confidentiality</h3>
-        <p>No personally identifying information will be collected. Your data will be stored securely and may be included in scientific publications.</p>
+            <h3>Confidentiality</h3>
+            <p>No personally identifying information will be collected. Your data will be stored securely and may be included in scientific publications.</p>
 
-        <h3>Learning More</h3>
-        <p>
-            If you have any questions about the study, contact the researchers listed above. For complaints or ethical concerns, you may contact UBC’s Research Participant Complaint Line at 604-822-8598 or email <a href="mailto:RSIL@ors.ubc.ca">RSIL@ors.ubc.ca</a>.
-        </p>
+            <h3>Learning More</h3>
+            <p>
+                If you have any questions about the study, contact the researchers listed above. For complaints or ethical concerns, you may contact UBC's Research Participant Complaint Line at 604-822-8598 or email <a href="mailto:RSIL@ors.ubc.ca">RSIL@ors.ubc.ca</a>.
+            </p>
 
-        <h3>Informed Consent</h3>
-        <p>
-            Your participation indicates that you have read and understood this consent form and that you agree to be in this study.
-        </p>
-        <p>
-            <strong>Please press the ‘Y’ key to proceed to the experiment or the ‘N’ key to exit.</strong>
-        </p>
+            <h3>Informed Consent</h3>
+            <p>
+                Your participation indicates that you have read and understood this consent form and that you agree to be in this study.
+            </p>
+            
+            <div class="consent-instruction">
+                Please press the 'Y' key to proceed to the experiment or the 'N' key to exit.
+            </div>
         </div>
     </div>
 
