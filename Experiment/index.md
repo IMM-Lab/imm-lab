@@ -80,8 +80,8 @@ nav:
             z-index: 99999;
             overflow-y: auto;
             padding: 20px;
-            padding-top: 60;
-            padding-bottom: 100;              
+            scroll-padding-top: 100px;
+            scroll-padding-bottom: 200px;          
             box-sizing: border-box;
         }
 
