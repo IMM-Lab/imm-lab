@@ -67,12 +67,13 @@ nav:
         #consent-modal {
             position: fixed;
             top: 0; right: 0; bottom: 0; left: 0;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             display: flex;
-            align-items: center;
+            align-items: flex-start;  
             justify-content: center;
             z-index: 99999;
-            overflow: auto;
+            overflow-y: auto;    
+            padding: 5vh 0;         
         }
 
         .dark #consent-box {
@@ -88,13 +89,12 @@ nav:
             background: white;
             color: black;
             padding: 20px;
-            padding-bottom: 100px;
             border-radius: 10px;
             max-width: 800px;
-            max-height: 60vh;
-            overflow-y: auto;
-            margin-bottom: 20vh;
+            width: 90%;
+            overflow-y: auto;        
             box-sizing: border-box;
+            margin: 0 auto;        
         }
 
         #consent-box h2,
