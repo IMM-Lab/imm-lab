@@ -286,7 +286,7 @@ async function saveResultsOnline(results, participantId) {
       ParticipantID: participantId,
       Stimulus:      r.stimulus,
       UserResponse:  r.userResponse || '',
-      Correct:       r.correct,
+      Correct:       r.correct ? 'TRUE' : 'FALSE',
       Timestamp:     new Date().toISOString()
     };
 

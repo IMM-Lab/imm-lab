@@ -76,8 +76,12 @@ nav:
             background-color: #28282B;
             z-index: 99999;
             overflow-y: auto;
-            padding: 120px 20px 320px 20px;
+            padding: 120px 20px 120px 20px;
             box-sizing: border-box;
+        }
+
+        body:has(#consent-modal[style*="visible"]) footer {
+            display: none;
         }
 
 
