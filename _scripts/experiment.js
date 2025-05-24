@@ -277,7 +277,7 @@ async function runImageTrial(stimulus, correctResponse, question) {
 // }
 
 // ─── config ─────────────────────────────────────────────────────────────────
-const SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzhmMkPBxV9_NBAmIPgrTBKb9lX5axhTiM0dRYmJhbMmGuhUcfANtaOrxmvDIovHACABA/exec';
+const SHEET_API = 'https://sheetdb.io/api/v1/5uzg1s1qcb9om';
 
 // ─── Save to Google Sheet ─────────────────────────────────────────────────────
 async function saveResultsOnline(results, participantId) {
@@ -291,10 +291,10 @@ async function saveResultsOnline(results, participantId) {
     };
 
     try {
-      const res = await fetch(SHEET_ENDPOINT, {
+      const res = await fetch(SHEET_API, {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(payload)
+        body:    JSON.stringify({ data: payload })
       });
       const json = await res.json();
       console.log('Sheet response:', json);
