@@ -88,6 +88,7 @@ nav:
             background: white;
             color: black;
             padding: 20px;
+            padding-bottom: 100px;
             border-radius: 10px;
             max-width: 800px;
             max-height: 60vh;
