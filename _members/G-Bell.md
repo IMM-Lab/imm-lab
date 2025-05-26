@@ -1,7 +1,7 @@
 ---
 name: Grace Bell 
 image: images/Grace-people.png
-role: RA
+role: AI
 group: Research Assistant  
 description: Research Assistant
 links:
