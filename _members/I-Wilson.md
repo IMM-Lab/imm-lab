@@ -1,7 +1,7 @@
 ---
 name: Isabel Wilson
 image: images/Isabel-people.jpg
-role: AI
+role: Al
 group: Research Technician    
 description: Research Technician
 links:
