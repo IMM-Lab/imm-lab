@@ -1,7 +1,7 @@
 ---
 name: Grace Bell 
 image: images/Grace-people.png
-role: Al
+role: RA
 group: Research Assistant  
 description: Research Assistant
 links:
