@@ -1,10 +1,6 @@
 ---
 title: Americans weigh an attended emotion more than Koreans in overall mood judgments
 author: Son, G., Im, H., Albohn, D. N., Kveraga, K., Adams, R. B., Sun, J., & Chong, S.
-tags:
-  - ensemble perception
-  - psychophysics
-published: 2023
 group: paper
 ---
 
