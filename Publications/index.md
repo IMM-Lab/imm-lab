@@ -13,7 +13,8 @@ nav:
     <!-- Add your paper titles, links, or summaries here -->
 {% include search-box.html %}
 {% include search-info.html %}
-{% include list.html data="posts" component="post-excerpt" filters="group: paper" group_by=""%}
+{% include list.html data="posts" component="post-excerpt" filters="group: paper" sort_by="date" reverse=true group_by="" %}
+
     
   </p>
 </div>
