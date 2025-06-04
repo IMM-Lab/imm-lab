@@ -1,5 +1,8 @@
 ---
 title: Publications
+nav:
+  order: 2
+  tooltip: Research papers and PDFs
 ---
 
 # Publications
