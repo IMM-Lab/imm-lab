@@ -329,19 +329,3 @@ export async function runExperiment(participantId) {
     }
 }
 
-// -----------------------
-// Begin Experiment on Button Click Only
-// -----------------------
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("beginExperimentButton").addEventListener("click", () => {
-        if (!window.experimentHasStarted) {
-            window.experimentHasStarted = true;
-            const participantId = prompt('Enter Participant ID or Initials (e.g., 001, AF):');
-            if (participantId) {
-                runExperiment(participantId);
-            } else {
-                alert('Experiment aborted: No participant ID provided.');
-            }
-        }
-    });
-});

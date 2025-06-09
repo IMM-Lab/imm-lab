@@ -61,12 +61,21 @@ nav:
             margin: 20px auto;
             position: relative;
         }
+        
+        /* hide footer during lock and consent page */
+        body:has(#consent-modal[style*="visible"]),
+        body:has(#lock-modal[style*="flex"]) {
+            footer {
+                display: none;
+            }
+        }
+
+        /* consent css */
         #instructionScreen {
             font-size: 18px;
             text-align: left;
             margin-bottom: 10px;
         }
-
         #consent-modal {
             position: fixed;
             top: 0; 
@@ -79,12 +88,6 @@ nav:
             padding: 120px 20px 120px 20px;
             box-sizing: border-box;
         }
-
-        body:has(#consent-modal[style*="visible"]) footer {
-            display: none;
-        }
-
-
         #consent-box {
             background-color: #B2BEB5;
             color: black;
@@ -98,7 +101,6 @@ nav:
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
             font-family: Arial, sans-serif;
         }
-
         #consent-box h2,
         #consent-box h3 {
             margin-top: 1.5em;
@@ -144,9 +146,164 @@ nav:
             text-align: center;
             border: 1px solid black;
         }
+
+        /* survey css */
+        #surveyContainer {
+            display: none;
+            background-color: #B2BEB5;
+            color: black;
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            max-width: 800px;
+            width: 90%;
+            margin: 60px auto;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+        }
+
+        #surveyContainer h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .question {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        .question.active {
+            display: block;
+        }
+
+        .left-align {
+            text-align: left;
+        }
+
+        .center-align {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #91d1f8;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #7bc3f0;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .other-input {
+            margin-top: 0.5rem;
+            display: none;
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        /* lock css */
+        #lock-modal {
+            position: fixed;
+            top: 0; 
+            right: 0; 
+            bottom: 0; 
+            left: 0;
+            background-color: #28282B;
+            z-index: 100000; /* Higher than consent modal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #lock-box {
+            background-color: #B2BEB5;
+            color: black;
+            padding: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #lock-box h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        #code-input {
+            font-size: 24px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 20px 0;
+            width: 150px;
+            letter-spacing: 5px;
+        }
+
+        #code-input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        #unlock-button {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #91d1f8;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        #unlock-button:hover {
+            background-color: #7bc3f0;
+        }
+
+        .error-message {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            visibility: hidden;
+        }
+
     </style>
 </head>
 <body>
+    <!--lock-->
+    <div id="lock-modal">
+    <div id="lock-box">
+        <h2>Enter Access Code</h2>
+        <p>Please enter the 4-digit access code to proceed:</p>
+        <input type="password" id="code-input" maxlength="4" placeholder="••••">
+        <br>
+        <button id="unlock-button">Unlock</button>
+        <p class="error-message" id="error-message">Incorrect code. Please try again.</p>
+    </div>
+    </div>
+
+    <!--consent-->
     <div id="consent-modal">
         <div id="consent-box">
             <div class="header">
@@ -211,9 +368,87 @@ nav:
         </div>
     </div>
 
+    <!-- Survey -->
+    <div id="surveyContainer">
+    <h2>Participant Survey</h2>
+
+    <div class="question active" data-key="age">
+        <label>What is your age?<br>
+        <input type="number" min="18" required />
+        </label><br>
+        <button>Next</button>
+    </div>
+
+    <div class="question left-align" data-key="sex">
+        <p>What is your sex?</p>
+        <label><input type="radio" name="sex" value="male"> Male</label>
+        <label><input type="radio" name="sex" value="female"> Female</label>
+        <label><input type="radio" name="sex" value="non-binary"> Non-binary</label>
+        <label><input type="radio" name="sex" value="prefer not to say"> Prefer not to say</label>
+        <label><input type="radio" name="sex" value="Other"> Other (please specify)</label>
+        <input type="text" class="other-input sex" placeholder="Please specify" />
+        <button>Next</button>
+    </div>
+
+    <div class="question left-align" data-key="ethnicity">
+        <p>What is your ethnicity?</p>
+        <label><input type="radio" name="ethnicity" value="Hispanic or Latino" required> Hispanic or Latino</label>
+        <label><input type="radio" name="ethnicity" value="Jewish"> Jewish</label>
+        <label><input type="radio" name="ethnicity" value="Chinese"> Chinese</label>
+        <label><input type="radio" name="ethnicity" value="Japanese"> Japanese</label>
+        <label><input type="radio" name="ethnicity" value="Korean"> Korean</label>
+        <label><input type="radio" name="ethnicity" value="South Asian (e.g., Indian, Pakistani)"> South Asian (e.g., Indian, Pakistani)</label>
+        <label><input type="radio" name="ethnicity" value="Southeast Asian (e.g., Filipino, Thai)"> Southeast Asian (e.g., Filipino, Thai)</label>
+        <label><input type="radio" name="ethnicity" value="Indigenous"> Indigenous</label>
+        <label><input type="radio" name="ethnicity" value="Arab"> Arab</label>
+        <label><input type="radio" name="ethnicity" value="Roma / Romani"> Roma / Romani</label>
+        <label><input type="radio" name="ethnicity" value="Other"> Other (please specify)</label>
+        <input type="text" class="other-input ethnicity" placeholder="Please specify" />
+        <button>Next</button>
+    </div>
+
+    <div class="question left-align" data-key="race">
+        <p>What is your race?</p>
+        <label><input type="radio" name="race" value="European" required> White (European descent)</label>
+        <label><input type="radio" name="race" value="Middle Eastern"> Middle Eastern</label>
+        <label><input type="radio" name="race" value="African American"> African American</label>
+        <label><input type="radio" name="race" value="African"> African (e.g., Nigerian, Ethiopian)</label>
+        <label><input type="radio" name="race" value="East Asian"> East Asian (e.g., Chinese, Japanese, Korean)</label>
+        <label><input type="radio" name="race" value="South Asian"> South Asian (e.g., Indian, Pakistani)</label>
+        <label><input type="radio" name="race" value="Southeast Asian"> Southeast Asian (e.g., Filipino, Thai)</label>
+        <label><input type="radio" name="race" value="Native Hawaiian or Other Pacific Islander"> Native Hawaiian or Other Pacific Islander</label>
+        <label><input type="radio" name="race" value="Multiracial / Two or More Races"> Multiracial / Two or More Races</label>
+        <label><input type="radio" name="race" value="Other"> Other (please specify)</label>
+        <input type="text" class="other-input race" placeholder="Please specify" />
+        <button>Next</button>
+    </div>
+
+    <div class="question left-align" data-key="firstLanguage">
+        <p>What is your first language?</p>
+    <label><input type="radio" name="firstLanguage" value="English" required> English</label>
+    <label><input type="radio" name="firstLanguage" value="Mandarin"> Mandarin</label>
+    <label><input type="radio" name="firstLanguage" value="Spanish"> Spanish</label>
+    <label><input type="radio" name="firstLanguage" value="French"> French</label>
+    <label><input type="radio" name="firstLanguage" value="Hindi"> Hindi</label>
+    <label><input type="radio" name="firstLanguage" value="Arabic"> Arabic</label>
+    <label><input type="radio" name="firstLanguage" value="Prefer not to say"> Prefer not to say</label>
+        <label><input type="radio" name="firstLanguage" value="Other"> Other (please specify)</label>
+        <input type="text" class="other-input firstLanguage" placeholder="Please specify" />
+        <button>Next</button>
+    </div>
+
+    <div class="question center-align" data-key="timePerception">
+        <p>If a meeting on Wednesday was pushed forward a day, what day is the new meeting?</p>
+        <label><input type="radio" name="timePerception" value="Tuesday" required /> Tuesday</label>
+        <label><input type="radio" name="timePerception" value="Thursday" /> Thursday</label><br>
+        <button>Submit</button>
+    </div>
+    </div>
+
+    <!-- Experiment -->
     <div id="instructionScreen">
         <h1 id="experimentTitle">Welcome to the Experiment</h1>
-        <p>Please pay attention to the blue screen below when the experiment begins and follow all instructions promptly.</p>
+        <p>Please pay attention to the black screen below when the experiment begins and follow all instructions promptly.</p>
         <p>Press the button below to start the experiment when you are ready!</p>
         <button id="startButton">Begin Experiment</button>
     </div>
@@ -223,35 +458,71 @@ nav:
     </div>
     
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", () => {
+        const lockModal = document.getElementById("lock-modal");
         const consentModal = document.getElementById("consent-modal");
         const instructionScreen = document.getElementById("instructionScreen");
         const experimentContainer = document.getElementById("experimentContainer");
+        const codeInput = document.getElementById("code-input");
+        const unlockButton = document.getElementById("unlock-button");
+        const errorMessage = document.getElementById("error-message");
 
-        // Initially show only the modal
-        consentModal.style.visibility = "visible";
+        // Initially show only the lock modal
+        lockModal.style.display = "flex";
+        consentModal.style.visibility = "hidden";
         instructionScreen.style.display = "none";
         experimentContainer.style.display = "none";
 
+        // Handle unlock attempt
+        function attemptUnlock() {
+            const enteredCode = codeInput.value;
+            if (enteredCode === "6666") {
+                // Correct code entered
+                lockModal.style.display = "none";
+                consentModal.style.visibility = "visible";
+                errorMessage.style.visibility = "hidden";
+            } else {
+                // Incorrect code
+                errorMessage.style.visibility = "visible";
+                codeInput.value = "";
+                codeInput.focus();
+            }
+        }
+
+        // Event listeners for unlock
+        unlockButton.addEventListener("click", attemptUnlock);
+        
+        codeInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                attemptUnlock();
+            }
+        });
+
+        // Auto-focus on code input
+        codeInput.focus();
+
+        // Existing consent modal logic (modify the initial state)
         document.addEventListener("keydown", (event) => {
             const key = event.key.toLowerCase();
-            if (key === "y") {
-            // Consent given
-            consentModal.style.visibility = "hidden";
-            instructionScreen.style.display = "block";
-            experimentContainer.style.display = "block";
-            localStorage.setItem("userConsent", "true");
-            }
-            else if (key === "n") {
-            // Consent declined
-            alert("You have declined participation. The window will now close.");
-            window.open("", "_self").close();
-            setTimeout(() => {
-                alert("If the window did not close automatically, please close it manually.");
-            }, 500);
+            // Only process Y/N keys if lock modal is hidden
+            if (lockModal.style.display === "none") {
+                if (key === "y") {
+                    // Consent given
+                    consentModal.style.visibility = "hidden";
+                    document.getElementById("surveyContainer").style.display = "block";
+                    localStorage.setItem("userConsent", "true");
+                }
+                else if (key === "n") {
+                    // Consent declined
+                    alert("You have declined participation. The window will now close.");
+                    window.open("", "_self").close();
+                    setTimeout(() => {
+                        alert("If the window did not close automatically, please close it manually.");
+                    }, 500);
+                }
             }
         });
-        });
+    });
     </script>
 
     <script type="module">
@@ -265,7 +536,7 @@ nav:
             return;
         }
 
-        document.getElementById('instructionScreen').style.display = 'none';
+        document.getElementById('experimentContainer').style.display = 'block';
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         try {
@@ -276,5 +547,64 @@ nav:
         }
         });
     </script>
+    
+    <script>
+    const survey = document.getElementById('surveyContainer');
+    const questions = survey.querySelectorAll('.question');
+    const data = { participantID: Date.now() };
+    let current = 0;
+
+    questions.forEach((div, index) => {
+        const button = div.querySelector('button');
+        const otherInput = div.querySelector('.other-input');
+        const radios = div.querySelectorAll('input[type="radio"]');
+
+        radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            const key = div.dataset.key;
+            const input = div.querySelector(`.other-input.${key}`);
+            if (radio.value === 'Other' && input) {
+            input.style.display = 'block';
+            input.focus();
+            } else if (input) {
+            input.style.display = 'none';
+            }
+        });
+        });
+
+        button.addEventListener('click', () => {
+        const input = div.querySelector('input, select');
+        const key = div.dataset.key;
+        const textField = div.querySelector(`.other-input.${key}`);
+
+        if (input) {
+            if (input.type === 'radio') {
+            const checked = div.querySelector('input[type="radio"]:checked');
+            if (!checked) return alert('Please select an option.');
+            if (checked.value === 'Other' && textField && textField.value.trim()) {
+                data[key] = textField.value.trim();
+            } else {
+                data[key] = checked.value;
+            }
+            } else if (!input.value) {
+            return alert('Please fill in the field.');
+            } else {
+            data[key] = input.value;
+            }
+        }
+
+        questions[current].classList.remove('active');
+        current++;
+        if (current < questions.length) {
+            questions[current].classList.add('active');
+        } else {
+            localStorage.setItem("surveyData", JSON.stringify(data));
+            survey.style.display = "none";
+            document.getElementById("instructionScreen").style.display = "block";
+        }
+        });
+    });
+    </script>
+
 </body>
 </html>
