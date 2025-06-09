@@ -38,13 +38,13 @@ to see how you can impact our lab!
 
 {% capture col1 %}
 
-{% include figure.html image="images/VML_611H.png" caption="Children MEG/MRI research study" %}
+{% include figure.html image="images/VML MEG new ad_child_page_1.png" caption="Children MEG/MRI research study" %}
 
 {% endcapture %}
 
 {% capture col2 %}
 
-{% include figure.html image="images/VML_918H.png" caption="Children MEG/MRI research study" %}
+{% include figure.html image="images/flyer_child_clustering_new_page_1.png" caption="Children MEG/MRI research study" %}
 
 {% endcapture %}
 

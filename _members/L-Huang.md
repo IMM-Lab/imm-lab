@@ -1,7 +1,7 @@
 ---
 name: Luke Huang
 image: images/luke-people.jpg
-role: RA
+role: Al
 group: Research Assistant  
 description: Neuroscience Capstone student
 links:

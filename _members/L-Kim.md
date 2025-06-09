@@ -1,7 +1,7 @@
 ---
 name: Lina Kim
 image: images/Lina-people.jpeg
-role: RA
+role: Al
 group: Research Assistant  
 description: Research Assistant
 links:

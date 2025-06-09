@@ -1,7 +1,7 @@
 ---
 name: Max Garson
 image: images/max-people.jpeg
-role: RA
+role: Al
 group: Work-Learn Student  
 description: Work-Learn Student
 links:

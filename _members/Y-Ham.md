@@ -1,7 +1,7 @@
 ---
 name: Yoonsoo Ham
 image: images/Yoonsoo1-people.jpeg
-role: RA
+role: Al
 group: Work-Learn Student 
 description: Work-Learn Student
 links:

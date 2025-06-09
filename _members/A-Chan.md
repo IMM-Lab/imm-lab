@@ -1,7 +1,7 @@
 ---
 name: Amy Chan
 image: images/Amy-people.jpeg
-role: RA
+role: Al
 group: Research Assistant  
 description: COGS402 student
 links:
