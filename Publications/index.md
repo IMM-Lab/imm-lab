@@ -20,7 +20,7 @@ nav:
 
     <li style="margin-bottom: 1.5rem;">
       Cook, A. J., Im, H., Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Behavioral Reviews, 173</i>. <br>
-      <a href="https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF]" target="_blank">[https://doi.org/10.1111/nyas.15056](https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF])</a>
+     (https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF])</a>
     </li>
 
     <li style="margin-bottom: 1.5rem;">
