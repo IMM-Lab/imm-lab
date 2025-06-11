@@ -28,9 +28,9 @@ nav:
       <a href=" https://doi.org/10.1038/s41598-023-46723-7" target="_blank"> https://doi.org/10.1038/s41598-023-46723-7</a>
     </li>
 
-   <li style="margin-bottom: 1.5rem;">
-      Cho, J., Im, H.Y., Yoon, Y.J., Joo, S.J., & Chong, S.C. (2023). The effect of masks on the emotion perception of a facial crowd. <i>Scientific Reports 13, 14274</i>.
-      <a href=" https://www.nature.com/articles/s41598-023-41366-0" target="_blank"> https://www.nature.com/articles/s41598-023-41366-0</a>
+    <li style="margin-bottom: 1.5rem;">
+      Cho, J., Im, H.Y., Yoon, Y.J., Joo, S.J., & Chong, S.C. (2023). The effect of masks on the emotion perception of a facial crowd. <i>Scientific Reports, 13</i>.
+      <a href=" https://doi.org/10.1038/s41598-023-41366-0" target="_blank"> https://doi.org/10.1038/s41598-023-41366-0</a>
     </li>
 
     <li style="margin-bottom: 1.5rem;">
