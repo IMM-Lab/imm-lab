@@ -1,6 +1,6 @@
 ---
 name: Angela Peng
-image: 
+image: images/Angela-P-People.jpg
 role: RA
 group: Research Assistant  
 description: Research assistant
