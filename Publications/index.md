@@ -13,17 +13,6 @@ nav:
   If you would like to read an article listed below and a link is not provided, please email Dr. Hee-Yeon Im at heeyeon.im@ubc.ca.
 </p>
 
-<!-- Preprints Section -->
-<details>
-  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Preprints</summary>
-  <ul>
-    <li>
-      (Sample preprint here) Author, A., & Author, B. (2025). Title of preprint. <i>Open Science Framework</i>. <br>
-      <a href="https://doi.org/xx.xxxx/preprint" target="_blank">https://doi.org/xx.xxxx/preprint</a>
-    </li>
-  </ul>
-</details>
-
 <!-- Journal Articles Section -->
 <details open>
   <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Journal Articles</summary>
