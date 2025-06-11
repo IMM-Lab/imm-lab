@@ -43,6 +43,36 @@ nav:
       <a href=" https://doi.org/10.3758/s13415-021-00880-2" target="_blank"> https://doi.org/10.3758/s13415-021-00880-2</a>
     </li>
 
+    <li style="margin-bottom: 1.5rem;">
+      Im, H. Y., Tiurina, N. A., & Utochkin, I. S. (2020). An explicit investigation of the roles that feature distributions play in rapid visual categorization. <i>Attention, Perception, & Psychophysics</i>.
+      <a href=" https://doi.org/10.3758/s13414-020-02046-7" target="_blank"> https://doi.org/10.3758/s13414-020-02046-7</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+      Kveraga, K., Im, H. Y., Ward, N., & Adams, R. B. Jr. (2020). Fast saccadic and manual responses to faces presented to the koniocellular visual pathway. <i>Journal of Vision, 20(2)</i>.
+      <a href=" https://doi.org/10.1167/jov.20.2.9" target="_blank"> https://doi.org/10.1167/jov.20.2.9</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+      Adams, R. B. Jr., Im, H. Y., Cushing, C., Boshyan, J., Ward, N., Albohn, D. N., & Kveraga, K. (2019). Differential magnocellular versus parvocellular pathway contributions to the combinatorial processing of facial threat. <i>Progress in Brain Research, 247, 71-87</i>.
+      <a href=" https://doi.org/10.1016/bs.pbr.2019.03.006" target="_blank"> https://doi.org/10.1016/bs.pbr.2019.03.006</a>
+    </li>
+
+     <li style="margin-bottom: 1.5rem;">
+      Cushing, C., Im, H. Y., Adams, R. B. Jr., Ward, N., & Kveraga, K. (2019). Magnocellular and parvocellular pathway contributions to facial threat cue processing. <i>Social Cognitive and Affective Neuroscience, 14, 151-162</i>.
+      <a href=" https://doi.org/10.1093/scan/nsz003" target="_blank"> https://doi.org/10.1093/scan/nsz003</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+      Kveraga, K., De Vito, D., Cushing, C., Im, H. Y., Albohn, D. N., & Adams, R. B. Jr. (2019). Spatial and feature-based attention to expressive faces. <i>Experimental Brain Research, 4, 967-975</i>.
+      <a href=" https://link.springer.com/article/10.1007/s00221-019-05472-8" target="_blank"> https://link.springer.com/article/10.1007/s00221-019-05472-8</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+      Im, H. Y., Adams, R. B. Jr., Cushing, C., Boshyan, J., Ward, N., & Kveraga, K. (2018). Sex-related differences in behavioral and amygdalar responses to compound facial threat cues. <i>Human Brain Mapping, 39, 2725-2741</i>.
+      <a href=" Human Brain Mapping, 39, 2725-2741" target="_blank"> Human Brain Mapping, 39, 2725-2741</a>
+    </li>
+
   </ul>
 </details>
 
