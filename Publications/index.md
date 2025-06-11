@@ -19,14 +19,15 @@ nav:
   <ul style="list-style-type: none; padding-left: 0;">
 
     <li style="margin-bottom: 1.5rem;">
-      Cook, A. J., Im, H., Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Behavioral Reviews, 173</i>. <br>
-     (https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF])</a>
+      Cook, A. J., Im, H., Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Behavioral Reviews, 173</i>.
+      <a href=" https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF]" target="_blank'> https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF]</a>
     </li>
 
     <li style="margin-bottom: 1.5rem;">
-      Son, G., Im, H., Albohn, D. N., Kveraga, K., Adams, R. B., Sun, J., & Chong, S.(2023). Americans weigh an attended emotion more than Koreans in overall mood judgements. <i>Scientific Reports, 13(1)</i>. <br>
+      Son, G., Im, H., Albohn, D. N., Kveraga, K., Adams, R. B., Sun, J., & Chong, S.(2023). Americans weigh an attended emotion more than Koreans in overall mood judgements. <i>Scientific Reports, 13(1)</i>.
       <a href=" https://doi.org/10.1038/s41598-023-46723-7" target="_blank"> https://doi.org/10.1038/s41598-023-46723-7</a>
     </li>
+
 
 
 
