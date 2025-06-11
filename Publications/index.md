@@ -7,16 +7,39 @@ nav:
 
 # Publications
 
-<div style="margin-top: 3rem;">
-  <h2 style="font-size: 2rem; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Papers</h2>
+<h1 style="text-align: center;">Publications</h1>
 
-  {% include search-box.html %}
-  {% include search-info.html %}
-  {% include list.html data="posts" component="post-excerpt" filters="group: paper" sort_by="date" reverse=true group_by="" %}
-</div>
+<p style="text-align: center;">
+  If you would like to read an article listed below and a link is not provided, please email Dr. Hee-Yeon Im at heeyeon.im@ubc.ca.
+</p>
 
-<div style="margin-top: 3rem;">
-  <h2 style="font-size: 2rem; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">Conferences & Presentations</h2>
+<!-- Preprints Section -->
+<details>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Preprints</summary>
+  <ul>
+    <li>
+      (Sample preprint here) Author, A., & Author, B. (2025). Title of preprint. <i>Open Science Framework</i>. <br>
+      <a href="https://doi.org/xx.xxxx/preprint" target="_blank">https://doi.org/xx.xxxx/preprint</a>
+    </li>
+  </ul>
+</details>
 
-  <!-- Add your conference presentations, posters, or abstracts here -->
-</div>
+<!-- Journal Articles Section -->
+<details open>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Journal Articles</summary>
+  <ul style="list-style-type: none; padding-left: 0;">
+
+    <li style="margin-bottom: 1.5rem;">
+      Cook, A. J., Im, H., Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Behavioral Reviews, 173</i>. <br>
+      <a href="https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF]" target="_blank">[https://doi.org/10.1111/nyas.15056](https://doi.org/10.1016/j.neubiorev.2025.106165 [PDF])</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+      Son, G., Im, H., Albohn, D. N., Kveraga, K., Adams, R. B., Sun, J., & Chong, S.(2023). Americans weigh an attended emotion more than Koreans in overall mood judgements. <i>Scientific Reports, 13(1)</i>. <br>
+      <a href=" https://doi.org/10.1038/s41598-023-46723-7" target="_blank"> https://doi.org/10.1038/s41598-023-46723-7</a>
+    </li>
+
+
+
+  </ul>
+</details>
