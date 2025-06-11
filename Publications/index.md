@@ -70,9 +70,68 @@ nav:
 
     <li style="margin-bottom: 1.5rem;">
       Im, H. Y., Adams, R. B. Jr., Cushing, C., Boshyan, J., Ward, N., & Kveraga, K. (2018). Sex-related differences in behavioral and amygdalar responses to compound facial threat cues. <i>Human Brain Mapping, 39, 2725-2741</i>.
-      <a href=" Human Brain Mapping, 39, 2725-2741" target="_blank"> Human Brain Mapping, 39, 2725-2741</a>
+      <a href=" https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.24035" target="_blank"> https://onlinelibrary.wiley.com/doi/epdf/10.1002/hbm.24035</a>
     </li>
 
+    <li style="margin-bottom: 1.5rem;">
+     Cushing, C., Im, H. Y., Adams, R. B. Jr., Ward, N., Albohn, N.D., Steiner, T.G., & Kveraga, K. (2018). Neurodynamics and connectivity during facial fear perception: The role of threat exposure and signal congruity. <i>Scientific Reports, 8, 2776.</i>.
+      <a href=" https://www.nature.com/articles/s41598-018-20509-8" target="_blank"> https://www.nature.com/articles/s41598-018-20509-8</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H. Y., Adams, R. B. Jr., Boshyan, J., Ward, N., Cushing, C., & Kveraga, K. (2017). Observer’s anxiety facilitates magnocellular processing of clear facial threat cues, but impairs parvocellular processing of ambiguous facial threat cues. <i>Scientific Reports, 7, 15151.</i>.
+      <a href=" https://www.nature.com/articles/s41598-017-15495-2" target="_blank"> https://www.nature.com/articles/s41598-017-15495-2</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H. Y., Chong, S. C., Sun, J., Steiner, T. G., Albohn, D. N., Adams, R. B. Jr., & Kveraga, K. (2017). Cross-cultural and hemispheric laterality effects on the ensemble coding of emotion in facial crowds. <i>Culture and Brain, 5, 125-152.</i>.
+      <a href=" https://link.springer.com/article/10.1007/s40167-017-0054-y" target="_blank"> https://link.springer.com/article/10.1007/s40167-017-0054-y</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H. Y., Albohn, N.D., Steiner, T.G., Cushing, C., Adams, R.B.Jr., & Kveraga, K. (2017). Ensemble coding of crowd emotion: Differential hemispheric and visual stream contributions. <i>Nature Human Behaviour, 1, 828-842.</i>.
+      <a href=" https://www.nature.com/articles/s41562-017-0225-z" target="_blank"> https://www.nature.com/articles/s41562-017-0225-z</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Odic, D., Im, H.Y., Eisinger, R., Ly, R., & Halberda, J. (2016). PsiMLE: A maximum-likelihood estimation approach to estimating psychophysical scaling and variability more reliably, efficiently, and flexibly. <i>Behavioral Research Methods, 48, 445-462.</i>.
+      <a href=" https://link.springer.com/article/10.3758/s13428-015-0600-5" target="_blank"> https://link.springer.com/article/10.3758/s13428-015-0600-5</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H.Y., Bédard, P., & Song, J-H. (2016). Long lasting attentional-context dependent visuomotor memory. <i>Journal of Experimental Psychology: Human Perception & Performance, 42, 1269-1274.</i>.
+      <a href=" https://doi.org/10.1037/xhp0000271" target="_blank"> https://doi.org/10.1037/xhp0000271</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H.Y., Zhong, S., & Halberda, J.(2016). Grouping by proximity and the visual impression of approximate number in random dot arrays. <i>Vision Research, 126, 291-307.</i>.
+      <a href=" https://doi.org/10.1016/j.visres.2015.08.013" target="_blank"> https://doi.org/10.1016/j.visres.2015.08.013</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+     Im, H.Y., Bédard, P., & Song, J-H. (2015). Encoding attentional states during visuomotor adaptation. <i>Journal of Vision, 15, 1-16.</i>.
+      <a href=" https://doi.org/10.1167/15.8.20" target="_blank"> https://doi.org/10.1167/15.8.20</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+    Im, H.Y., Park, W., & Chong, S.C. (2015). Ensemble statistics as units of selection. <i>Journal of Cognitive Psychology, 27, 114-127.</i>.
+      <a href=" https://doi.org/10.1080/20445911.2014.985301" target="_blank"> https://doi.org/10.1080/20445911.2014.985301</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+    Im, H.Y., & Chong, S.C. (2014). Mean size as a unit of visual working memory. <i>Perception, 43, 663-676.</i>.
+      <a href=" https://doi.org/10.1068/p7719" target="_blank"> https://doi.org/10.1068/p7719</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+    Im, H.Y., & Halberda, J. (2013). The effects of sampling and internal noise on the representation of ensemble average size. <i>Attention, Perception, & Psychophysics, 75, 278-286.</i>.
+      <a href=" https://link.springer.com/article/10.3758/s13414-012-0399-4" target="_blank"> https://link.springer.com/article/10.3758/s13414-012-0399-4</a>
+    </li>
+
+    <li style="margin-bottom: 1.5rem;">
+    Park, K.M., Cha, O., Kim, S., Im, H.Y., Chong, S.C. (2007). The Influence of Depth Context on Blind Spot Filling-in <i>Korean Journal of Cognitive Science, 18, 351-370.</i>.
+    </li>
+    
   </ul>
 </details>
 
