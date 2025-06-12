@@ -135,4 +135,12 @@ nav:
   </ul>
 </details>
 
-<h1 style="text-align: center;">Presentations & Conferences</h1>
+<!-- Presentations & Conferences Section -->
+<details open>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Presentation & Conferences</summary>
+  <ul style="list-style-type: none; padding-left: 0;">
+
+    <li style="margin-bottom: 1.5rem;">
+      Schoenfeld, D.*, Im, H.Y., & Ongchoco, J.D.K. (accepted). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i>Poster at Vision Sciences Society</i>.
+    </li>
+
