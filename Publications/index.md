@@ -143,19 +143,19 @@ nav:
     </li>
 
     <li style="margin-bottom: 1.5rem;">
-      Wilson, I.*, Song, J-H, & Im, H.Y. (submitted) Neural bases of attentional context-dependent visuomotor adaptation. <i>Poster at Vision Sciences Society</i>.
+      Wilson, I.*, Song, J-H, & Im, H.Y. (submitted). Neural bases of attentional context-dependent visuomotor adaptation. <i>Poster at Vision Sciences Society</i>.
     </li>
 
     <li style="margin-bottom: 1.5rem;">
-      Garson, M.*, Cook, A.*, Giaschi, D., & Im, H.Y. (submitted) Development of cerebellar function for visuomotor adaptation: a magnetoencephalography (MEG) study. <i>Poster at Vision Sciences Society</i>.
+      Garson, M.*, Cook, A.*, Giaschi, D., & Im, H.Y. (submitted). Development of cerebellar function for visuomotor adaptation: a magnetoencephalography (MEG) study. <i>Poster at Vision Sciences Society</i>.
     </li>
 
     <li style="margin-bottom: 1.5rem;">
-      Hajela, A.* & Im, H.Y. (submitted) MEG decoding of brain dynamics during voluntary eye movements. <i>Poster at Vision Sciences Society</i>.
+      Hajela, A.* & Im, H.Y. (submitted). MEG decoding of brain dynamics during voluntary eye movements. <i>Poster at Vision Sciences Society</i>.
     </li>
 
     <li style="margin-bottom: 1.5rem;">
-      Cui, V.* & Im, H.Y. (submitted) Automatic ensemble coding of task-irrelevant visual features: insights from MEG (magnetoencephalography) decoding. <i>Poster at Vision Sciences Society</i>.
+      Cui, V.* & Im, H.Y. (submitted). Automatic ensemble coding of task-irrelevant visual features: insights from MEG (magnetoencephalography) decoding. <i>Poster at Vision Sciences Society</i>.
     </li>
 
     <li style="margin-bottom: 1.5rem;">
