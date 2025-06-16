@@ -135,7 +135,7 @@ nav:
 
 <!-- Presentations & Conferences Section -->
 <details open>
-  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Presentation & Conferences</summary>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Presentations & Conferences</summary>
   <ul style="list-style-type: none; padding-left: 0;">
 
     <li style="margin-bottom: 1.5rem;">
