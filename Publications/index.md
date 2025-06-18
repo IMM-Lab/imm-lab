@@ -124,11 +124,11 @@ nav:
   <ul style="list-style-type: none; padding-left: 0;">
 
   <li style="margin-bottom: 1.5rem;">
-      Schoenfeld, D., Im, H. Y., & Ongchoco, J.D.K. (2025). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i></i>.
+      Schoenfeld, D., Im, H. Y., & Ongchoco, J.D.K. (2025). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i>Poster at Vision Sciences Society</i>.
   </li>
 
   <li style="margin-bottom: 1.5rem;">
-      Wilson, I., Song, J-H, & Im, H. Y. (2025). Neural bases of attentional context-dependent visuomotor adaptation. <i>Poster at Vision Sciences Society</i>.
+      Wilson, I., Song, J-H, & Im, H. Y. (2025). Neural bases of attentional context-dependent visuomotor adaptation. <i>Poster at Northwest Cognition and Memory Conference</i>.
   </li>
 
   <li style="margin-bottom: 1.5rem;">
