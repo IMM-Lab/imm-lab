@@ -7,7 +7,7 @@ nav:
 
 <h1 style="text-align: center;">Publications</h1>
 
-<p style="text-align: center;">
+<p style="text-align: center; font-size: 1.1rem;">
   If you would like to read an article listed below and a link is not provided, please email us at UBCVCNLAB[at]bcchr.ca.
 </p>
     
@@ -15,6 +15,11 @@ nav:
 <details open>
   <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Journal Articles</summary>
   <ul style="list-style-type: none; padding-left: 0;">
+
+<li style="margin-bottom: 1.5rem; padding-left: 1.2em; text-indent: -1.2em;">
+  • Cook, A. J., Im, H., & Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Biobehavioral Reviews, 173</i>. 
+  <a href="https://doi.org/10.1016/j.neubiorev.2025.106165" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neubiorev.2025.106165</a>
+</li>
 
     <li style="margin-bottom: 1.5rem;">
       Cook, A. J., Im, H., & Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. <i>Neuroscience & Behavioral Reviews, 173</i>.
@@ -135,7 +140,7 @@ nav:
 
 <!-- Presentations & Conferences Section -->
 <details open>
-  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Presentations & Conferences</summary>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Presentations</summary>
   <ul style="list-style-type: none; padding-left: 0;">
 
     <li style="margin-bottom: 1.5rem;">
