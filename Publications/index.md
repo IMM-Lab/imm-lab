@@ -16,7 +16,7 @@ nav:
 <details open>
   <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Journal Articles</summary>
   
-  <ul style="list-style-type: none; padding-left: 0;">
+  <ul style="list-style-type: disc; padding-left: 0;">
     <li style="margin-bottom: 1.5rem; padding-left: 1.2em; text-indent: -1.2em;">
       Cook, A. J., Im, H. Y., & Giashci, D. E. (2025). Large-scale functional networks underlying visual attention. 
       <i>Neuroscience & Biobehavioral Reviews, 173</i>. 
@@ -121,7 +121,7 @@ nav:
 <!-- Presentations & Conferences Section -->
 <details open>
   <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Presentations</summary>
-  <ul style="list-style-type: none; padding-left: 0;">
+  <ul style="list-style-type: disc; padding-left: 0;">
 
   <li style="margin-bottom: 1.5rem;">
       Schoenfeld, D., Im, H. Y., & Ongchoco, J.D.K. (2025). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i>Poster at Vision Sciences Society</i>.
