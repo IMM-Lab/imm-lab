@@ -8,12 +8,12 @@ nav:
 <h1 style="text-align: center;">Publications</h1>
 
 <p style="text-align: center;">
-  If you would like to read an article listed below and a link is not provided, please email Dr. Hee-Yeon Im at heeyeon.im@ubc.ca.
+  If you would like to read an article listed below and a link is not provided, please email us at UBCVCNLAB[at]bcchr.ca.
 </p>
-
+    
 <!-- Journal Articles Section -->
 <details open>
-  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem;">Journal Articles</summary>
+  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Journal Articles</summary>
   <ul style="list-style-type: none; padding-left: 0;">
 
     <li style="margin-bottom: 1.5rem;">
