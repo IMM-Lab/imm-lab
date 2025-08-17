@@ -8,7 +8,31 @@ nav:
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-person-chalkboard" %} Conferences and Posters
 
+## NOWCAM Northwest Cognition & Memory 2025
+
+{% capture col1 %}
+
+{% include figure.html image="images/image001.jpg" caption="Meriwether, Enda, Luke, Adi, Hee-yeon, Minsu, Kate and Victor at the NOWCAM (NOWCAM, 2025)" %}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 %}
+
 ## UBC Neuroscience Undergraduate Research Conference (NURC)
+
+{% capture col1 %}
+ 
+{% include figure.html image="images/image002.png" caption="Adi, Victor, Luke at NURC (UBC, 2025)" %}
+
+{% endcapture %}
+
+{% capture col2 %}
+
+{% include figure.html image="images/image003.jpg" caption="Victor at NURC (UBC, 2025)" %}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2%}
 
 {% capture col1 %}
  
