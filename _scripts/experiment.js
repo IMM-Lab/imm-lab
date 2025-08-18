@@ -1,5 +1,18 @@
 console.log('Updated script loaded!');
 
+// URL parameter handling for Prolific integration
+const params = new URLSearchParams(window.location.search);
+const source = params.get("source");
+let participantId = null;
+
+if (source === "prolific") {
+    participantId = params.get("PROLIFIC_PID");
+    console.log("Prolific participant detected:", participantId);
+} else if (source === "hsp") {
+    participantId = params.get("ID"); // Optional, if tracking HSP participants
+    console.log("HSP participant detected:", participantId);
+}
+
 // Candidate Stimuli array (from a single folder)
 const candidateStimuli = [
     '/assets/images/F_5_3_num_001.png',
@@ -26,12 +39,8 @@ const candidateStimuli = [
     '/assets/images/W_cluster_02.png'
 ];
 
-// Canvas Setup
-const canvas = document.getElementById('experimentCanvas');
-const ctx = canvas.getContext('2d');
-
-ctx.font = '30px sans-serif';
-ctx.textRendering = "geometricPrecision";
+// Canvas Setup - will be initialized when needed
+let canvas, ctx;
 
 // -----------------------
 // Utility Functions
@@ -259,56 +268,111 @@ async function runImageTrial(stimulus, correctResponse, question) {
     return trialResult;
 }
 
-// Save trial result as CSV
-// function saveResultsAsCSV(results, participantId) {
-//     let csvContent = "ParticipantID,Stimulus,Response,Correct\n";
-//     results.forEach((res) => {
-//         csvContent += `${participantId},${res.stimulus},${res.userResponse || 'N/A'},${res.correct}\n`;
-//     });
-//     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-//     const url = URL.createObjectURL(blob);
+// Finish experiment and handle redirects
+function finishExperiment() {
+    if (source === "prolific") {
+        // Redirect to Prolific's completion URL
+        const completionCode = "ABC123"; // Replace with your actual completion code
+        window.location.href = `https://app.prolific.com/submissions/complete?cc=${completionCode}`;
+    } else if (source === "hsp") {
+        // Show a "Thank you" page or redirect to an HSP confirmation page
+        alert("Thank you for participating! You may close this window.");
+        // window.location.href = "https://yourlab.university.edu/thanks-hsp.html";
+    } else {
+        // Default completion for other sources
+        alert("Thank you for participating in the experiment!");
+    }
+}
+
+// Save trial results and survey data as CSV
+function saveResultsAsCSV(results, participantId) {
+    // Get survey data from localStorage
+    const surveyData = JSON.parse(localStorage.getItem("surveyData") || "{}");
     
-//     const a = document.createElement('a');
-//     a.href = url;
-//     a.download = `experiment_results_${participantId}.csv`;
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-// }
+    // Add source information to survey data
+    surveyData.source = source || "direct";
+    surveyData.prolific_pid = source === "prolific" ? params.get("PROLIFIC_PID") : "";
+    
+    // Create CSV header with survey fields and trial fields
+    const surveyFields = Object.keys(surveyData);
+    const trialFields = ["Stimulus", "UserResponse", "Correct", "Timestamp"];
+    const csvHeader = ["ParticipantID", ...surveyFields, ...trialFields].join(",");
+    
+    let csvContent = csvHeader + "\n";
+    
+    // Add each trial result with survey data
+    results.forEach((res) => {
+        const row = [
+            participantId,
+            ...surveyFields.map(field => `"${surveyData[field] || ''}"`),
+            `"${res.stimulus}"`,
+            `"${res.userResponse || 'N/A'}"`,
+            res.correct,
+            `"${new Date().toISOString()}"`
+        ];
+        csvContent += row.join(",") + "\n";
+    });
+    
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `experiment_results_${participantId}_${new Date().toISOString().split('T')[0]}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    
+    // Clean up
+    URL.revokeObjectURL(url);
+    
+    // Finish experiment after saving data
+    setTimeout(() => {
+        finishExperiment();
+    }, 1000); // Give time for download to start
+}
 
 // ─── config ─────────────────────────────────────────────────────────────────
-const SHEET_API = 'https://sheetdb.io/api/v1/5uzg1s1qcb9om';
+// const SHEET_API = 'https://sheetdb.io/api/v1/5uzg1s1qcb9om';
 
 // ─── Save to Google Sheet ─────────────────────────────────────────────────────
-async function saveResultsOnline(results, participantId) {
-  for (const r of results) {
-    const payload = {
-      ParticipantID: participantId,
-      Stimulus:      r.stimulus,
-      UserResponse:  r.userResponse || '',
-      Correct:       r.correct ? 'TRUE' : 'FALSE',
-      Timestamp:     new Date().toISOString()
-    };
+// async function saveResultsOnline(results, participantId) {
+//   for (const r of results) {
+//     const payload = {
+//       ParticipantID: participantId,
+//       Stimulus:      r.stimulus,
+//       UserResponse:  r.userResponse || '',
+//       Correct:       r.correct ? 'TRUE' : 'FALSE',
+//       Timestamp:     new Date().toISOString()
+//     };
 
-    try {
-      const res = await fetch(SHEET_API, {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data: [payload] }) 
-      });
-      const json = await res.json();
-      console.log('Sheet response:', json);
-    } catch (err) {
-      console.error('Failed to save to sheet:', err);
-    }
-  }
-}
+//     try {
+//       const res = await fetch(SHEET_API, {
+//         method:  'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ data: [payload] }) 
+//       });
+//       const json = await res.json();
+//       console.log('Sheet response:', json);
+//     } catch (err) {
+//       console.error('Failed to save to sheet:', err);
+//     }
+//   }
+// }
 
 
 // -----------------------
 // Exported function: Run the Experiment (One Trial Only)
 // -----------------------
-export async function runExperiment(participantId) {
+async function runExperiment(participantId) {
+    // Initialize canvas if not already done
+    if (!canvas) {
+        canvas = document.getElementById('experimentCanvas');
+        ctx = canvas.getContext('2d');
+        ctx.font = '30px sans-serif';
+        ctx.textRendering = "geometricPrecision";
+    }
+    
     // Randomly select one stimulus from candidateStimuli
     const randomIndex = Math.floor(Math.random() * candidateStimuli.length);
     const selectedStimulus = candidateStimuli[randomIndex];
@@ -322,10 +386,184 @@ export async function runExperiment(participantId) {
     try {
         console.log('Running trial with stimulus:', selectedStimulus, 'and correct response:', correctResponse);
         const trialResult = await runImageTrial(selectedStimulus, correctResponse, question);
-        // saveResultsAsCSV([trialResult], participantId);
-        await saveResultsOnline([trialResult], participantId);
+        saveResultsAsCSV([trialResult], participantId);
     } catch (error) {
         console.error("Error during trial:", error);
     }
 }
+
+// -----------------------
+// UI and Modal Management Functions
+// -----------------------
+
+// Initialize all UI functionality when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM loaded, initializing experiment UI...");
+    
+    // Update participant info display
+    const participantInfoElement = document.getElementById("participantInfo");
+    if (participantInfoElement) {
+        if (source === "prolific" && participantId) {
+            participantInfoElement.textContent = `Prolific participant detected: ${participantId}`;
+            participantInfoElement.style.color = "black";
+        } else if (source === "hsp" && participantId) {
+            participantInfoElement.textContent = `HSP participant detected: ${participantId}`;
+            participantInfoElement.style.color = "black";
+        } else {
+            participantInfoElement.textContent = "Manual participant ID entry required";
+            participantInfoElement.style.color = "black";
+        }
+    }
+    
+    // Lock and consent modal elements
+    const lockModal = document.getElementById("lock-modal");
+    const consentModal = document.getElementById("consent-modal");
+    const instructionScreen = document.getElementById("instructionScreen");
+    const experimentContainer = document.getElementById("experimentContainer");
+    const codeInput = document.getElementById("code-input");
+    const unlockButton = document.getElementById("unlock-button");
+    const errorMessage = document.getElementById("error-message");
+    
+    // Survey elements
+    const survey = document.getElementById('surveyContainer');
+    const questions = survey.querySelectorAll('.question');
+    const data = { participantID: Date.now() };
+    let current = 0;
+    
+    // Initially show only the lock modal
+    lockModal.style.display = "flex";
+    consentModal.style.visibility = "hidden";
+    instructionScreen.style.display = "none";
+    experimentContainer.style.display = "none";
+    
+    // Handle unlock attempt
+    function attemptUnlock() {
+        const enteredCode = codeInput.value;
+        console.log("Unlock attempt with code:", enteredCode);
+        if (enteredCode === "6666") {
+            // Correct code entered
+            console.log("Correct code! Unlocking...");
+            lockModal.style.display = "none";
+            consentModal.style.visibility = "visible";
+            errorMessage.style.visibility = "hidden";
+        } else {
+            // Incorrect code
+            console.log("Incorrect code");
+            errorMessage.style.visibility = "visible";
+            codeInput.value = "";
+            codeInput.focus();
+        }
+    }
+    
+    // Event listeners for unlock
+    console.log("Setting up unlock button listeners...");
+    unlockButton.addEventListener("click", attemptUnlock);
+    codeInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            attemptUnlock();
+        }
+    });
+    
+    // Auto-focus on code input
+    codeInput.focus();
+    
+    // Consent modal logic
+    document.addEventListener("keydown", (event) => {
+        const key = event.key.toLowerCase();
+        // Only process Y/N keys if lock modal is hidden
+        if (lockModal.style.display === "none") {
+            if (key === "y") {
+                // Consent given
+                consentModal.style.visibility = "hidden";
+                survey.style.display = "block";
+                localStorage.setItem("userConsent", "true");
+            }
+            else if (key === "n") {
+                // Consent declined
+                alert("You have declined participation. The window will now close.");
+                window.open("", "_self").close();
+                setTimeout(() => {
+                    alert("If the window did not close automatically, please close it manually.");
+                }, 500);
+            }
+        }
+    });
+    
+    // Start button event listener
+    document.getElementById('startButton').addEventListener('click', async () => {
+        let finalParticipantId = participantId;
+        
+        // If no participant ID from URL parameters, prompt for manual entry
+        if (!finalParticipantId) {
+            finalParticipantId = prompt('Enter Participant ID or Initials (e.g., 001, AF):');
+            if (!finalParticipantId) {
+                alert('Experiment aborted: No participant ID provided.');
+                return;
+            }
+        }
+        
+        // Hide instruction screen and show experiment container
+        document.getElementById('instructionScreen').style.display = 'none';
+        document.getElementById('experimentContainer').style.display = 'block';
+        const experimentCanvas = document.getElementById('experimentCanvas');
+        const experimentCtx = experimentCanvas.getContext('2d');
+        experimentCtx.clearRect(0, 0, experimentCanvas.width, experimentCanvas.height);
+        try {
+            runExperiment(finalParticipantId);
+        } catch (err) {
+            console.error("Error loading experiment script:", err);
+        }
+    });
+    
+    // Survey functionality
+    questions.forEach((div) => {
+        const button = div.querySelector('button');
+        const radios = div.querySelectorAll('input[type="radio"]');
+        
+        radios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                const key = div.dataset.key;
+                const input = div.querySelector(`.other-input.${key}`);
+                if (radio.value === 'Other' && input) {
+                    input.style.display = 'block';
+                    input.focus();
+                } else if (input) {
+                    input.style.display = 'none';
+                }
+            });
+        });
+        
+        button.addEventListener('click', () => {
+            const input = div.querySelector('input, select');
+            const key = div.dataset.key;
+            const textField = div.querySelector(`.other-input.${key}`);
+            
+            if (input) {
+                if (input.type === 'radio') {
+                    const checked = div.querySelector('input[type="radio"]:checked');
+                    if (!checked) return alert('Please select an option.');
+                    if (checked.value === 'Other' && textField && textField.value.trim()) {
+                        data[key] = textField.value.trim();
+                    } else {
+                        data[key] = checked.value;
+                    }
+                } else if (!input.value) {
+                    return alert('Please fill in the field.');
+                } else {
+                    data[key] = input.value;
+                }
+            }
+            
+            questions[current].classList.remove('active');
+            current++;
+            if (current < questions.length) {
+                questions[current].classList.add('active');
+            } else {
+                localStorage.setItem("surveyData", JSON.stringify(data));
+                survey.style.display = "none";
+                instructionScreen.style.display = "block";
+            }
+        });
+    });
+});
 
