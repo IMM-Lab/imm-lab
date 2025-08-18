@@ -1,0 +1,91 @@
+{% assign member = site.members 
+  | where_exp: "member", "member.slug == include.lookup"
+  | first
+  | default: include
+%}
+
+<div class="portrait-wrapper">
+  <a
+    {% if member.role == 'GA' or member.role == 'Lead' or member.role == 'Co-PI' or member.role == 'PD' %}
+      href="{{ member.url | relative_url }}"
+    {% endif %}
+    class="portrait"
+    data-style="{{ include.style }}"
+    aria-label="{{ member.name | default: "member link" }}"
+  >
+
+
+
+     {% if member.role != 'Al' %}
+    <img
+      src="{{ member.image | relative_url }}"
+      class="portrait-image"
+      alt="member portrait"
+      loading="lazy"
+    >
+  {% endif %}
+
+
+    
+    {% if member.name %}
+      <span class="portrait-text">
+        <span class="portrait-name">
+          {{ member.name }}
+        </span>
+        {% if member.role == 'Col' and member.external_links or member.links %} 
+          <div class="portrait-links">
+            {% for link in member.external_links or for link in member.links %}
+              <a href="{{ link.url }}" class="external-link">{{ link.icon }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        {% if member.role == 'Col' and member.links  or member.external_links%}
+        <div class="portrait-links">
+          {% for link in member.links or for link in member.role == 'Col' %}
+            <a href="{{ link.url }}" class="external-link">{{ link.icon }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      </span>
+    {% endif %}
+
+<!--
+    {% if member.name or member.role or member.description %}
+    <span class="portrait-text">
+      {% if member.role or member.description %}
+        <span class="portrait-role">
+          {% assign type = site.data.types[member.role] %}
+          <span class="portrait-subtitle">{{ member.subtitle | default: type.subtitle }} <br></span>
+          {% include icon.html icon=type.icon %}
+          <span class="portrait-description">{{ member.description | default: type.description }}</span>
+        </span>
+      {% endif %}
+    </span>
+  {% endif %}
+-->
+  
+{% if member.name or member.role or member.description %}
+  <span class="portrait-text">
+    {% if member.role or member.description %}
+      <span class="portrait-role">
+        {% assign type = site.data.types[member.role] %}
+        
+        {% if member.subtitle == "Lab Director" %}
+          <span class="portrait-subtitle director">{{ member.subtitle | default: type.subtitle }} <br></span>
+          <span class="portrait-description director">{{ member.description | default: type.description }}</span>
+        {% else %}
+          <span class="portrait-subtitle">{{ member.subtitle | default: type.subtitle }} <br></span>
+          <span class="portrait-description">{{ member.description | default: type.description }}</span>
+        {% endif %}
+        
+      </span>
+    {% endif %}
+  </span>
+{% endif %}
+
+
+  </a>
+</div>
+

@@ -1,0 +1,73 @@
+# site properties and page defaults
+title: IMM Laboratory
+show-title: false
+header: images/background.jpg
+footer: images/background.jpg
+header-dark: false
+
+# site social media and other links
+links:
+  orcid: 0000-0001-9379-1347
+  google-scholar: Zq3Z-ioAAAAJ
+  bcchr: research
+  ubc-psych: 
+  ubc-vision: 
+  ubc-langsci: 
+  brain: 
+
+### jekyll settings
+
+# front matter defaults
+defaults:
+  # all markdown files
+  - scope:
+      path: ""
+    values:
+      layout: default
+  # markdown files in /_members
+  - scope:
+      type: "members"
+    values:
+      layout: member
+  # markdown files in /_posts
+  - scope:
+      type: "posts"
+    values:
+      layout: post
+
+collections:
+  # generate page for each member
+  members:
+    output: true
+  # generate page for each post
+  posts:
+    output: true
+
+# jekyll plugins
+plugins:
+  - jekyll-spaceship
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# code block syntax highlighting
+highlighter: rouge
+
+# jekyll theme
+theme: null
+
+# sass settings
+sass:
+  sass_dir: _styles
+
+# force jekyll to include certain files/folders
+include:
+  - _styles
+  - _scripts
+  - assets/images
+
+# force jekyll to exclude certain files/folders
+exclude:
+  - LICENSE.md
+  - CITATION.cff

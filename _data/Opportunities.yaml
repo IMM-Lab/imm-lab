@@ -1,0 +1,48 @@
+- title: Visuomotor Learning 
+  authors: Hee Yeon Im, Alex Cook, Ahad Zafar, April Hwang, and Melissa Aziz
+  subtitle: A study relating to human adaptation.
+  study-date: Running until September, 2023. 
+  group: published
+  image: images/test2.png
+  description: "This study seeks to evaluate participants’ learning of new motor movements through a behavioural task. You will first complete a few short visual assessments, followed by a computer task. The study will be conducted in one session, 
+                lasting between 40 mins to an hour. You will receive $30 for your participation. Please email Ahad at UBCVCNLAB@bcchr.ca for more information about eligiblity and logistics."
+  text:  "Eligibility:
+    Youth of 6-10 years, with normal or corrected-to-normal vision."
+  
+  details:
+    "Location:
+    BC Children’s Hospital. Room E300E, 4480 Oak Street V6H 3V4"
+
+
+- image: images/PosterAdults1-1.png
+  group: develop
+
+
+# Extra miscellaneous stuff - remove if unecessary
+- title: Cool Tutorial
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 3 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - resource
+    - publication
+
+- title: Cool Web App
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 4 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - software
+
+- title: Cool Web Server
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 5 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - software

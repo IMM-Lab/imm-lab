@@ -1,0 +1,50 @@
+- title: Postdoc Fellow
+  subtitle: 2023, June 15
+  image: images/postdoc-img.png
+  group: featured
+  link: https://github.com/
+  description: Postdoctoral Fellow in Multimodal neuroimaging research on human visuomotor behaviours in real-world environments.
+  repo: greenelab/lab-website-template
+  tags:
+    - resource
+
+- title: Postdoc Fellow
+  subtitle: 2023, June 15
+  group: featured
+  link: https://github.com/
+  description: Postdoctoral Fellow in Neuroimaging research on human visual perception and action.
+  repo: greenelab/lab-website-template
+  tags:
+    - resource
+
+- title: Cool Tutorial
+  group: featured
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 3 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - resource
+    - publication
+
+
+- title: Cool Web App
+  group: hide
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 4 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - software
+
+- title: Cool Web Server
+  group: hide
+  subtitle: a subtitle
+  image: images/photo.jpg
+  link: https://github.com/
+  description: Paragraph 5 - Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  repo: greenelab/lab-website-template
+  tags:
+    - software
