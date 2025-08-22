@@ -31,7 +31,7 @@ to see how you can impact our lab!
 
 {% capture col3 %}
 
-{% include figrue.html image="images/Fig5-EEG-Opportunity-PosterAd.png" caption="Adult MEG/MRI research study" %}
+{% include figrue.html image="images/Fig5-EEG-Opportunity-PosterAd.png" caption="Adult EEG research study" %}
 
 {% endcapture %}
 
