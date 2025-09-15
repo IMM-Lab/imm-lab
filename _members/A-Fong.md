@@ -5,7 +5,7 @@ role: RA
 group: Research Assistant 
 description: Research Assistant 
 links:
-  email: alexisfong01@gmail.com
+  email: afong01@mail.ubc.ca
 ---
 
 
