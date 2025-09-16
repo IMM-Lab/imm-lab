@@ -1,7 +1,7 @@
 ---
 name: Angela Lee
 image: images/Angela-people.JPG
-role: RA
+role: AI
 group: Research Assistant  
 description: Research Assistant
 links:

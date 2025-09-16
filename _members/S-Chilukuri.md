@@ -1,7 +1,7 @@
 ---
 name: Siddarth Chilukuri
 image: images/Siddarth-People.jpg
-role: RA
+role: AI
 group: Research Assistant
 description: Work-Learn Student
 links:
