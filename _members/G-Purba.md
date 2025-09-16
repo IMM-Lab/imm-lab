@@ -1,7 +1,7 @@
 ---
 name: Gursahil Purba
 image: images/Gursahil-people.jpg
-role: Al
+role: RA
 group: Research Assistant  
 description: Research Assistant
 links:
