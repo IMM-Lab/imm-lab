@@ -48,10 +48,10 @@ nav:
             </p>
             <h3>Co-Investigators</h3>
             <p>
-                Alexis Fong (<a href="mailto:alexisfong01@gmail.com">alexisfong01@gmail.com</a>), Research Assistant, Cognitive Systems
+                Alexis Fong (<a href="mailto:afong01@mail.ubc.com">afong01@mail.ubc.ca</a>), Research Assistant, Cognitive Systems
             </p>
             <p>
-                Victor Cui (<a href="mailto:csq2002@student.ubc.ca">csq2002@student.ubc.ca</a>), Directed Studies Student, Psychology
+                Victor Cui (<a href="mailto:csq2002@student.ubc.ca">csq2002@student.ubc.ca</a>), Master's Student
             </p>
             <h3>Research Study Summary, Risks, and Benefits</h3>
             <p>
@@ -97,10 +97,10 @@ nav:
     </div>
     <div class="question left-align" data-key="sex">
         <p>What is your sex?</p>
-        <label><input type="radio" name="sex" value="male"> Male</label>
-        <label><input type="radio" name="sex" value="female"> Female</label>
-        <label><input type="radio" name="sex" value="non-binary"> Non-binary</label>
-        <label><input type="radio" name="sex" value="prefer not to say"> Prefer not to say</label>
+        <label><input type="radio" name="sex" value="Male"> Male</label>
+        <label><input type="radio" name="sex" value="Female"> Female</label>
+        <label><input type="radio" name="sex" value="Non-binary"> Non-binary</label>
+        <label><input type="radio" name="sex" value="Prefer not to say"> Prefer not to say</label>
         <label><input type="radio" name="sex" value="Other"> Other (please specify)</label>
         <input type="text" class="other-input sex" placeholder="Please specify" />
         <button>Next</button>
@@ -140,8 +140,10 @@ nav:
         <p>What is your first language?</p>
     <label><input type="radio" name="firstLanguage" value="English" required> English</label>
     <label><input type="radio" name="firstLanguage" value="Mandarin"> Mandarin</label>
+    <label><input type="radio" name="firstLanguage" value="Cantonese"> Cantonese</label>
     <label><input type="radio" name="firstLanguage" value="Spanish"> Spanish</label>
     <label><input type="radio" name="firstLanguage" value="French"> French</label>
+    <label><input type="radio" name="firstLanguage" value="Korean"> Korean</label>
     <label><input type="radio" name="firstLanguage" value="Hindi"> Hindi</label>
     <label><input type="radio" name="firstLanguage" value="Arabic"> Arabic</label>
     <label><input type="radio" name="firstLanguage" value="Prefer not to say"> Prefer not to say</label>
@@ -156,16 +158,75 @@ nav:
         <button>Submit</button>
     </div>
     </div>
-    <!-- Experiment -->
-    <div id="instructionScreen">
-        <h1 id="experimentTitle">Welcome to the Experiment</h1>
-        <p>Please pay attention to the experiment window that will appear when you start.</p>
-        <p id="participantInfo"></p>
-        <p>Press the button below to start the experiment when you are ready!</p>
-        <button id="startButton">Begin Experiment</button>
-    </div>
-    <div id="experimentContainer" style="display: none;">
-        <canvas id="experimentCanvas" width="956" height="625"></canvas>
-    </div>
+<!-- ... your header/consent/survey HTML ... -->
+
+<!-- Experiment -->
+<div id="instructionScreen">
+  <h1 id="experimentTitle">Welcome to the Experiment</h1>
+  <p>Please pay attention to the experiment window that will appear when you start.</p>
+  <p id="participantInfo"></p>
+  <p>Press the button below to start the experiment when you are ready!</p>
+  <button id="startButton">Begin Experiment</button>
+</div>
+<div id="experimentContainer" style="display: none;">
+  <canvas id="experimentCanvas" width="956" height="625"></canvas>
+</div>
+
+<!-- Your main site JS (survey/consent logic).
+     If you use external files, include them with `defer`
+<!-- <script src="main.js" defer></script> 
+-->
+
+<!-- Helper block to handle repo-safe paths + chain to the 2nd experiment -->
+<script>
+  // --- Build URL from repo root (GitHub Pages safe) ---
+  function urlFromRepoRoot(path) {
+    path = String(path || '').replace(/^\/+/, '');
+    const parts = window.location.pathname.split('/').filter(Boolean);
+    const repo = parts.length ? parts[0] : '';
+    const prefix = repo ? `/${repo}/` : '/';
+    return (prefix + path).replace(/\/{2,}/g, '/');
+  }
+
+  // --- Load a script once, then run a callback ---
+  const __loadedScripts = new Set();
+  function loadScript(pathFromRepoRoot, cb) {
+    const url = urlFromRepoRoot(pathFromRepoRoot);
+    if (__loadedScripts.has(url)) { cb && cb(); return; }
+    const s = document.createElement('script');
+    s.src = url;
+    s.defer = true;
+    s.onload = () => { __loadedScripts.add(url); cb && cb(); };
+    s.onerror = () => { console.error('Failed to load', url); alert(`Could not load: ${url}`); };
+    document.body.appendChild(s);
+  }
+
+  // --- Chain into the second experiment when the first one finishes ---
+  function startOtherExperiment(participantId) {
+    // adjust path to where other_experiment.js actually lives in your repo
+    loadScript('scripts/other_experiment.js', async () => { //CHANGE HERE WITH ACTUAL NAME
+      try {
+        if (typeof runOtherExperiment === 'function') {
+          await runOtherExperiment(participantId);   // this file should POST its own data
+        } else {
+          console.warn('runOtherExperiment() not found in other_experiment.js');
+        }
+      } catch (e) {
+        console.warn('other_experiment error:', e);
+      } finally {
+        if (typeof finishExperiment === 'function') finishExperiment();
+      }
+    });
+  }
+</script>
+
+<!-- If you want to dynamically load the first experiment too (optional) -->
+<!-- <script>
+  loadScript('js/experiment.js', () => {
+    // experiment.js is ready; you can reveal instructions if you prefer
+  });
+</script> -->
+
 </body>
 </html>
+
