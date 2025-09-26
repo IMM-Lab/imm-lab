@@ -5,9 +5,9 @@ nav:
   tooltip: Research papers and PDFs
 ---
 
-<h1 style="text-align: center;">Publications</h1>
+<h1 style="text-align: left;">Publications</h1>
 
-<p style="text-align: center; font-size: 1.1rem;">
+<p style="text-align: left; font-size: 1.1rem;">
   If you would like to read an article listed below and a link is not provided, please email us at UBCVCNLAB@bcchr.ca.
 </p>
     
