@@ -1,7 +1,7 @@
 ---
 name: Meriwether Morris
 image: images/Meriwether-people.jpg
-role: RA
+role: Al
 group: Research Technician
 description: Research Technician
 links:
