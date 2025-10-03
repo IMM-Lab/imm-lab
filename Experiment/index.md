@@ -152,9 +152,9 @@ nav:
         <button>Next</button>
     </div>
     <div class="question center-align" data-key="timePerception">
-        <p>If a meeting on Wednesday was pushed forward a day, what day is the new meeting?</p>
-        <label><input type="radio" name="timePerception" value="Tuesday" required /> Tuesday</label>
-        <label><input type="radio" name="timePerception" value="Thursday" /> Thursday</label><br>
+        <p>If a meeting on Wednesday was pushed forward by two days, what day is the new meeting?</p>
+        <label><input type="radio" name="timePerception" value="Monday" required /> Friday</label>
+        <label><input type="radio" name="timePerception" value="Friday" /> Friday</label><br>
         <button>Submit</button>
     </div>
     </div>
