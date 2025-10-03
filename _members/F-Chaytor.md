@@ -3,7 +3,7 @@ name: Freya Chaytor
 image: images/Freya-people.jpeg
 role: RA
 group: Research Assistant  
-description: Research Assistant
+description: Directed Studies Student
 links:
   email: freyachayts@gmail.com
 ---

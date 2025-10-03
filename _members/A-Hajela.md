@@ -3,7 +3,7 @@ name: Adi Hajela
 image: images/Adi1-people.jpeg
 role: RA
 group: Research Assistant    
-description: Research Assistant 
+description: Neuroscience Capstone Student 
 links:
   email: adi050317@gmail.com
 ---
