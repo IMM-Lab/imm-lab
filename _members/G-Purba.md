@@ -3,7 +3,7 @@ name: Gursahil Purba
 image: images/Gursahil-people.jpg
 role: RA
 group: Research Assistant  
-description: Neuroscience Capstone Student
+description: Directed Studies Student
 links:
   email: gursahilpurba@gmail.com
 ---
