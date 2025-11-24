@@ -1,7 +1,7 @@
 ---
 name: Minsu Song
 image: images/minsu-people.jpg
-role: PD 
+role: Al 
 description: Postdoctoral Researcher
 group: Postdoctoral Researcher
 links:
