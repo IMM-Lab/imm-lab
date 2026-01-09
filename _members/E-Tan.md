@@ -1,7 +1,7 @@
 ---
 name: Enda Tan
 image: images/enda-people.JPG
-role: PD 
+role: Al 
 description: Postdoctoral Researcher
 group: Postdoctoral Researcher
 links:
