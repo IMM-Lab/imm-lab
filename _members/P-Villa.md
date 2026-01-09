@@ -1,9 +1,9 @@
 ---
 name: Patricia Rae Villa
 image: images/Patricia-people.jpeg
-role: RA
+role: Al
 group: Research Assistant
-description: COGS 402 Student
+description: COGS Student
 links:
   email: patriciaraevilla@gmail.com
 ---
