@@ -32,7 +32,17 @@ nav:
 <!-- Section for Alumni -->
 {% include section.html %}
 ## Previous Members
-{% include list.html data="members" component="portrait" filters="role: Al" background="gray"%}
+
+### PhD & Master's Students
+{% include list.html data="members" component="portrait" filters="role: Al, group: phd" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: msc" background="gray" %}
+
+### Research Assistants
+{% include list.html data="members" component="portrait" filters="role: Al, group: Research Technician" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: Co-op Student" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: Work-Learn Student" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: Research Assistant" background="gray" %}
+
 
 ## Our Affiliations 
 We are proud to be affiliated with these esteemed organizations and institutes.
