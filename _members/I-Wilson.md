@@ -2,7 +2,7 @@
 name: Isabel Wilson
 image: images/Isabel-people.jpg
 role: Al
-group: msc    
+group: Masters    
 description: Master's Student (SFU)
 links:
   email: isabelsienw@gmail.com
