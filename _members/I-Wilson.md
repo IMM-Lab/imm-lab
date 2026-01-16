@@ -2,8 +2,8 @@
 name: Isabel Wilson
 image: images/Isabel-people.jpg
 role: Al
-group: Research Technician    
-description: Research Technician
+group: msc    
+description: Master's Student (SFU)
 links:
   email: isabelsienw@gmail.com
 ---
