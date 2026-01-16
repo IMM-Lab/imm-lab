@@ -34,9 +34,8 @@ nav:
 ## Previous Members
 
 ### PhD & Master's Students
-{% include list.html data="members" component="portrait" filters="role: Al, group: Postdoctoral Researcher" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: MSc Candidate" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Lecturer" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: phd" background="gray" %}
+{% include list.html data="members" component="portrait" filters="role: Al, group: msc" background="gray" %}
 
 ### Research Assistants
 {% include list.html data="members" component="portrait" filters="role: Al, group: Research Technician" background="gray" %}
