@@ -2,7 +2,7 @@
 name: Angela Lee
 image: images/Angela-people.JPG
 role: Al
-group: Masters
+group: Research Assistant
 description: Master's Student (SNU)
 links:
   email: onyu4452@gmail.com
