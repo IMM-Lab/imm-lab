@@ -1,6 +1,6 @@
 ---
 name: Mariana Mota
-image: images/Mariana.png
+image: images/Mariana.jpeg
 role: RA
 group: Research Assistant 
 description: COGS 402 Student 
