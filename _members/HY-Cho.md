@@ -3,7 +3,7 @@ name: Hayoung Cho
 image: images/hayoung-people.png
 role: Al
 group: Co-op Student
-description: Co-op Student 
+description: Neuroscience Student (UBC)
 links:
   email: hayoungc@student.ubc.ca
 ---
