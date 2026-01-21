@@ -31,8 +31,6 @@ nav:
 
 <!-- Section for Alumni -->
 {% include section.html %}
-<div class="previous-members" markdown="1">
-
 ## Previous Members
 
 ### PhD & Master's Students
@@ -45,17 +43,6 @@ nav:
 {% include list.html data="members" component="portrait" filters="role: Al, group: Co-op Student" background="gray" %}
 {% include list.html data="members" component="portrait" filters="role: Al, group: Work-Learn Student" background="gray" %}
 {% include list.html data="members" component="portrait" filters="role: Al, group: Research Assistant" background="gray" %}
-
-</div>
-
-<style>
-.previous-members ul,
-.previous-members .list,
-.previous-members .portrait-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-</style>
 
 
 ## Our Affiliations 
