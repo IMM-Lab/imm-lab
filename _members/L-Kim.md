@@ -3,7 +3,7 @@ name: Lina Kim
 image: images/Lina-people.jpeg
 role: Al
 group: Research Assistant  
-description: Research Assistant
+description: PharmD Student (Semmelweis)
 links:
   email: lnkim0914@gmail.com
 ---
