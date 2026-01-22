@@ -31,6 +31,8 @@ nav:
 
 <!-- Section for Alumni -->
 {% include section.html %}
+<div class="previous-members">
+  
 ## Previous Members
 
 ### PhD & Master's Students
@@ -44,6 +46,7 @@ nav:
 {% include list.html data="members" component="portrait" filters="role: Al, group: Work-Learn Student" background="gray" %}
 {% include list.html data="members" component="portrait" filters="role: Al, group: Research Assistant" background="gray" %}
 
+</div>
 
 ## Our Affiliations 
 We are proud to be affiliated with these esteemed organizations and institutes.
