@@ -7,8 +7,18 @@ main {
   flex-grow: 1;
 }
 
-.previous-members .grid {
-  --cols: 3;
+/* Previous Members: prevent overlap by allowing wrapping */
+.previous-members .portrait-text {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  text-align: center;
 }
+
+/* Optional: slightly wider cards so long affiliations fit nicer */
+.previous-members .portrait {
+  width: 220px;
+}
+
 
 
