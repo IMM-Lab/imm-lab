@@ -4,4 +4,8 @@ main {
   flex-grow: 1;
 }
 
+.previous-members .grid {
+  --cols: 3;
+}
+
 /*# sourceMappingURL=main.css.map */
