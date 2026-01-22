@@ -6,3 +6,9 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
+
+.previous-members .grid {
+  --cols: 3;
+}
+
+
