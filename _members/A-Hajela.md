@@ -1,6 +1,6 @@
 ---
 name: Adi Hajela
-image: images/Adi_old-people.jpeg
+image: images/Adi-people.jpg
 role: RA
 group: Research Assistant    
 description: Neuroscience Capstone Student 
