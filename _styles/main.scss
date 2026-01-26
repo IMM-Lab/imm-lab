@@ -7,17 +7,25 @@ main {
   flex-grow: 1;
 }
 
-/* Previous Members: prevent overlap by allowing wrapping */
-.previous-members .portrait-text {
-  white-space: normal !important;
+/* Previous Members: 3 columns via grid.scss pattern */
+.previous-members-grid {
+  --cols: 3;
+}
+
+/* Grid handles spacing; portrait.scss margins will create huge gaps */
+.previous-members-grid .portrait {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Alumni: allow wrapping so long affiliations don't overlap */
+.previous-members-grid .portrait-text {
+  white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
   text-align: center;
-}
-
-/* Optional: slightly wider cards so long affiliations fit nicer */
-.previous-members .portrait {
-  width: 220px;
+  line-height: 1.2;
 }
 
 
