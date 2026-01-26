@@ -31,21 +31,21 @@ nav:
 
 <!-- Section for Alumni -->
 {% include section.html %}
-<div class="previous-members">
-  
 ## Previous Members
 
 ### PhD & Master's Students
-{% include list.html data="members" component="portrait" filters="role: Al, group: PostDoc" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Masters" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Lecturer" background="gray" %}
+<div class="grid previous-members-grid">
+  {% include list.html data="members" component="portrait" filters="role: Al, group: PostDoc" background="gray" %}
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Masters" background="gray" %}
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Lecturer" background="gray" %}
+</div>
 
 ### Research Assistants
-{% include list.html data="members" component="portrait" filters="role: Al, group: Research Technician" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Co-op Student" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Work-Learn Student" background="gray" %}
-{% include list.html data="members" component="portrait" filters="role: Al, group: Research Assistant" background="gray" %}
-
+<div class="grid previous-members-grid">
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Research Technician" background="gray" %}
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Co-op Student" background="gray" %}
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Work-Learn Student" background="gray" %}
+  {% include list.html data="members" component="portrait" filters="role: Al, group: Research Assistant" background="gray" %}
 </div>
 
 ## Our Affiliations 
