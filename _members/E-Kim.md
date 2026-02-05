@@ -3,7 +3,7 @@ name: Eddie Kim
 image: images/eddie-people.png
 role: Al
 group: Work-Learn Student
-description: Master's Student (UBC)
+description: Master's Student, Developmental Psychology (UBC)
 links:
   email: eddiek57@student.ubc.ca
 ---
