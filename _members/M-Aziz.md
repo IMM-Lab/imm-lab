@@ -3,7 +3,7 @@ name: Melissa Aziz
 image: images/melissa-people.jpg
 role: Al
 group: Research Assistant  
-description: Research Assistant 
+description: Masters Student, Social Work (UBC)
 links:
   email: aziz082@student.ubc.ca
 ---
