@@ -3,7 +3,7 @@ name: Grace Bell
 image: images/Grace-people.png
 role: Al
 group: Research Assistant  
-description: Research Assistant
+description: COGS Student (UBC)
 links:
   email: gbell01@student.ubc.ca
 ---
