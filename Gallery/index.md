@@ -50,6 +50,20 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
+{% capture col1 %}
+{% include figure.html image="images/bowling-2024-group.jpg" caption="Lab bowling — group photo" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/bowling-2024-hangout.jpg" caption="Lab bowling — hanging out" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/bowling-2024-lane.jpg" caption="Lab bowling — on the lanes" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
 ## 2023
 
 {% capture col1 %}
