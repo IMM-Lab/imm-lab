@@ -65,15 +65,15 @@ nav:
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/coop-2024-1.jpg" caption="Featured by UBC Science Co-op #1" %}
+{% include figure.html image="images/coop-2024-1.jpg" caption="Adi and Hayoung featured by UBC Science Co-op #1" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/coop-2024-2.jpg" caption="Featured by UBC Science Co-op #2" %}
+{% include figure.html image="images/coop-2024-2.jpg" caption="Adi and Hayoung featured by UBC Science Co-op #2" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/coop-2024-3.jpg" caption="Featured by UBC Science Co-op #3" %}
+{% include figure.html image="images/coop-2024-3.jpg" caption="Adi and Hayoung featured by UBC Science Co-op #3" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
