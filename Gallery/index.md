@@ -127,6 +127,16 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
+{% capture col1 %}
+{% include figure.html image="images/max-heeyeon-bbd2025.jpg" caption="Max and Hee-Yeon at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/minsu-bbd2025.jpg" caption="Minsu at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3="" %}
+
 ## 2024
 
 {% capture col1 %}
@@ -142,16 +152,6 @@ nav:
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
-
-{% capture col1 %}
-{% include figure.html image="images/max-heeyeon-bbd2024.jpg" caption="Max and Hee-Yeon at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
-{% endcapture %}
-
-{% capture col2 %}
-{% include figure.html image="images/minsu-bbd2024.jpg" caption="Minsu at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3="" %}
 
 ## 2023
 
