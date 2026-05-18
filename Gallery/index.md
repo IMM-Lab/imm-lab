@@ -21,15 +21,15 @@ nav:
 ## 2025
 
 {% capture col1 %}
-{% include figure.html image="images/group_2025.jpeg" caption="Group photo take #1" %}
+{% include figure.html image="images/group_2025.jpeg" caption="Group photo #1" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/group_2025_3.jpeg" caption="Group photo take #2" %}
+{% include figure.html image="images/group_2025_3.jpeg" caption="Group photo #2" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/group_2025_2.jpeg" caption="Group photo take #3" %}
+{% include figure.html image="images/group_2025_2.jpeg" caption="Group photo #3" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
@@ -37,43 +37,43 @@ nav:
 ## 2024
 
 {% capture col1 %}
-{% include figure.html image="images/529-1.jpg" caption="Lab boardgame social take #1" %}
+{% include figure.html image="images/529-1.jpg" caption="Lab boardgame social #1" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/529-2.jpg" caption="Lab boardgame social take #2" %}
+{% include figure.html image="images/529-2.jpg" caption="Lab boardgame social #2" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/529-3.jpg" caption="Lab boardgame social take #3" %}
+{% include figure.html image="images/529-3.jpg" caption="Lab boardgame social #3" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/bowling-2024-group.jpg" caption="Lab bowling — group photo" %}
+{% include figure.html image="images/bowling-2024-group.jpg" caption="Lab bowling #1" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/bowling-2024-hangout.jpg" caption="Lab bowling — hanging out" %}
+{% include figure.html image="images/bowling-2024-hangout.jpg" caption="Lab bowling #2" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/bowling-2024-lane.jpg" caption="Lab bowling — on the lanes" %}
+{% include figure.html image="images/bowling-2024-lane.jpg" caption="Lab bowling #3" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/coop-2024-1.jpg" caption="Featured by UBC Science Co-op take #1" %}
+{% include figure.html image="images/coop-2024-1.jpg" caption="Featured by UBC Science Co-op #1" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/coop-2024-2.jpg" caption="Featured by UBC Science Co-op take #2" %}
+{% include figure.html image="images/coop-2024-2.jpg" caption="Featured by UBC Science Co-op #2" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/coop-2024-3.jpg" caption="Featured by UBC Science Co-op take #3" %}
+{% include figure.html image="images/coop-2024-3.jpg" caption="Featured by UBC Science Co-op #3" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
