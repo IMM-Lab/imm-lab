@@ -5,6 +5,16 @@ nav:
   tooltip: Lab photos and events
 ---
 
+<style>
+  /* Cap photo height so rows look more uniform (aspect ratios preserved) */
+  .figure-image img {
+    max-height: 280px !important;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+</style>
+
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-people-group" %} Lab social
 
@@ -115,4 +125,4 @@ nav:
 {% include figure.html image="images/alex-conference-img1.jpg" caption="Alex at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme (2022)" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 %}
+{% include cols.html col1=col1 col2="" col3="" %}
