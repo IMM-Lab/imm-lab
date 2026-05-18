@@ -147,6 +147,46 @@ nav:
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-person-chalkboard" %} Conferences
 
+## 2026
+
+{% capture col1 %}
+{% include figure.html image="images/evelyn-nowcam2026.jpg" caption="Evelyn at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/bianca-nowcam2026.jpg" caption="Bianca at NOWCAM" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/gurs-nowcam2026.jpg" caption="Gurs at NOWCAM" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+{% capture col1 %}
+{% include figure.html image="images/fin-nowcam2026.jpg" caption="Fin at NOWCAM" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/angela-nowcam2026.jpg" caption="Angela at NOWCAM" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/erin-nowcam2026.jpg" caption="Erin at NOWCAM" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+{% capture col1 %}
+{% include figure.html image="images/alexis-nowcam2026.jpg" caption="Alexis at NOWCAM" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/group-nowcam2026.jpg" caption="Group photo at NOWCAM" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3="" %}
+
 ## 2025
 
 {% capture col1 %}
