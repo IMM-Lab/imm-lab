@@ -185,6 +185,20 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
+{% capture col1 %}
+{% include figure.html image="images/minsu-nowcam2025.jpg" caption="Minsu at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/victor-nowcam2025.jpg" caption="Victor at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/isabel-nowcam2025.jpg" caption="Isabel at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
 ## 2024
 
 {% capture col1 %}
