@@ -48,12 +48,6 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
-{% capture col1 %}
-{% include figure.html image="images/mario-kart-7.jpg" %}
-{% endcapture %}
-
-{% include cols.html col1=col1 col2="" col3="" %}
-
 <p style="text-align: center; font-style: italic; margin-top: -20px;">Mario Kart tournament</p>
 
 {% capture col1 %}
