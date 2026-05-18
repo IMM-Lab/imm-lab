@@ -48,6 +48,38 @@ nav:
   </li>
 
   <li>
+      Chaytor, F., Young, E., Botha, K., Prihodova, D., Bartolome, A., & Im, H.Y. (2026). Neural and behavioural time courses of rapid danger detection. <i>Talk at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Boicu, B., Mota, M., & Im, H.Y. (2026). Tunnel vision or general interference? Visual attention in dynamic environments. <i>Talk at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Fong, A., Felber, C., Giaschi, D., & Im, H.Y. (2026). Organizing the visual world: How children’s use of spatial information changes with age. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Peng, A., Prihodova, D., & Im, H.Y. (2026). Audiomotor adaptation remaps spatial-auditory representations. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Chiu, E., Im, H.Y., Chong, S.C., & Cho, J. (2026). Effects of exemplar distribution on information-integration category learning and generalization. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Casey, F., Im, H.Y., & Botha, K. (2026). Predicting falls vs. near-falls at event boundaries: behavioural and neural markers. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Popa, A., Felber, C., Morris, M., Chang, A., Asare, A., Kreyenmeier, P., Bacon, B.-A., Im, H.Y., Vanderwal, T., & Giaschi, D. (2026). Using high-resolution eye-tracking to compare fixation stability during naturalistic movie-watching vs. motion psychophysics. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
+      Purba, G., Wang, R., Cui, V., Fong, A., Villa, P.R., & Im, H.Y. (2026). Reading the room over time: Extracting and updating emotional ensemble representations from dynamic groups. <i>Poster at Northwest Cognition and Memory Conference</i>.
+  </li>
+
+  <li>
       Schoenfeld, D., Im, H. Y., & Ongchoco, J.D.K. (2025). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i>Poster at Vision Sciences Society</i>.
   </li>
 
