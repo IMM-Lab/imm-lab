@@ -1,5 +1,5 @@
 ---
-title: Photos
+title: Lab photos
 nav:
   order: 5
   tooltip: Lab photos and events
