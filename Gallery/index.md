@@ -21,10 +21,10 @@ nav:
 ## 2026
 
 {% capture col1 %}
-{% include figure.html image="images/lab-spring-2026.jpg" caption="Spring lab group photo" %}
+{% include figure.html image="images/lab-spring-2026.jpg" caption="Lab group photo" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 col2="" col3="" %}
+{% include cols.html col1=col1 col2="" %}
 
 {% capture col1 %}
 {% include figure.html image="images/mario-kart-1.jpg" caption="Mario Kart tournament group #1" %}
