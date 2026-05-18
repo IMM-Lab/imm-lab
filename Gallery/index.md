@@ -87,7 +87,7 @@ nav:
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/lab-bowling-event-img1.jpeg" caption="A lab bowling event to celebrate the graduation of some of our RAs" %}
+{% include figure.html image="images/lab-bowling-event-img1.jpeg" caption="Lab bowling night" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 %}
