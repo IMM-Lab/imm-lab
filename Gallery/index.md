@@ -18,6 +18,22 @@ nav:
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-people-group" %} Lab social
 
+## 2025
+
+{% capture col1 %}
+{% include figure.html image="images/group_2025.jpeg" caption="Lab group photo (2025)" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/group_2025_3.jpeg" caption="Lab group photo (2025)" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/group_2025_2.jpeg" caption="Lab group photo (2025)" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
 ## 2024
 
 {% capture col1 %}
