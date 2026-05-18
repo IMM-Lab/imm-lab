@@ -198,35 +198,35 @@ nav:
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/image003.jpg" caption="Victor at UBC Neuroscience Undergraduate Research Conference (NURC)" %}
+{% include figure.html image="images/image003.jpg" caption="Victor at NURC" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/max-heeyeon-bbd2025.jpg" caption="Max and Hee-Yeon at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% include figure.html image="images/max-heeyeon-bbd2025.jpg" caption="Max and Hee-Yeon at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme (BBD)" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/minsu-bbd2025.jpg" caption="Minsu at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% include figure.html image="images/minsu-bbd2025.jpg" caption="Minsu at BBD Research Day" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/kate-nowcam2025.jpg" caption="Kate at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% include figure.html image="images/kate-nowcam2025.jpg" caption="Kate at NOWCAM" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/minsu-nowcam2025.jpg" caption="Minsu at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% include figure.html image="images/minsu-nowcam2025.jpg" caption="Minsu at NOWCAM" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/victor-nowcam2025.jpg" caption="Victor at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% include figure.html image="images/victor-nowcam2025.jpg" caption="Victor at NOWCAM" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/isabel-nowcam2025.jpg" caption="Isabel at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% include figure.html image="images/isabel-nowcam2025.jpg" caption="Isabel at NOWCAM" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
@@ -238,11 +238,11 @@ nav:
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/maxadi-nurc2024.jpeg" caption="Max and Adi at UBC Neuroscience Undergraduate Research Conference (NURC)" %}
+{% include figure.html image="images/maxadi-nurc2024.jpeg" caption="Max and Adi at NURC" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/hayoung-nurc2024.jpg" caption="Hayoung at UBC Neuroscience Undergraduate Research Conference (NURC)" %}
+{% include figure.html image="images/hayoung-nurc2024.jpg" caption="Hayoung at NURC" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
@@ -254,11 +254,11 @@ nav:
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/heeyeon-vss_poster-img1.jpg" caption="Hee-Yeon at Vision Sciences Society (VSS)" %}
+{% include figure.html image="images/heeyeon-vss_poster-img1.jpg" caption="Hee-Yeon at VSS" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/alex-vss_poster-img1.jpg" caption="Alex at Vision Sciences Society (VSS)" %}
+{% include figure.html image="images/alex-vss_poster-img1.jpg" caption="Alex at VSS" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
@@ -270,17 +270,17 @@ nav:
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/akosua-conference-img1.jpg" caption="Akosua at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% include figure.html image="images/akosua-conference-img1.jpg" caption="Akosua at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme (BBD)" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/zara-conference1-img1.jpg" caption="Zahra at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% include figure.html image="images/zara-conference1-img1.jpg" caption="Zahra at BBD Research Day" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 {% capture col1 %}
-{% include figure.html image="images/alex-conference-img1.jpg" caption="Alex at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% include figure.html image="images/alex-conference-img1.jpg" caption="Alex at BBD Research Day" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2="" col3="" %}
