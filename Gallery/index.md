@@ -94,7 +94,11 @@ nav:
 {% include figure.html image="images/lab-bowling-event-img1.jpeg" caption="Lab bowling night" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 %}
+{% capture col3 %}
+{% include figure.html image="images/lab-lunch-2023.jpg" caption="Lab lunch outing" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 ## 2022
 
