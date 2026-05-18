@@ -36,7 +36,7 @@ nav:
   </li>
 
   <li>
-      Tan, E., Kveraga, K., & Im, H.Y. (2026). Rapid and persistent neural representations differentiate crowd vs. individual faces: an magnetoencephalography (MEG) study. <i>Poster at Cognitive Neuroscience Society</i>.
+      Tan, E., Kveraga, K., & Im, H.Y. (2026). Rapid and persistent neural representations differentiate crowd vs. individual faces: a magnetoencephalography (MEG) study. <i>Poster at Cognitive Neuroscience Society</i>.
   </li>
 
   <li>
