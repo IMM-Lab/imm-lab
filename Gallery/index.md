@@ -179,7 +179,11 @@ nav:
 {% include figure.html image="images/minsu-bbd2025.jpg" caption="Minsu at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 col3="" %}
+{% capture col3 %}
+{% include figure.html image="images/kate-nowcam2025.jpg" caption="Kate at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
 
 ## 2024
 
