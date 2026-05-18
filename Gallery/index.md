@@ -1,7 +1,7 @@
 ---
-title: Gallery
+title: Photos
 nav:
-  order: 6
+  order: 5
   tooltip: Lab photos and events
 ---
 

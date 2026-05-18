@@ -1,7 +1,7 @@
 ---
 title: Opportunities
 nav:
-  order: 5
+  order: 7
   tooltip: Research participants and open positions 
 ---
 
