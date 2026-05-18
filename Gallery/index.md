@@ -110,7 +110,7 @@ nav:
 ## 2025
 
 {% capture col1 %}
-{% include figure.html image="images/image001.jpg" caption="Meriwether, Enda, Luke, Adi, Hee-yeon, Minsu, Kate, and Victor at the Northwest Cognition & Memory Conference (NOWCAM)" %}
+{% include figure.html image="images/image001.jpg" caption="Meriwether, Enda, Luke, Adi, Hee-Yeon, Minsu, Kate, and Victor at the Northwest Cognition & Memory Conference (NOWCAM)" %}
 {% endcapture %}
 
 {% capture col2 %}
@@ -139,14 +139,20 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
 
+{% capture col1 %}
+{% include figure.html image="images/max-heeyeon-bbd2024.jpg" caption="Max and Hee-Yeon at Research Day, BC Children's Hospital, Brain, Behaviour, & Development Theme" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2="" col3="" %}
+
 ## 2023
 
 {% capture col1 %}
-{% include figure.html image="images/multiple-vss_poster-img1.jpg" caption="Debbie, Akosua, and Hee Yeon at Vision Sciences Society (VSS)" %}
+{% include figure.html image="images/multiple-vss_poster-img1.jpg" caption="Debbie, Akosua, and Hee-Yeon at Vision Sciences Society (VSS)" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/heeyeon-vss_poster-img1.jpg" caption="Hee Yeon at Vision Sciences Society (VSS)" %}
+{% include figure.html image="images/heeyeon-vss_poster-img1.jpg" caption="Hee-Yeon at Vision Sciences Society (VSS)" %}
 {% endcapture %}
 
 {% capture col3 %}
