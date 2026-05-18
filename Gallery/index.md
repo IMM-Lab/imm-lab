@@ -37,32 +37,36 @@ nav:
 ## 2024
 
 {% capture col1 %}
-{% include figure.html image="images/529-1.jpg" caption="Lab boardgame social #1" %}
+{% include figure.html image="images/529-1.jpg" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/529-2.jpg" caption="Lab boardgame social #2" %}
+{% include figure.html image="images/529-2.jpg" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/529-3.jpg" caption="Lab boardgame social #3" %}
+{% include figure.html image="images/529-3.jpg" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+<p style="text-align: center; font-style: italic; margin-top: -20px;">Lab boardgame social</p>
 
 {% capture col1 %}
-{% include figure.html image="images/bowling-2024-group.jpg" caption="Lab bowling #1" %}
+{% include figure.html image="images/bowling-2024-group.jpg" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/bowling-2024-hangout.jpg" caption="Lab bowling #2" %}
+{% include figure.html image="images/bowling-2024-hangout.jpg" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/bowling-2024-lane.jpg" caption="Lab bowling #3" %}
+{% include figure.html image="images/bowling-2024-lane.jpg" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+<p style="text-align: center; font-style: italic; margin-top: -20px;">Lab bowling night</p>
 
 {% capture col1 %}
 {% include figure.html image="images/coop-2024-1.jpg" %}
