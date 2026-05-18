@@ -24,7 +24,7 @@ nav:
 {% include figure.html image="images/lab-spring-2026.jpg" caption="Lab group photo" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 col2="" %}
+{% include cols.html col1=col1 col2="" col3="" %}
 
 {% capture col1 %}
 {% include figure.html image="images/mario-kart-1.jpg" caption="Mario Kart tournament group #1" %}
@@ -148,7 +148,7 @@ nav:
 {% include figure.html image="images/lab-dinner-img1.jpeg" caption="End-of-year lab dinner" %}
 {% endcapture %}
 
-{% include cols.html col1=col1 %}
+{% include cols.html col1=col1 col2="" col3="" %}
 
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-person-chalkboard" %} Conferences
