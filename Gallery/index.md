@@ -21,15 +21,15 @@ nav:
 ## 2025
 
 {% capture col1 %}
-{% include figure.html image="images/group_2025.jpeg" caption="Lab group photo (2025)" %}
+{% include figure.html image="images/group_2025.jpeg" caption="Group photo take #1 (2025)" %}
 {% endcapture %}
 
 {% capture col2 %}
-{% include figure.html image="images/group_2025_3.jpeg" caption="Lab group photo (2025)" %}
+{% include figure.html image="images/group_2025_3.jpeg" caption="Group photo take #2 (2025)" %}
 {% endcapture %}
 
 {% capture col3 %}
-{% include figure.html image="images/group_2025_2.jpeg" caption="Lab group photo (2025)" %}
+{% include figure.html image="images/group_2025_2.jpeg" caption="Group photo take #3 (2025)" %}
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
