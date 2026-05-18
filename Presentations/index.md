@@ -28,6 +28,26 @@ nav:
 <ul class="pres">
 
   <li>
+      Hajela, A.*, Kim, P.*, Yoo, S-A., Cho, H., Joo, S., Chong, S.C., & Im, H.Y. (2026). Neural dynamics of global and local visual processing: magnetoencephalography (MEG) decoding with Navon letters. <i>Poster at Cognitive Neuroscience Society</i>.
+  </li>
+
+  <li>
+      Cho, J., Joo, S., Chong, S.C., & Im, H.Y. (2026). Behavioral and neural mechanisms of face identity learning and generalization: a magnetoencephalography (MEG) study. <i>Poster at Cognitive Neuroscience Society</i>.
+  </li>
+
+  <li>
+      Tan, E., Kveraga, K., & Im, H.Y. (2026). Rapid and persistent neural representations differentiate crowd vs. individual faces: an magnetoencephalography (MEG) study. <i>Poster at Cognitive Neuroscience Society</i>.
+  </li>
+
+  <li>
+      Botha, K.*, Chaytor, F.*, Young, E., Prihodova, D., Bartolome, A., & Im, H.Y. (2026). Neural and Behavioural Time Courses of Rapid Danger Detection. <i>Poster at Cognitive Neuroscience Society</i>.
+  </li>
+
+  <li>
+      Peng, A., Ham, Y., Park, W., & Im, H.Y. (2026). Audiomotor adaptation remaps spatial-auditory representations. <i>Poster at Cognitive Neuroscience Society</i>.
+  </li>
+
+  <li>
       Schoenfeld, D., Im, H. Y., & Ongchoco, J.D.K. (2025). The missing self in time: duration reproductions diverge when using the “self” as a reference point. <i>Poster at Vision Sciences Society</i>.
   </li>
 
