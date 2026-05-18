@@ -187,6 +187,12 @@ nav:
 
 {% include cols.html col1=col1 col2=col2 col3="" %}
 
+{% capture col1 %}
+{% include figure.html image="images/evelyn-victor-dominika-nurc2026.jpg" caption="Evelyn, Victor, and Dominika at UBC Neuroscience Undergraduate Research Conference (NURC)" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2="" col3="" %}
+
 ## 2025
 
 {% capture col1 %}
