@@ -28,7 +28,7 @@ nav:
 <ul class="pres">
 
   <li>
-      Hajela, A.*, Kim, P.*, Yoo, S-A., Cho, H., Joo, S., Chong, S.C., & Im, H.Y. (2026). Neural dynamics of global and local visual processing: magnetoencephalography (MEG) decoding with Navon letters. <i>Poster at Cognitive Neuroscience Society</i>.
+      Hajela, A., Kim, P., Yoo, S-A., Cho, H., Joo, S., Chong, S.C., & Im, H.Y. (2026). Neural dynamics of global and local visual processing: magnetoencephalography (MEG) decoding with Navon letters. <i>Poster at Cognitive Neuroscience Society</i>.
   </li>
 
   <li>
@@ -40,7 +40,7 @@ nav:
   </li>
 
   <li>
-      Botha, K.*, Chaytor, F.*, Young, E., Prihodova, D., Bartolome, A., & Im, H.Y. (2026). Neural and Behavioural Time Courses of Rapid Danger Detection. <i>Poster at Cognitive Neuroscience Society</i>.
+      Botha, K., Chaytor, F., Young, E., Prihodova, D., Bartolome, A., & Im, H.Y. (2026). Neural and Behavioural Time Courses of Rapid Danger Detection. <i>Poster at Cognitive Neuroscience Society</i>.
   </li>
 
   <li>
