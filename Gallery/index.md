@@ -18,6 +18,50 @@ nav:
 {% include section.html %}
 # {% include icon.html icon="fa-solid fa-people-group" %} Lab social
 
+## 2026
+
+{% capture col1 %}
+{% include figure.html image="images/mario-kart-1.jpg" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/mario-kart-2.jpg" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/mario-kart-3.jpg" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+{% capture col1 %}
+{% include figure.html image="images/mario-kart-4.jpg" %}
+{% endcapture %}
+
+{% capture col2 %}
+{% include figure.html image="images/mario-kart-5.jpg" %}
+{% endcapture %}
+
+{% capture col3 %}
+{% include figure.html image="images/mario-kart-6.jpg" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 col3=col3 %}
+
+{% capture col1 %}
+{% include figure.html image="images/mario-kart-7.jpg" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2="" col3="" %}
+
+<p style="text-align: center; font-style: italic; margin-top: -20px;">Mario Kart tournament</p>
+
+{% capture col1 %}
+{% include figure.html image="images/mario-kart-winner.jpg" caption="Tournament winner — Fin" %}
+{% endcapture %}
+
+{% include cols.html col1=col1 col2="" col3="" %}
+
 ## 2025
 
 {% capture col1 %}
