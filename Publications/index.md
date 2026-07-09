@@ -36,12 +36,17 @@ nav:
   
   <ul class="pubs">
     <li>
+      Cook, A. J., Giaschi, D., &amp; Im, H. Y. (2026). Speed and accuracy of movement during visuomotor adaptation are still developing in school-age children.
+      <i>Infant and Child Development</i>, <i>35</i>(4), e70121.
+      <a href="https://doi.org/10.1002/icd.70121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/icd.70121</a>
+    </li>
+    <li>
       Asare, A. K., Ho, C., Im, H. Y., &amp; Giaschi, D. (2026). Evaluation of motion perception and binocular vision following dichoptic treatment for amblyopia.
       <i>Vision Research</i>, <i>240</i>, 108745.
       <a href="https://doi.org/10.1016/j.visres.2025.108745" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.visres.2025.108745</a>
     </li>
     <li>
-      Cook, A. J., Im, H. Y., &amp; Giashci, D. E. (2025). Large-scale functional networks underlying visual attention.
+      Cook, A. J., Im, H. Y., &amp; Giaschi, D. E. (2025). Large-scale functional networks underlying visual attention.
       <i>Neuroscience &amp; Biobehavioral Reviews</i>, <i>173</i>, 106165.
       <a href="https://doi.org/10.1016/j.neubiorev.2025.106165" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neubiorev.2025.106165</a>
     </li>
