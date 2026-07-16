@@ -7,10 +7,6 @@ nav:
 
 <h1 style="text-align: left;">Publications</h1>
 
-<p style="text-align: left; font-size: 1.1rem;">
-  If you would like to read an article listed below and a link is not provided, please email us at UBCVCNLAB@bcchr.ca.
-</p>
-
 <style>
   /* alignment + hanging indent (unchanged) */
   .pubs, .pubs li {
@@ -29,12 +25,7 @@ nav:
   .pubs * { color: inherit !important; }
 </style>
     
-<!-- Journal Articles Section -->
-
-<details open>
-  <summary style="font-weight: bold; font-size: 1.2rem; margin-top: 2rem; text-align: left;">Journal Articles</summary>
-  
-  <ul class="pubs">
+<ul class="pubs">
     <li>
       Cook, A. J., Giaschi, D., &amp; Im, H. Y. (2026). Speed and accuracy of movement during visuomotor adaptation are still developing in school-age children.
       <i>Infant and Child Development</i>, <i>35</i>(4), e70121.
@@ -141,4 +132,3 @@ nav:
     </li>
     
   </ul>
-</details>
