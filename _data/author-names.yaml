@@ -4,6 +4,10 @@
 # so the same person can be rendered several different ways across papers.
 # Keys are the form generated from publisher metadata; values are how the
 # name should appear in the publications list.
+#
+# Note: citations are cached, so after editing this file locally delete
+# _cite/.cache before re-running _cite/cite.py. CI builds from a cold cache
+# and always picks changes up.
 
-"Im, H. Y.": "Im, H.-Y."
+"Im, H.-Y.": "Im, H. Y."
 "Giaschi, D.": "Giaschi, D. E."
