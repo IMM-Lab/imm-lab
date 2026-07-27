@@ -42,7 +42,7 @@ module Jekyll
       weights = regex_scan(css, '--\S*:\s(\d{3});', false, true).sort.uniq
       url = "https://fonts.googleapis.com/css2?display=swap&"
       for name in names do
-        name.sub!" ", "+"
+        name.gsub!" ", "+"
         url += "&family=#{name}:ital,wght@"
         for ital in [0, 1] do
           for weight in weights do
