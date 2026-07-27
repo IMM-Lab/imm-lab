@@ -17,7 +17,7 @@
 # Crossref has this paper's authors as Hangul names in a different order to the
 # published article, and with no given/family split to build initials from
 - id: doi:10.19066/cogsci.2007.18.4.002
-  authors_apa: Park, K. M., Cha, O., Kim, S., Im, H.-Y., & Chong, S. C.
+  authors_apa: Park, K. M., Cha, O., Kim, S., Im, H. Y., & Chong, S. C.
 
 # Wiley's Crossref record for this paper wraps the leading "S" in small-caps
 # markup, which leaves "S ex-related" once the tags are stripped. Override it.
