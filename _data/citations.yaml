@@ -6,6 +6,10 @@
   - Alexander J. Cook
   - Hee Yeon Im
   - Deborah E. Giaschi
+  authors_apa: Cook, A. J., Im, H.-Y., & Giaschi, D. E.
+  volume: '173'
+  issue: ''
+  pages: '106165'
   publisher: Neuroscience &amp; Biobehavioral Reviews
   date: '2025-06-01'
   link: https://doi.org/g96x76
@@ -22,6 +26,11 @@
   - Reginald B. Adams
   - Jisoo Sun
   - Sang Chul Chong
+  authors_apa: Son, G., Im, H.-Y., Albohn, D. N., Kveraga, K., Adams, R. B., Sun,
+    J., & Chong, S. C.
+  volume: '13'
+  issue: '1'
+  pages: ''
   publisher: Scientific Reports
   date: '2023-11-07'
   link: https://doi.org/gs94m6
@@ -36,6 +45,10 @@
   - Young Jun Yoon
   - Sung Jun Joo
   - Sang Chul Chong
+  authors_apa: Cho, J., Im, H.-Y., Yoon, Y. J., Joo, S. J., & Chong, S. C.
+  volume: '13'
+  issue: '1'
+  pages: ''
   publisher: Scientific Reports
   date: '2023-08-31'
   link: https://doi.org/gs94m7
@@ -49,6 +62,10 @@
   - Hee Yeon Im
   - Joshua J. Liddy
   - Joo-Hyun Song
+  authors_apa: Im, H.-Y., Liddy, J. J., & Song, J.-H.
+  volume: '128'
+  issue: '3'
+  pages: 527-542
   publisher: Journal of Neurophysiology
   date: '2022-09-01'
   link: https://doi.org/gsc4tq
@@ -63,6 +80,10 @@
   - Cody A. Cushing
   - Noreen Ward
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Cushing, C. A., Ward, N., & Kveraga, K.
+  volume: '21'
+  issue: '4'
+  pages: 776-792
   publisher: Cognitive, Affective, &amp; Behavioral Neuroscience
   date: '2021-03-16'
   link: https://doi.org/gnjsp8
@@ -77,6 +98,10 @@
   - Hee Yeon Im
   - Noreen Ward
   - Reginald B. Adams
+  authors_apa: Kveraga, K., Im, H.-Y., Ward, N., & Adams, R. B.
+  volume: '20'
+  issue: '2'
+  pages: '9'
   publisher: Journal of Vision
   date: '2020-02-25'
   link: https://doi.org/gsc4tr
@@ -92,6 +117,10 @@
   - Reginald B Adams Jr
   - Noreen Ward
   - Kestutis Kveraga
+  authors_apa: Cushing, C. A., Im, H.-Y., Adams Jr, R. B., Ward, N., & Kveraga, K.
+  volume: '14'
+  issue: '2'
+  pages: 151-162
   publisher: Social Cognitive and Affective Neuroscience
   date: '2019-02-01'
   link: https://doi.org/ggbmwt
@@ -107,6 +136,11 @@
   - Hee Yeon Im
   - Daniel N. Albohn
   - Reginald B. Adams
+  authors_apa: Kveraga, K., De Vito, D., Cushing, C., Im, H.-Y., Albohn, D. N., &
+    Adams, R. B.
+  volume: '237'
+  issue: '4'
+  pages: 967-975
   publisher: Experimental Brain Research
   date: '2019-01-25'
   link: https://doi.org/gsc4ts
@@ -124,6 +158,11 @@
   - Noreen Ward
   - Daniel N. Albohn
   - Kestutis Kveraga
+  authors_apa: Adams, R. B., Im, H.-Y., Cushing, C., Boshyan, J., Ward, N., Albohn,
+    D. N., & Kveraga, K.
+  volume: ''
+  issue: ''
+  pages: 71-87
   publisher: Progress in Brain Research
   date: '2019-01-01'
   link: https://doi.org/ggsp8c
@@ -131,8 +170,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1002/hbm.24035
-  title: "<scp>S</scp>\n                    ex\u2010related differences in behavioral\
-    \ and amygdalar responses to compound facial threat cues"
+  title: Sex-related differences in behavioral and amygdalar responses to compound
+    facial threat cues
   authors:
   - Hee Yeon Im
   - Reginald B. Adams
@@ -140,12 +179,17 @@
   - Jasmine Boshyan
   - Noreen Ward
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Adams, R. B., Cushing, C. A., Boshyan, J., Ward, N., & Kveraga,
+    K.
+  volume: '39'
+  issue: '7'
+  pages: 2725-2741
   publisher: Human Brain Mapping
   date: '2018-03-08'
   link: https://doi.org/gdv9gc
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1038/s41598-017-15495-2
   title: "Observer\u2019s anxiety facilitates magnocellular processing of clear facial\
     \ threat cues, but impairs parvocellular processing of ambiguous facial threat\
@@ -157,6 +201,11 @@
   - Noreen Ward
   - Cody A. Cushing
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Adams, R. B., Boshyan, J., Ward, N., Cushing, C. A., & Kveraga,
+    K.
+  volume: '7'
+  issue: '1'
+  pages: ''
   publisher: Scientific Reports
   date: '2017-11-09'
   link: https://doi.org/gck26w
@@ -173,6 +222,11 @@
   - Cody A. Cushing
   - Reginald B. Adams
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Albohn, D. N., Steiner, T. G., Cushing, C. A., Adams, R.
+    B., & Kveraga, K.
+  volume: '1'
+  issue: '11'
+  pages: 828-842
   publisher: Nature Human Behaviour
   date: '2017-10-09'
   link: https://doi.org/gnjsqc
@@ -189,12 +243,18 @@
   - Noreen Ward
   - Cody A. Cushing
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Adams, R. B., Boshyan, J., Ward, N., Cushing, C. A., & Kveraga,
+    K.
+  volume: ''
+  issue: ''
+  pages: ''
   publisher: openRxiv
   date: '2017-05-24'
   link: https://doi.org/gkvndj
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  hide: true
 - id: doi:10.1007/s40167-017-0058-7
   title: 'Correction to: Cross-cultural and hemispheric laterality effects on the
     ensemble coding of emotion in facial crowds'
@@ -206,12 +266,18 @@
   - Daniel N. Albohn
   - Reginald B. Adams
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Chong, S. C., Sun, J., Steiner, T. G., Albohn, D. N., Adams,
+    R. B., & Kveraga, K.
+  volume: '6'
+  issue: '1'
+  pages: 97-97
   publisher: Culture and Brain
-  date: '2017-12-22'
+  date: '2018-01-01'
   link: https://doi.org/gsc4tt
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  hide: true
 - id: doi:10.1101/141861
   title: Cross-cultural effects on ensemble coding of emotion in facial crowds
   authors:
@@ -222,12 +288,18 @@
   - Daniel N. Albohn
   - Reginald B. Adams
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Chong, S. C., Sun, J., Steiner, T. G., Albohn, D. N., Adams,
+    R. B., & Kveraga, K.
+  volume: ''
+  issue: ''
+  pages: ''
   publisher: openRxiv
   date: '2017-05-24'
   link: https://doi.org/gkxk5n
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  hide: true
 - id: doi:10.1016/j.visres.2015.08.013
   title: Grouping by proximity and the visual impression of approximate number in
     random dot arrays
@@ -235,6 +307,10 @@
   - Hee Yeon Im
   - Sheng-hua Zhong
   - Justin Halberda
+  authors_apa: Im, H.-Y., Zhong, S.-H., & Halberda, J.
+  volume: '126'
+  issue: ''
+  pages: 291-307
   publisher: Vision Research
   date: '2016-09-01'
   link: https://doi.org/f82pkn
@@ -247,6 +323,10 @@
   - Hee Yeon Im
   - "Patrick B\xE9dard"
   - Joo-Hyun Song
+  authors_apa: "Im, H.-Y., B\xE9dard, P., & Song, J.-H."
+  volume: '42'
+  issue: '9'
+  pages: 1269-1274
   publisher: 'Journal of Experimental Psychology: Human Perception and Performance'
   date: '2016-09-01'
   link: https://doi.org/f84n2c
@@ -259,6 +339,10 @@
   - Hee Yeon Im
   - "Patrick B\xE9dard"
   - Joo-Hyun Song
+  authors_apa: "Im, H.-Y., B\xE9dard, P., & Song, J.-H."
+  volume: '15'
+  issue: '8'
+  pages: '20'
   publisher: Journal of Vision
   date: '2015-06-26'
   link: https://doi.org/f7sbbf
@@ -274,8 +358,12 @@
   - Robert Eisinger
   - Ryan Ly
   - Justin Halberda
+  authors_apa: Odic, D., Im, H.-Y., Eisinger, R., Ly, R., & Halberda, J.
+  volume: '48'
+  issue: '2'
+  pages: 445-462
   publisher: Behavior Research Methods
-  date: '2015-05-19'
+  date: '2016-01-01'
   link: https://doi.org/f8vgnp
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
@@ -285,6 +373,10 @@
   authors:
   - Hee Yeon Im
   - Sang Chul Chong
+  authors_apa: Im, H.-Y., & Chong, S. C.
+  volume: '43'
+  issue: '7'
+  pages: 663-676
   publisher: Perception
   date: '2014-01-01'
   link: https://doi.org/f6dsmh
@@ -297,8 +389,12 @@
   - Hee Yeon Im
   - Woon Ju Park
   - Sang Chul Chong
+  authors_apa: Im, H.-Y., Park, W. J., & Chong, S. C.
+  volume: '27'
+  issue: '1'
+  pages: 114-127
   publisher: Journal of Cognitive Psychology
-  date: '2014-12-08'
+  date: '2015-01-01'
   link: https://doi.org/gsc4tv
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
@@ -309,8 +405,12 @@
   authors:
   - Hee Yeon Im
   - Justin Halberda
+  authors_apa: Im, H.-Y., & Halberda, J.
+  volume: '75'
+  issue: '2'
+  pages: 278-286
   publisher: Attention, Perception, &amp; Psychophysics
-  date: '2012-11-28'
+  date: '2013-01-01'
   link: https://doi.org/f4mqbv
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
@@ -320,6 +420,10 @@
   authors:
   - H. Y. Im
   - S. C. Chong
+  authors_apa: Im, H.-Y., & Chong, S. C.
+  volume: '71'
+  issue: '2'
+  pages: 375-384
   publisher: Attention, Perception &amp; Psychophysics
   date: '2009-02-01'
   link: https://doi.org/fmn4kh
@@ -334,12 +438,16 @@
   - ' Sang Chul Chong'
   - ' Oakyoon Cha'
   - " \uC784\uD76C\uC5F0"
+  authors_apa: Park, K. M., Cha, O., Kim, S., Im, H.-Y., & Chong, S. C.
+  volume: '18'
+  issue: '4'
+  pages: 351-370
   publisher: Korean Journal of Cognitive Science
   date: '2007-12-01'
   link: https://doi.org/gsc4tw
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.3758/s13414-020-02046-7
   title: An explicit investigation of the roles that feature distributions play in
     rapid visual categorization
@@ -347,8 +455,12 @@
   - Hee Yeon Im
   - Natalia A. Tiurina
   - Igor S. Utochkin
+  authors_apa: Im, H.-Y., Tiurina, N. A., & Utochkin, I. S.
+  volume: '83'
+  issue: '3'
+  pages: 1050-1069
   publisher: Attention, Perception, &amp; Psychophysics
-  date: '2020-05-14'
+  date: '2021-01-01'
   link: https://doi.org/gsc4tx
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
@@ -363,12 +475,18 @@
   - Cody A. Cushing
   - Reginald B. Adams
   - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Albohn, D. N., Steiner, T. G., Cushing, C. A., Adams, R.
+    B., & Kveraga, K.
+  volume: ''
+  issue: ''
+  pages: ''
   publisher: openRxiv
   date: '2017-01-19'
   link: https://doi.org/gkws7j
   orcid: 0000-0001-9379-1347
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  hide: true
 - id: doi:10.1038/s41598-018-20509-8
   title: 'Neurodynamics and connectivity during facial fear perception: The role of
     threat exposure and signal congruity'
@@ -380,6 +498,11 @@
   - Daniel N. Albohn
   - Troy G. Steiner
   - Kestutis Kveraga
+  authors_apa: Cushing, C. A., Im, H.-Y., Adams, R. B., Ward, N., Albohn, D. N., Steiner,
+    T. G., & Kveraga, K.
+  volume: '8'
+  issue: '1'
+  pages: ''
   publisher: Scientific Reports
   date: '2018-02-09'
   link: https://doi.org/gc27t7
@@ -395,6 +518,10 @@
   - Advitya Hajela
   - Deborah Giaschi
   - Hee-Yeon Im
+  authors_apa: Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., & Im, H.-Y.
+  volume: '339'
+  issue: ''
+  pages: '122145'
   publisher: NeuroImage
   date: '2026-10-01'
   link: https://doi.org/hcct5s
@@ -407,6 +534,10 @@
   - Alexander J. Cook
   - Deborah Giaschi
   - Hee Yeon Im
+  authors_apa: Cook, A. J., Giaschi, D. E., & Im, H.-Y.
+  volume: '35'
+  issue: '4'
+  pages: e70121
   publisher: Infant and Child Development
   date: '2026-07-01'
   link: https://doi.org/hcct5t
@@ -420,8 +551,33 @@
   - Cindy S. Ho
   - Hee Yeon Im
   - Deborah Eileen Giaschi
+  authors_apa: Asare, A. K., Ho, C. S., Im, H.-Y., & Giaschi, D. E.
+  volume: '240'
+  issue: ''
+  pages: '108745'
   publisher: Vision Research
   date: '2026-03-01'
   link: https://doi.org/hcct5v
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s40167-017-0054-y
+  title: Cross-cultural and hemispheric laterality effects on the ensemble coding
+    of emotion in facial crowds
+  authors:
+  - Hee Yeon Im
+  - Sang Chul Chong
+  - Jisoo Sun
+  - Troy G. Steiner
+  - Daniel N. Albohn
+  - Reginald B. Adams
+  - Kestutis Kveraga
+  authors_apa: Im, H.-Y., Chong, S. C., Sun, J., Steiner, T. G., Albohn, D. N., Adams,
+    R. B., & Kveraga, K.
+  volume: '5'
+  issue: '2'
+  pages: 125-152
+  publisher: Culture and Brain
+  date: '2017-10-01'
+  link: https://doi.org/hcct9n
   plugin: sources.py
   file: sources.yaml

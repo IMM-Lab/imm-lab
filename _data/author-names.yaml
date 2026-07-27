@@ -1,0 +1,9 @@
+# Preferred display forms for author names.
+#
+# Publisher metadata is inconsistent about middle initials and hyphenation,
+# so the same person can be rendered several different ways across papers.
+# Keys are the form generated from publisher metadata; values are how the
+# name should appear in the publications list.
+
+"Im, H. Y.": "Im, H.-Y."
+"Giaschi, D.": "Giaschi, D. E."

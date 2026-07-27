@@ -4,7 +4,9 @@ utility functions for cite process and plugins
 
 import subprocess
 import json
+import re
 import yaml
+from urllib.request import Request, urlopen
 from yaml.loader import SafeLoader
 from pathlib import Path
 from datetime import datetime
@@ -165,6 +167,93 @@ def save_data(path, data):
         raise Exception("Can't write to file")
 
 
+def strip_markup(text):
+    """
+    remove inline markup tags that some publishers embed in their metadata,
+    e.g. the "<scp>S</scp>ex-related" small-caps markup Wiley sends to Crossref.
+    Whitespace is collapsed too, since removing a tag can leave the line breaks
+    and indentation that surrounded it.
+    """
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", text)).strip()
+
+
+# lazily-loaded map of preferred author name forms, see _data/author-names.yaml
+_author_names = None
+
+
+def canonical_author(name):
+    """
+    look up the preferred display form of an author name, falling back to the
+    name as generated from publisher metadata
+    """
+    global _author_names
+    if _author_names is None:
+        try:
+            _author_names = load_data(Path("_data/author-names.yaml")) or {}
+        except Exception:
+            _author_names = {}
+    return _author_names.get(name, name)
+
+
+def author_initials(given):
+    """
+    convert a given name to APA-style initials, preserving hyphenation
+    ("Alexander J." -> "A. J.", "Hee-Yeon" -> "H.-Y.")
+    """
+    words = []
+    for word in given.split():
+        segments = [segment for segment in word.split("-") if segment]
+        words.append("-".join(segment[0].upper() + "." for segment in segments))
+    return " ".join(words)
+
+
+def format_authors(authors):
+    """
+    format a CSL author list APA-style,
+    e.g. "Song, M., Cook, A. J., & Im, H.-Y."
+    """
+    names = []
+    for author in authors:
+        given = strip_markup(get_safe(author, "given", "").strip())
+        family = strip_markup(get_safe(author, "family", "").strip())
+        if not (given or family):
+            continue
+        if given and family:
+            name = f"{family}, {author_initials(given)}"
+        else:
+            name = family or given
+        names.append(canonical_author(name))
+
+    if len(names) > 1:
+        return ", ".join(names[:-1]) + ", & " + names[-1]
+    return "".join(names)
+
+
+@log_cache
+@cache.memoize(name="crossref-print-year", expire=30 * (60 * 60 * 24))
+def crossref_print_year(_id):
+    """
+    look up the print (issue) year for a DOI from Crossref
+
+    Manubot reports the "issued" date, which for online-first papers is when
+    the paper first appeared online — often a year before the issue it gets
+    cited by. Reference lists use the issue year, so prefer that where Crossref
+    has one. Returns "" if unavailable, so callers fall back to the Manubot date.
+    """
+    if not _id.lower().startswith("doi:"):
+        return ""
+
+    try:
+        request = Request(
+            f"https://api.crossref.org/works/{_id[4:]}",
+            headers={"User-Agent": "imm-lab-website (https://www.imm-lab.ca)"},
+        )
+        message = json.loads(urlopen(request, timeout=30).read())["message"]
+        return str(message["published-print"]["date-parts"][0][0])
+    except Exception:
+        return ""
+
+
 @log_cache
 @cache.memoize(name="manubot", expire=90 * (60 * 60 * 24))
 def cite_with_manubot(_id):
@@ -193,7 +282,7 @@ def cite_with_manubot(_id):
     citation["id"] = _id
 
     # title
-    citation["title"] = get_safe(manubot, "title", "").strip()
+    citation["title"] = strip_markup(get_safe(manubot, "title", "").strip())
 
     # authors
     citation["authors"] = []
@@ -202,6 +291,14 @@ def cite_with_manubot(_id):
         family = get_safe(author, "family", "").strip()
         if given or family:
             citation["authors"].append(" ".join([given, family]))
+
+    # authors, formatted APA-style for reference lists
+    citation["authors_apa"] = format_authors(get_safe(manubot, "author", {}))
+
+    # volume, issue, and page or article number
+    citation["volume"] = str(get_safe(manubot, "volume", "")).strip()
+    citation["issue"] = str(get_safe(manubot, "issue", "")).strip()
+    citation["pages"] = str(get_safe(manubot, "page", "")).strip()
 
     # publisher
     container = get_safe(manubot, "container-title", "").strip()
@@ -226,6 +323,11 @@ def cite_with_manubot(_id):
     else:
         # if no year, consider date missing data
         citation["date"] = ""
+
+    # for online-first papers, cite the issue year rather than the online date
+    print_year = crossref_print_year(_id)
+    if print_year and not citation["date"].startswith(print_year):
+        citation["date"] = format_date(f"{print_year}-1-1")
 
     # link
     citation["link"] = get_safe(manubot, "URL", "").strip()
