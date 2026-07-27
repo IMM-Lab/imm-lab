@@ -27,6 +27,11 @@ nav:
     
 <ul class="pubs">
     <li>
+      Song, M., Cook, A. J., Hajela, A., Giaschi, D., &amp; Im, H. Y. (2026). Developmental changes in MEG oscillatory activity during visuomotor adaptation: Differential maturation of feedforward and feedback-related mechanisms.
+      <i>NeuroImage</i>, <i>339</i>, 122145.
+      <a href="https://doi.org/10.1016/j.neuroimage.2026.122145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neuroimage.2026.122145</a>
+    </li>
+    <li>
       Cook, A. J., Giaschi, D., &amp; Im, H. Y. (2026). Speed and accuracy of movement during visuomotor adaptation are still developing in school-age children.
       <i>Infant and Child Development</i>, <i>35</i>(4), e70121.
       <a href="https://doi.org/10.1002/icd.70121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/icd.70121</a>
