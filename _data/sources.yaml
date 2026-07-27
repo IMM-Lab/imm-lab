@@ -5,6 +5,38 @@
 
 - id: doi:10.1016/j.neuroimage.2026.122145
 
+# Crossref has no page or article number for this one, so supply it
 - id: doi:10.1002/icd.70121
+  pages: e70121
 
 - id: doi:10.1016/j.visres.2025.108745
+
+# ORCID lists only the correction notice for this paper, not the paper itself
+- id: doi:10.1007/s40167-017-0054-y
+
+# Crossref has this paper's authors as Hangul names in a different order to the
+# published article, and with no given/family split to build initials from
+- id: doi:10.19066/cogsci.2007.18.4.002
+  authors_apa: Park, K. M., Cha, O., Kim, S., Im, H.-Y., & Chong, S. C.
+
+# Wiley's Crossref record for this paper wraps the leading "S" in small-caps
+# markup, which leaves "S ex-related" once the tags are stripped. Override it.
+- id: doi:10.1002/hbm.24035
+  title: Sex-related differences in behavioral and amygdalar responses to compound facial threat cues
+
+# Entries below are pulled in automatically from ORCID but hidden from the
+# publications list: bioRxiv preprints of papers that later appeared in a
+# journal, and a publisher correction notice. Listing them alongside the
+# journal versions would duplicate the same work.
+
+- id: doi:10.1101/101527
+  hide: true
+
+- id: doi:10.1101/141838
+  hide: true
+
+- id: doi:10.1101/141861
+  hide: true
+
+- id: doi:10.1007/s40167-017-0058-7
+  hide: true
