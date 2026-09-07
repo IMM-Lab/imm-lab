@@ -1,5 +1,41 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.neuroimage.2026.122145
+  title: 'Developmental changes in MEG oscillatory activity during visuomotor adaptation:
+    Differential maturation of feedforward and feedback-related mechanisms'
+  authors:
+  - Minsu Song
+  - Alexander J. Cook
+  - Advitya Hajela
+  - Deborah Giaschi
+  - Hee-Yeon Im
+  authors_apa: Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., & Im, H. Y.
+  volume: '339'
+  issue: ''
+  pages: '122145'
+  publisher: NeuroImage
+  date: '2026-10-01'
+  link: https://doi.org/hcct5s
+  orcid: 0000-0001-9379-1347
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/icd.70121
+  title: "Speed and Accuracy of Movement During Visuomotor Adaptation Are Still Developing\
+    \ in School\u2010Age Children"
+  authors:
+  - Alexander J. Cook
+  - Deborah Giaschi
+  - Hee Yeon Im
+  authors_apa: Cook, A. J., Giaschi, D. E., & Im, H. Y.
+  volume: '35'
+  issue: '4'
+  pages: e70121
+  publisher: Infant and Child Development
+  date: '2026-07-01'
+  link: https://doi.org/hcct5t
+  orcid: 0000-0001-9379-1347
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1016/j.neubiorev.2025.106165
   title: Large-scale functional networks underlying visual attention
   authors:
@@ -509,40 +545,6 @@
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.neuroimage.2026.122145
-  title: 'Developmental changes in MEG oscillatory activity during visuomotor adaptation:
-    Differential maturation of feedforward and feedback-related mechanisms'
-  authors:
-  - Minsu Song
-  - Alexander J. Cook
-  - Advitya Hajela
-  - Deborah Giaschi
-  - Hee-Yeon Im
-  authors_apa: Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., & Im, H. Y.
-  volume: '339'
-  issue: ''
-  pages: '122145'
-  publisher: NeuroImage
-  date: '2026-10-01'
-  link: https://doi.org/hcct5s
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1002/icd.70121
-  title: "Speed and Accuracy of Movement During Visuomotor Adaptation Are Still Developing\
-    \ in School\u2010Age Children"
-  authors:
-  - Alexander J. Cook
-  - Deborah Giaschi
-  - Hee Yeon Im
-  authors_apa: Cook, A. J., Giaschi, D. E., & Im, H. Y.
-  volume: '35'
-  issue: '4'
-  pages: e70121
-  publisher: Infant and Child Development
-  date: '2026-07-01'
-  link: https://doi.org/hcct5t
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1016/j.visres.2025.108745
   title: Evaluation of motion perception and binocular vision following dichoptic
     treatment for amblyopia
