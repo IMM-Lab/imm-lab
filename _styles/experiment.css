@@ -1,7 +1,7 @@
 body {
   text-align: center;
   background-color: #28282B;
-  font-family: var(--body);
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -92,7 +92,7 @@ body:has(#lock-modal[style*=flex]) footer {
   margin: 0 auto;
   box-sizing: border-box;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  font-family: var(--body);
+  font-family: Arial, sans-serif;
 }
 
 #consent-box h2,
@@ -154,7 +154,7 @@ body:has(#lock-modal[style*=flex]) footer {
   margin: 60px auto;
   box-sizing: border-box;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  font-family: var(--body);
+  font-family: Arial, sans-serif;
 }
 
 #surveyContainer h2 {

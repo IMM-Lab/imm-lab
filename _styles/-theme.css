@@ -21,9 +21,9 @@
 }
 
 :root {
-  --title: "Public Sans", sans-serif;
-  --heading: "Public Sans", sans-serif;
-  --body: "Public Sans", sans-serif;
+  --title: "Inter", sans-serif;
+  --heading: "Inter", sans-serif;
+  --body: "Inter", sans-serif;
   --code: "Roboto Mono", monospace;
   --medium: 1rem;
   --large: 1.2rem;
