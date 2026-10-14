@@ -5,7 +5,7 @@ nav:
   tooltip: Research papers and PDFs
 ---
 
-<h1 style="text-align: left; margin-bottom: 18px;">Publications</h1>
+<h1 style="text-align: left; margin-bottom: 16px;">Publications</h1>
 
 <style>
   /* alignment + hanging indent */
@@ -17,7 +17,7 @@ nav:
     white-space: normal !important;
   }
   .pubs { list-style-type: disc; padding-left: 0; margin: 0; }
-  .pubs li { margin-bottom: 1.65rem; padding-left: 1.2em; text-indent: -1.2em; line-height: 2.1; }
+  .pubs li { margin-bottom: 1.2rem; padding-left: 1.2em; text-indent: -1.2em; line-height: 1.8; }
   .pubs a { overflow-wrap: anywhere; word-break: break-word; }
 
   /* follow the light/dark theme rather than forcing a fixed colour */
