@@ -30,3 +30,16 @@ main {
 
 
 
+
+/* Previous Members: plain left-aligned one-line list */
+.alumni-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 20px 0;
+}
+
+.alumni-list li {
+  margin: 2px 0;
+  padding-left: 0;
+  text-align: left;
+}

@@ -1,0 +1,17 @@
+{% comment %}
+  One-line "Name (Affiliation)" list of former members (role: Al).
+  include.groups: comma-separated member `group` values, listed in that order.
+  Nested parentheses in a description are flattened, so
+  "Assistant Professor, Psychology (UVic)" shows as "..., Psychology, UVic".
+{% endcomment %}
+{% assign groups = include.groups | split: "," %}
+<ul class="alumni-list">
+{%- for g in groups -%}
+  {%- assign group = g | strip -%}
+  {%- assign people = site.members | where: "role", "Al" | where: "group", group | sort: "name" -%}
+  {%- for m in people -%}
+    {%- assign affiliation = m.description | default: "" | strip | replace: " (", ", " | remove: ")" -%}
+  <li>{{ m.name | strip }}{% if affiliation != "" %} ({{ affiliation }}){% endif %}</li>
+  {%- endfor -%}
+{%- endfor %}
+</ul>
