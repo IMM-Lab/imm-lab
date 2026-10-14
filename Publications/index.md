@@ -23,6 +23,8 @@ nav:
   /* follow the light/dark theme rather than forcing a fixed colour */
   .pubs { color: var(--text); }
   .pubs * { color: inherit; }
+
+  .pubs-note { text-align: left !important; font-size: 0.9em; margin-bottom: 1.5rem; }
 </style>
 
 <!--
@@ -32,6 +34,8 @@ nav:
 -->
 
 {%- assign pubs = site.data.citations | sort: "date" | reverse -%}
+
+<p class="pubs-note">* These authors contributed equally.</p>
 
 <ul class="pubs">
 {%- for pub in pubs -%}
