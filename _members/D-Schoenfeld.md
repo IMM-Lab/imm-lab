@@ -1,9 +1,9 @@
 ---
 name: Drew Schoenfeld
 image: images/drew-people.png 
-role: GA 
-description: MSc Candidate
-group: msc
+role: Al
+description: MSc
+group: Graduate Student
 links:
   email: drewschoenfeld@gmail.com
 ---
