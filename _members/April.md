@@ -2,7 +2,7 @@
 name: April Hwang
 image: images/april-people.png
 role: Al
-group: Alumni
+group: Research Assistant
 description: Research Assistant
 links:
   email: 
