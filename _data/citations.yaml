@@ -1,5 +1,41 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.neuroimage.2026.122145
+  title: 'Developmental changes in MEG oscillatory activity during visuomotor adaptation:
+    Differential maturation of feedforward and feedback-related mechanisms'
+  authors:
+  - Minsu Song
+  - Alexander J. Cook
+  - Advitya Hajela
+  - Deborah Giaschi
+  - Hee-Yeon Im
+  authors_apa: Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., & Im, H. Y.
+  volume: '339'
+  issue: ''
+  pages: '122145'
+  publisher: NeuroImage
+  date: '2026-10-01'
+  link: https://doi.org/hcct5s
+  orcid: 0000-0001-9379-1347
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/icd.70121
+  title: "Speed and Accuracy of Movement During Visuomotor Adaptation Are Still Developing\
+    \ in School\u2010Age Children"
+  authors:
+  - Alexander J. Cook
+  - Deborah Giaschi
+  - Hee Yeon Im
+  authors_apa: Cook, A. J., Giaschi, D. E., & Im, H. Y.
+  volume: '35'
+  issue: '4'
+  pages: e70121
+  publisher: Infant and Child Development
+  date: '2026-07-01'
+  link: https://doi.org/hcct5t
+  orcid: 0000-0001-9379-1347
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1016/j.neubiorev.2025.106165
   title: Large-scale functional networks underlying visual attention
   authors:
@@ -509,38 +545,22 @@
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.neuroimage.2026.122145
-  title: 'Developmental changes in MEG oscillatory activity during visuomotor adaptation:
-    Differential maturation of feedforward and feedback-related mechanisms'
-  authors:
-  - Minsu Song
-  - Alexander J. Cook
-  - Advitya Hajela
-  - Deborah Giaschi
-  - Hee-Yeon Im
-  authors_apa: Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., & Im, H. Y.
-  volume: '339'
-  issue: ''
-  pages: '122145'
-  publisher: NeuroImage
-  date: '2026-10-01'
-  link: https://doi.org/hcct5s
+- title: 'Neural dynamics of top-down and stimulus-evoked activity during global and
+    local visual processing of Navon letter stimuli: a multivariate magnetoencephalography
+    (MEG) decoding study'
+  authors_apa: Hajela, A.*, Kim, P.*, Cho, H., Yoo, S.-A., Joo, S., Chong, S. C.,
+    & Im, H. Y.
+  publisher: Cognitive, Affective, & Behavioral Neuroscience
+  date: '2026-10-13'
+  in_press: true
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1002/icd.70121
-  title: "Speed and Accuracy of Movement During Visuomotor Adaptation Are Still Developing\
-    \ in School\u2010Age Children"
-  authors:
-  - Alexander J. Cook
-  - Deborah Giaschi
-  - Hee Yeon Im
-  authors_apa: Cook, A. J., Giaschi, D. E., & Im, H. Y.
-  volume: '35'
-  issue: '4'
-  pages: e70121
-  publisher: Infant and Child Development
-  date: '2026-07-01'
-  link: https://doi.org/hcct5t
+- title: "From metaphorical to experienced time: Subjective experience of time\u2019\
+    s passage across self-time perspectives"
+  authors_apa: Schoenfeld, D., Im, H. Y., & Ongchoco, J. D. K.
+  publisher: Attention, Perception, & Psychophysics
+  date: '2026-10-13'
+  in_press: true
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1016/j.visres.2025.108745
