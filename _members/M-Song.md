@@ -2,7 +2,7 @@
 name: Minsu Song
 image: images/minsu-people.jpg
 role: Al
-description: Lecturer
+description: Research Professor, Korea University
 group: Postdoctoral Researcher
 links:
   email: minsu.song@ubc.ca
