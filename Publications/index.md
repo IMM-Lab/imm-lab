@@ -5,7 +5,7 @@ nav:
   tooltip: Research papers and PDFs
 ---
 
-<h1 style="text-align: left; margin-bottom: 16px;">Publications</h1>
+<h1 style="text-align: left; margin-bottom: 10px;">Publications</h1>
 
 <style>
   /* alignment + hanging indent */
