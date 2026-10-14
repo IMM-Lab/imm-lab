@@ -44,7 +44,7 @@ nav:
 {%- assign issue = pub.issue | default: "" -%}
 {%- assign pages = pub.pages | default: "" -%}
   <li>
-    {{ pub.authors_apa }} ({{ pub.date | date: "%Y" }}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
+    {{ pub.authors_apa }} ({% if pub.in_press %}in press{% else %}{{ pub.date | date: "%Y" }}{% endif %}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
     {%- if publisher != "" %}
       <i>{{ publisher }}</i>
       {%- if volume != "" %}, <i>{{ volume }}</i>{% if issue != "" %}({{ issue }}){% endif %}{% endif %}

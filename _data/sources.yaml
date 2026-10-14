@@ -3,6 +3,21 @@
 # (see _data/orcid.yaml). Add entries here for papers ORCID has not
 # indexed yet, or for works with no ORCID record.
 
+# In-press papers with no DOI yet. in_press shows "(in press)" in place of the
+# year; date only keeps them at the top of the list. Once a paper is published,
+# replace its entry with the DOI.
+- title: "Neural dynamics of top-down and stimulus-evoked activity during global and local visual processing of Navon letter stimuli: a multivariate magnetoencephalography (MEG) decoding study"
+  authors_apa: Hajela, A.*, Kim, P.*, Cho, H., Yoo, S.-A., Joo, S., Chong, S. C., & Im, H. Y.
+  publisher: Cognitive, Affective, & Behavioral Neuroscience
+  date: '2026-10-13'
+  in_press: true
+
+- title: "From metaphorical to experienced time: Subjective experience of time’s passage across self-time perspectives"
+  authors_apa: Schoenfeld, D., Im, H. Y., & Ongchoco, J. D. K.
+  publisher: Attention, Perception, & Psychophysics
+  date: '2026-10-13'
+  in_press: true
+
 - id: doi:10.1016/j.neuroimage.2026.122145
 
 # Crossref has no page or article number for this one, so supply it
