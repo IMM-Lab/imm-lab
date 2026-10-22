@@ -1,8 +1,9 @@
 ---
 title: Experiment
-nav:
-  order: 7
-  tooltip: Ongoing research projects
+# nav hidden for now; restore to show in the menu again
+# nav:
+#   order: 7
+#   tooltip: Ongoing research projects
 ---
 
 <html lang="en">

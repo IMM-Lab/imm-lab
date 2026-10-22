@@ -1,8 +1,9 @@
 ---
 title: Lab photos
-nav:
-  order: 5
-  tooltip: Lab photos and events
+# nav hidden for now; restore to show in the menu again
+# nav:
+#   order: 5
+#   tooltip: Lab photos and events
 ---
 
 <style>
