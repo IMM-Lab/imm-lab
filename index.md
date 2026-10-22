@@ -88,7 +88,7 @@ We use magnetoencephalography (MEG) and functional neuroimaging (fMRI) to measur
 %}
 
 <!-- Lab photo image -->
-![lab-photo](/images/lab-group-photo-img1.jpg)
+![lab-photo](/images/lab-spring-2026.jpg)
 
 
 <!--     nokogiri (1.13.10)
