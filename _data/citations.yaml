@@ -555,11 +555,19 @@
   in_press: true
   plugin: sources.py
   file: sources.yaml
+- title: 'Visuospatial and verbal abilities in poor readers: Cognitive differences
+    and strategy use'
+  authors_apa: Kheradmandsaadi, Z., Im, H. Y., & Giaschi, D. E.
+  publisher: Dyslexia
+  date: '2026-10-13'
+  in_press: true
+  plugin: sources.py
+  file: sources.yaml
 - title: "From metaphorical to experienced time: Subjective experience of time\u2019\
     s passage across self-time perspectives"
   authors_apa: Schoenfeld, D., Im, H. Y., & Ongchoco, J. D. K.
   publisher: Attention, Perception, & Psychophysics
-  date: '2026-10-13'
+  date: '2026-10-12'
   in_press: true
   plugin: sources.py
   file: sources.yaml
