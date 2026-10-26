@@ -1,5 +1,22 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1002/dys.70054
+  title: 'Visuospatial and Verbal Abilities in Poor Readers: Cognitive Differences
+    and Strategy Use'
+  authors:
+  - Zahra Kheradmandsaadi
+  - Hee Yeon Im
+  - Deborah Giaschi
+  authors_apa: Kheradmandsaadi, Z., Im, H. Y., & Giaschi, D. E.
+  volume: '32'
+  issue: '4'
+  pages: ''
+  publisher: Dyslexia
+  date: '2026-10-23'
+  link: https://doi.org/hcpvwb
+  orcid: 0000-0001-9379-1347
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.neuroimage.2026.122145
   title: 'Developmental changes in MEG oscillatory activity during visuomotor adaptation:
     Differential maturation of feedforward and feedback-related mechanisms'
