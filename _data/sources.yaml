@@ -19,10 +19,12 @@
   in_press: true
 
 # Crossref gives this one an article number but no page, and has the title in
-# title case, so supply both
+# title case, so supply both. The date is set so that it lists second, just
+# after the Navon paper (only the year is shown)
 - id: doi:10.1002/dys.70054
   title: "Visuospatial and verbal abilities in poor readers: Cognitive differences and strategy use"
   pages: e70054
+  date: '2026-10-13'
 
 - id: doi:10.1016/j.neuroimage.2026.122145
 
