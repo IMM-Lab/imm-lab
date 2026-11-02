@@ -9,8 +9,8 @@ nav:
 
 <style>
   /* journal names and links use a muted accent that works in light and dark */
-  [data-dark="false"] .pubs-list { --pub-accent: #0369a1; --pub-muted: #555; }
-  [data-dark="true"]  .pubs-list { --pub-accent: #7dd3fc; --pub-muted: #b0b0b0; }
+  [data-dark="false"] .pubs-list { --pub-accent: #0369a1; }
+  [data-dark="true"]  .pubs-list { --pub-accent: #7dd3fc; }
 
   .pubs-list, .pubs-list * { text-align: left !important; text-align-last: auto !important; }
   .pubs-note { text-align: left !important; font-size: 0.9em; color: var(--gray); margin-bottom: 0.5rem; }
@@ -33,8 +33,6 @@ nav:
     line-height: 1.6;
     color: var(--text);
   }
-  .pub-authors { color: var(--pub-muted); }
-  .pub-authors b { color: var(--text); font-weight: var(--bold); }
   .pub-journal { font-style: italic; color: var(--pub-accent); }
   .pub-link {
     display: inline-block;
@@ -82,9 +80,8 @@ nav:
 {%- assign volume = pub.volume | default: "" -%}
 {%- assign issue = pub.issue | default: "" -%}
 {%- assign pages = pub.pages | default: "" -%}
-{%- assign authors = pub.authors_apa | replace: "Im, H. Y.", "<b>Im, H. Y.</b>" %}
   <li>
-    <span class="pub-authors">{{ authors }}</span> ({% if pub.in_press %}in press{% else %}{{ pub.date | date: "%Y" }}{% endif %}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
+    {{ pub.authors_apa }} ({% if pub.in_press %}in press{% else %}{{ pub.date | date: "%Y" }}{% endif %}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
     {%- if publisher != "" %}
       <span class="pub-journal">{{ publisher }}</span>
       {%- if volume != "" %}, <i>{{ volume }}</i>{% if issue != "" %}({{ issue }}){% endif %}{% endif %}
