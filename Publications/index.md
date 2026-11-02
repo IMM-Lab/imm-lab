@@ -48,7 +48,10 @@ nav:
     text-decoration: none;
     vertical-align: 1px;
   }
-  .pub-link:hover { background: var(--pub-accent); color: var(--background) !important; }
+  .pub-link:hover {
+    background-color: var(--pub-accent);
+    color: var(--background) !important;
+  }
 </style>
 
 <!--
@@ -57,7 +60,11 @@ nav:
   To add a paper, add its DOI to _data/sources.yaml — don't edit this list.
 -->
 
-{%- assign pubs = site.data.citations | sort: "date" | reverse -%}
+{%- comment %} in-press papers first, then the rest by date, newest first {% endcomment -%}
+{%- assign by_date = site.data.citations | sort: "date" | reverse -%}
+{%- assign in_press = by_date | where: "in_press", true -%}
+{%- assign published = by_date | where_exp: "p", "p.in_press != true" -%}
+{%- assign pubs = in_press | concat: published -%}
 
 <div class="pubs-list">
 <p class="pubs-note">* These authors contributed equally.</p>
