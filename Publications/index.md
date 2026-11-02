@@ -8,23 +8,49 @@ nav:
 <h1 style="text-align: left; margin-bottom: 4px;">Publications</h1>
 
 <style>
-  /* alignment + hanging indent */
-  .pubs, .pubs li {
-    text-align: left !important;
-    text-align-last: auto !important;
-    word-spacing: normal !important;
-    letter-spacing: normal !important;
-    white-space: normal !important;
+  /* journal names and links use a muted accent that works in light and dark */
+  [data-dark="false"] .pubs-list { --pub-accent: #0369a1; --pub-muted: #555; }
+  [data-dark="true"]  .pubs-list { --pub-accent: #7dd3fc; --pub-muted: #b0b0b0; }
+
+  .pubs-list, .pubs-list * { text-align: left !important; text-align-last: auto !important; }
+  .pubs-note { text-align: left !important; font-size: 0.9em; color: var(--gray); margin-bottom: 0.5rem; }
+
+  .pubs-year {
+    margin: 2.2rem 0 0.8rem 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 1.15rem;
+    font-weight: var(--bold);
+    letter-spacing: 0.5px;
+    text-align: left;
   }
-  .pubs { list-style-type: disc; padding-left: 0; margin: 0; }
-  .pubs li { margin-bottom: 1.2rem; padding-left: 1.2em; text-indent: -1.2em; line-height: 1.8; }
-  .pubs a { overflow-wrap: anywhere; word-break: break-word; }
 
-  /* follow the light/dark theme rather than forcing a fixed colour */
-  .pubs { color: var(--text); }
-  .pubs * { color: inherit; }
-
-  .pubs-note { text-align: left !important; font-size: 0.9em; margin-bottom: 1.5rem; }
+  .pubs { list-style: none; padding: 0; margin: 0; }
+  .pubs li {
+    margin: 0 0 1rem 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;          /* hanging indent */
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .pub-authors { color: var(--pub-muted); }
+  .pub-authors b { color: var(--text); font-weight: var(--bold); }
+  .pub-journal { font-style: italic; color: var(--pub-accent); }
+  .pub-link {
+    display: inline-block;
+    margin-left: 0.4em;
+    padding: 0 0.5em;
+    text-indent: 0;
+    border: 1px solid var(--pub-accent);
+    border-radius: var(--rounded);
+    font-size: 0.75em;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    color: var(--pub-accent) !important;
+    text-decoration: none;
+    vertical-align: 1px;
+  }
+  .pub-link:hover { background: var(--pub-accent); color: var(--background) !important; }
 </style>
 
 <!--
@@ -35,11 +61,20 @@ nav:
 
 {%- assign pubs = site.data.citations | sort: "date" | reverse -%}
 
+<div class="pubs-list">
 <p class="pubs-note">* These authors contributed equally.</p>
-
-<ul class="pubs">
+{%- assign current_year = "" -%}
 {%- for pub in pubs -%}
 {%- unless pub.hide -%}
+{%- if pub.in_press -%}{%- assign year = "In press" -%}{%- else -%}{%- assign year = pub.date | date: "%Y" -%}{%- endif -%}
+{%- if year != current_year -%}
+{%- unless current_year == "" %}
+</ul>
+{%- endunless %}
+<h2 class="pubs-year">{{ year }}</h2>
+<ul class="pubs">
+{%- assign current_year = year -%}
+{%- endif -%}
 {%- assign doi = pub.id | remove_first: "doi:" -%}
 {%- assign last_char = pub.title | slice: -1 -%}
 {%- comment %} normalise missing fields: nil and "" must both count as absent {% endcomment -%}
@@ -47,19 +82,21 @@ nav:
 {%- assign volume = pub.volume | default: "" -%}
 {%- assign issue = pub.issue | default: "" -%}
 {%- assign pages = pub.pages | default: "" -%}
+{%- assign authors = pub.authors_apa | replace: "Im, H. Y.", "<b>Im, H. Y.</b>" %}
   <li>
-    {{ pub.authors_apa }} ({% if pub.in_press %}in press{% else %}{{ pub.date | date: "%Y" }}{% endif %}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
+    <span class="pub-authors">{{ authors }}</span> ({% if pub.in_press %}in press{% else %}{{ pub.date | date: "%Y" }}{% endif %}). {{ pub.title }}{% unless last_char == "." or last_char == "?" or last_char == "!" %}.{% endunless %}
     {%- if publisher != "" %}
-      <i>{{ publisher }}</i>
+      <span class="pub-journal">{{ publisher }}</span>
       {%- if volume != "" %}, <i>{{ volume }}</i>{% if issue != "" %}({{ issue }}){% endif %}{% endif %}
       {%- if pages != "" %}, {{ pages }}{% endif %}.
     {%- endif %}
     {% if pub.id contains "doi:" -%}
-      <a href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer">https://doi.org/{{ doi }}</a>
+      <a class="pub-link" href="https://doi.org/{{ doi }}" target="_blank" rel="noopener noreferrer" title="https://doi.org/{{ doi }}">DOI</a>
     {%- elsif pub.link -%}
-      <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">{{ pub.link }}</a>
+      <a class="pub-link" href="{{ pub.link }}" target="_blank" rel="noopener noreferrer" title="{{ pub.link }}">Link</a>
     {%- endif %}
   </li>
 {%- endunless -%}
 {%- endfor %}
 </ul>
+</div>
