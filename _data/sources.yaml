@@ -12,11 +12,9 @@
   date: '2026-10-14'
   in_press: true
 
-- title: "From metaphorical to experienced time: Subjective experience of time’s passage across self-time perspectives"
-  authors_apa: Schoenfeld, D., Im, H. Y., & Ongchoco, J. D. K.
-  publisher: Attention, Perception, & Psychophysics
-  date: '2026-10-12'
-  in_press: true
+# Crossref gives this one an article number but no page, so supply it
+- id: doi:10.3758/s13414-026-03344-2
+  pages: '218'
 
 # Crossref gives this one an article number but no page, and has the title in
 # title case, so supply both
