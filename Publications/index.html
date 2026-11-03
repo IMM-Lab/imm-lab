@@ -86,7 +86,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Public+Sans:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Open+Sans:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -372,7 +372,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')">
+<header class="background">
   <a href="/" class="home">
     
       <span class="logo">
@@ -447,27 +447,54 @@
   
   
 
-  <section class="background" data-size="0.9em; margin-bottom: 1.5rem">
+  <section class="background" data-size="0.9em; color: var(--gray); margin-bottom: 0.5rem">
     <h1 style="text-align: left; margin-bottom: 4px;">Publications</h1>
 
 <style>
-  /* alignment + hanging indent */
-  .pubs, .pubs li {
-    text-align: left !important;
-    text-align-last: auto !important;
-    word-spacing: normal !important;
-    letter-spacing: normal !important;
-    white-space: normal !important;
+  /* journal names and links use a muted accent that works in light and dark */
+  [data-dark="false"] .pubs-list { --pub-accent: #0369a1; }
+  [data-dark="true"]  .pubs-list { --pub-accent: #7dd3fc; }
+
+  .pubs-list, .pubs-list * { text-align: left !important; text-align-last: auto !important; }
+  .pubs-note { text-align: left !important; font-size: 0.9em; color: var(--gray); margin-bottom: 0.5rem; }
+
+  .pubs-year {
+    margin: 2.2rem 0 0.8rem 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 1.15rem;
+    font-weight: var(--bold);
+    letter-spacing: 0.5px;
+    text-align: left;
   }
-  .pubs { list-style-type: disc; padding-left: 0; margin: 0; }
-  .pubs li { margin-bottom: 1.2rem; padding-left: 1.2em; text-indent: -1.2em; line-height: 1.8; }
-  .pubs a { overflow-wrap: anywhere; word-break: break-word; }
 
-  /* follow the light/dark theme rather than forcing a fixed colour */
-  .pubs { color: var(--text); }
-  .pubs * { color: inherit; }
-
-  .pubs-note { text-align: left !important; font-size: 0.9em; margin-bottom: 1.5rem; }
+  .pubs { list-style: none; padding: 0; margin: 0; }
+  .pubs li {
+    margin: 0 0 1rem 0;
+    padding-left: 1.5em;
+    text-indent: -1.5em;          /* hanging indent */
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .pub-journal { font-style: italic; color: var(--pub-accent); }
+  .pub-link {
+    display: inline-block;
+    margin-left: 0.4em;
+    padding: 0 0.5em;
+    text-indent: 0;
+    border: 1px solid var(--pub-accent);
+    border-radius: var(--rounded);
+    font-size: 0.75em;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    color: var(--pub-accent) !important;
+    text-decoration: none;
+    vertical-align: 1px;
+  }
+  .pub-link:hover {
+    background-color: var(--pub-accent);
+    color: var(--background) !important;
+  }
 </style>
 
 <!--
@@ -475,160 +502,207 @@
   _cite/cite.py from the lab ORCID record plus _data/sources.yaml.
   To add a paper, add its DOI to _data/sources.yaml — don't edit this list.
 -->
+<div class="pubs-list">
 <p class="pubs-note">* These authors contributed equally.</p>
-
+<h2 class="pubs-year">In press</h2>
+<ul class="pubs">
+<li>
+    Hajela, A.*, Kim, P.*, Cho, H., Yoo, S.-A., Joo, S., Chong, S. C., &amp; Im, H. Y. (in press). Neural dynamics of top-down and stimulus-evoked activity during global and local visual processing of Navon letter stimuli: a multivariate magnetoencephalography (MEG) decoding study.
+      <span class="pub-journal">Cognitive, Affective, &amp; Behavioral Neuroscience</span>.
+    
+  </li>
+</ul>
+<h2 class="pubs-year">2026</h2>
 <ul class="pubs">
 <li>
     Schoenfeld, D., Im, H. Y., &amp; Ongchoco, J. D. K. (2026). From metaphorical to experienced time: Subjective experience of time’s passage across self-time perspectives.
-      <i>Attention, Perception, &amp; Psychophysics</i>, <i>88</i>(8), 218.
-    <a href="https://doi.org/10.3758/s13414-026-03344-2" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/s13414-026-03344-2</a>
+      <span class="pub-journal">Attention, Perception, &amp; Psychophysics</span>, <i>88</i>(8), 218.
+    <a class="pub-link" href="https://doi.org/10.3758/s13414-026-03344-2" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/s13414-026-03344-2">DOI</a>
   </li>
 <li>
     Kheradmandsaadi, Z., Im, H. Y., &amp; Giaschi, D. E. (2026). Visuospatial and verbal abilities in poor readers: Cognitive differences and strategy use.
-      <i>Dyslexia</i>, <i>32</i>(4), e70054.
-    <a href="https://doi.org/10.1002/dys.70054" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/dys.70054</a>
-  </li>
-<li>
-    Hajela, A.*, Kim, P.*, Cho, H., Yoo, S.-A., Joo, S., Chong, S. C., &amp; Im, H. Y. (in press). Neural dynamics of top-down and stimulus-evoked activity during global and local visual processing of Navon letter stimuli: a multivariate magnetoencephalography (MEG) decoding study.
-      <i>Cognitive, Affective, &amp; Behavioral Neuroscience</i>.
-    
+      <span class="pub-journal">Dyslexia</span>, <i>32</i>(4), e70054.
+    <a class="pub-link" href="https://doi.org/10.1002/dys.70054" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1002/dys.70054">DOI</a>
   </li>
 <li>
     Song, M., Cook, A. J., Hajela, A., Giaschi, D. E., &amp; Im, H. Y. (2026). Developmental changes in MEG oscillatory activity during visuomotor adaptation: Differential maturation of feedforward and feedback-related mechanisms.
-      <i>NeuroImage</i>, <i>339</i>, 122145.
-    <a href="https://doi.org/10.1016/j.neuroimage.2026.122145" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neuroimage.2026.122145</a>
+      <span class="pub-journal">NeuroImage</span>, <i>339</i>, 122145.
+    <a class="pub-link" href="https://doi.org/10.1016/j.neuroimage.2026.122145" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1016/j.neuroimage.2026.122145">DOI</a>
   </li>
 <li>
     Cook, A. J., Giaschi, D. E., &amp; Im, H. Y. (2026). Speed and Accuracy of Movement During Visuomotor Adaptation Are Still Developing in School‐Age Children.
-      <i>Infant and Child Development</i>, <i>35</i>(4), e70121.
-    <a href="https://doi.org/10.1002/icd.70121" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/icd.70121</a>
+      <span class="pub-journal">Infant and Child Development</span>, <i>35</i>(4), e70121.
+    <a class="pub-link" href="https://doi.org/10.1002/icd.70121" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1002/icd.70121">DOI</a>
   </li>
 <li>
     Asare, A. K., Ho, C. S., Im, H. Y., &amp; Giaschi, D. E. (2026). Evaluation of motion perception and binocular vision following dichoptic treatment for amblyopia.
-      <i>Vision Research</i>, <i>240</i>, 108745.
-    <a href="https://doi.org/10.1016/j.visres.2025.108745" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.visres.2025.108745</a>
+      <span class="pub-journal">Vision Research</span>, <i>240</i>, 108745.
+    <a class="pub-link" href="https://doi.org/10.1016/j.visres.2025.108745" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1016/j.visres.2025.108745">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2025</h2>
+<ul class="pubs">
 <li>
     Cook, A. J., Im, H. Y., &amp; Giaschi, D. E. (2025). Large-scale functional networks underlying visual attention.
-      <i>Neuroscience &amp; Biobehavioral Reviews</i>, <i>173</i>, 106165.
-    <a href="https://doi.org/10.1016/j.neubiorev.2025.106165" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.neubiorev.2025.106165</a>
+      <span class="pub-journal">Neuroscience &amp; Biobehavioral Reviews</span>, <i>173</i>, 106165.
+    <a class="pub-link" href="https://doi.org/10.1016/j.neubiorev.2025.106165" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1016/j.neubiorev.2025.106165">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2023</h2>
+<ul class="pubs">
 <li>
     Son, G., Im, H. Y., Albohn, D. N., Kveraga, K., Adams, R. B., Sun, J., &amp; Chong, S. C. (2023). Americans weigh an attended emotion more than Koreans in overall mood judgments.
-      <i>Scientific Reports</i>, <i>13</i>(1).
-    <a href="https://doi.org/10.1038/s41598-023-46723-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41598-023-46723-7</a>
+      <span class="pub-journal">Scientific Reports</span>, <i>13</i>(1).
+    <a class="pub-link" href="https://doi.org/10.1038/s41598-023-46723-7" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1038/s41598-023-46723-7">DOI</a>
   </li>
 <li>
     Cho, J., Im, H. Y., Yoon, Y. J., Joo, S. J., &amp; Chong, S. C. (2023). The effect of masks on the emotion perception of a facial crowd.
-      <i>Scientific Reports</i>, <i>13</i>(1).
-    <a href="https://doi.org/10.1038/s41598-023-41366-0" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41598-023-41366-0</a>
+      <span class="pub-journal">Scientific Reports</span>, <i>13</i>(1).
+    <a class="pub-link" href="https://doi.org/10.1038/s41598-023-41366-0" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1038/s41598-023-41366-0">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2022</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Liddy, J. J., &amp; Song, J.-H. (2022). Inconsistent attentional contexts impair relearning following gradual visuomotor adaptation.
-      <i>Journal of Neurophysiology</i>, <i>128</i>(3), 527-542.
-    <a href="https://doi.org/10.1152/jn.00463.2021" target="_blank" rel="noopener noreferrer">https://doi.org/10.1152/jn.00463.2021</a>
+      <span class="pub-journal">Journal of Neurophysiology</span>, <i>128</i>(3), 527-542.
+    <a class="pub-link" href="https://doi.org/10.1152/jn.00463.2021" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1152/jn.00463.2021">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2021</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Cushing, C. A., Ward, N., &amp; Kveraga, K. (2021). Differential neurodynamics and connectivity in the dorsal and ventral visual pathways during perception of emotional crowds and individuals: a MEG study.
-      <i>Cognitive, Affective, &amp; Behavioral Neuroscience</i>, <i>21</i>(4), 776-792.
-    <a href="https://doi.org/10.3758/s13415-021-00880-2" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/s13415-021-00880-2</a>
+      <span class="pub-journal">Cognitive, Affective, &amp; Behavioral Neuroscience</span>, <i>21</i>(4), 776-792.
+    <a class="pub-link" href="https://doi.org/10.3758/s13415-021-00880-2" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/s13415-021-00880-2">DOI</a>
   </li>
 <li>
     Im, H. Y., Tiurina, N. A., &amp; Utochkin, I. S. (2021). An explicit investigation of the roles that feature distributions play in rapid visual categorization.
-      <i>Attention, Perception, &amp; Psychophysics</i>, <i>83</i>(3), 1050-1069.
-    <a href="https://doi.org/10.3758/s13414-020-02046-7" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/s13414-020-02046-7</a>
+      <span class="pub-journal">Attention, Perception, &amp; Psychophysics</span>, <i>83</i>(3), 1050-1069.
+    <a class="pub-link" href="https://doi.org/10.3758/s13414-020-02046-7" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/s13414-020-02046-7">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2020</h2>
+<ul class="pubs">
 <li>
     Kveraga, K., Im, H. Y., Ward, N., &amp; Adams, R. B. (2020). Fast saccadic and manual responses to faces presented to the koniocellular visual pathway.
-      <i>Journal of Vision</i>, <i>20</i>(2), 9.
-    <a href="https://doi.org/10.1167/jov.20.2.9" target="_blank" rel="noopener noreferrer">https://doi.org/10.1167/jov.20.2.9</a>
+      <span class="pub-journal">Journal of Vision</span>, <i>20</i>(2), 9.
+    <a class="pub-link" href="https://doi.org/10.1167/jov.20.2.9" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1167/jov.20.2.9">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2019</h2>
+<ul class="pubs">
 <li>
     Cushing, C. A., Im, H. Y., Adams Jr, R. B., Ward, N., &amp; Kveraga, K. (2019). Magnocellular and parvocellular pathway contributions to facial threat cue processing.
-      <i>Social Cognitive and Affective Neuroscience</i>, <i>14</i>(2), 151-162.
-    <a href="https://doi.org/10.1093/scan/nsz003" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/scan/nsz003</a>
+      <span class="pub-journal">Social Cognitive and Affective Neuroscience</span>, <i>14</i>(2), 151-162.
+    <a class="pub-link" href="https://doi.org/10.1093/scan/nsz003" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1093/scan/nsz003">DOI</a>
   </li>
 <li>
     Kveraga, K., De Vito, D., Cushing, C., Im, H. Y., Albohn, D. N., &amp; Adams, R. B. (2019). Spatial and feature-based attention to expressive faces.
-      <i>Experimental Brain Research</i>, <i>237</i>(4), 967-975.
-    <a href="https://doi.org/10.1007/s00221-019-05472-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s00221-019-05472-8</a>
+      <span class="pub-journal">Experimental Brain Research</span>, <i>237</i>(4), 967-975.
+    <a class="pub-link" href="https://doi.org/10.1007/s00221-019-05472-8" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1007/s00221-019-05472-8">DOI</a>
   </li>
 <li>
     Adams, R. B., Im, H. Y., Cushing, C., Boshyan, J., Ward, N., Albohn, D. N., &amp; Kveraga, K. (2019). Differential magnocellular versus parvocellular pathway contributions to the combinatorial processing of facial threat.
-      <i>Progress in Brain Research</i>, 71-87.
-    <a href="https://doi.org/10.1016/bs.pbr.2019.03.006" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/bs.pbr.2019.03.006</a>
+      <span class="pub-journal">Progress in Brain Research</span>, 71-87.
+    <a class="pub-link" href="https://doi.org/10.1016/bs.pbr.2019.03.006" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1016/bs.pbr.2019.03.006">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2018</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Adams, R. B., Cushing, C. A., Boshyan, J., Ward, N., &amp; Kveraga, K. (2018). Sex-related differences in behavioral and amygdalar responses to compound facial threat cues.
-      <i>Human Brain Mapping</i>, <i>39</i>(7), 2725-2741.
-    <a href="https://doi.org/10.1002/hbm.24035" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/hbm.24035</a>
+      <span class="pub-journal">Human Brain Mapping</span>, <i>39</i>(7), 2725-2741.
+    <a class="pub-link" href="https://doi.org/10.1002/hbm.24035" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1002/hbm.24035">DOI</a>
   </li>
 <li>
     Cushing, C. A., Im, H. Y., Adams, R. B., Ward, N., Albohn, D. N., Steiner, T. G., &amp; Kveraga, K. (2018). Neurodynamics and connectivity during facial fear perception: The role of threat exposure and signal congruity.
-      <i>Scientific Reports</i>, <i>8</i>(1).
-    <a href="https://doi.org/10.1038/s41598-018-20509-8" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41598-018-20509-8</a>
+      <span class="pub-journal">Scientific Reports</span>, <i>8</i>(1).
+    <a class="pub-link" href="https://doi.org/10.1038/s41598-018-20509-8" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1038/s41598-018-20509-8">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2017</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Adams, R. B., Boshyan, J., Ward, N., Cushing, C. A., &amp; Kveraga, K. (2017). Observer’s anxiety facilitates magnocellular processing of clear facial threat cues, but impairs parvocellular processing of ambiguous facial threat cues.
-      <i>Scientific Reports</i>, <i>7</i>(1).
-    <a href="https://doi.org/10.1038/s41598-017-15495-2" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41598-017-15495-2</a>
+      <span class="pub-journal">Scientific Reports</span>, <i>7</i>(1).
+    <a class="pub-link" href="https://doi.org/10.1038/s41598-017-15495-2" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1038/s41598-017-15495-2">DOI</a>
   </li>
 <li>
     Im, H. Y., Albohn, D. N., Steiner, T. G., Cushing, C. A., Adams, R. B., &amp; Kveraga, K. (2017). Differential hemispheric and visual stream contributions to ensemble coding of crowd emotion.
-      <i>Nature Human Behaviour</i>, <i>1</i>(11), 828-842.
-    <a href="https://doi.org/10.1038/s41562-017-0225-z" target="_blank" rel="noopener noreferrer">https://doi.org/10.1038/s41562-017-0225-z</a>
+      <span class="pub-journal">Nature Human Behaviour</span>, <i>1</i>(11), 828-842.
+    <a class="pub-link" href="https://doi.org/10.1038/s41562-017-0225-z" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1038/s41562-017-0225-z">DOI</a>
   </li>
 <li>
     Im, H. Y., Chong, S. C., Sun, J., Steiner, T. G., Albohn, D. N., Adams, R. B., &amp; Kveraga, K. (2017). Cross-cultural and hemispheric laterality effects on the ensemble coding of emotion in facial crowds.
-      <i>Culture and Brain</i>, <i>5</i>(2), 125-152.
-    <a href="https://doi.org/10.1007/s40167-017-0054-y" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s40167-017-0054-y</a>
+      <span class="pub-journal">Culture and Brain</span>, <i>5</i>(2), 125-152.
+    <a class="pub-link" href="https://doi.org/10.1007/s40167-017-0054-y" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1007/s40167-017-0054-y">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2016</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Bédard, P., &amp; Song, J.-H. (2016). Long lasting attentional-context dependent visuomotor memory.
-      <i>Journal of Experimental Psychology: Human Perception and Performance</i>, <i>42</i>(9), 1269-1274.
-    <a href="https://doi.org/10.1037/xhp0000271" target="_blank" rel="noopener noreferrer">https://doi.org/10.1037/xhp0000271</a>
+      <span class="pub-journal">Journal of Experimental Psychology: Human Perception and Performance</span>, <i>42</i>(9), 1269-1274.
+    <a class="pub-link" href="https://doi.org/10.1037/xhp0000271" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1037/xhp0000271">DOI</a>
   </li>
 <li>
     Im, H. Y., Zhong, S.-H., &amp; Halberda, J. (2016). Grouping by proximity and the visual impression of approximate number in random dot arrays.
-      <i>Vision Research</i>, <i>126</i>, 291-307.
-    <a href="https://doi.org/10.1016/j.visres.2015.08.013" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.visres.2015.08.013</a>
+      <span class="pub-journal">Vision Research</span>, <i>126</i>, 291-307.
+    <a class="pub-link" href="https://doi.org/10.1016/j.visres.2015.08.013" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1016/j.visres.2015.08.013">DOI</a>
   </li>
 <li>
     Odic, D., Im, H. Y., Eisinger, R., Ly, R., &amp; Halberda, J. (2016). PsiMLE: A maximum-likelihood estimation approach to estimating psychophysical scaling and variability more reliably, efficiently, and flexibly.
-      <i>Behavior Research Methods</i>, <i>48</i>(2), 445-462.
-    <a href="https://doi.org/10.3758/s13428-015-0600-5" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/s13428-015-0600-5</a>
+      <span class="pub-journal">Behavior Research Methods</span>, <i>48</i>(2), 445-462.
+    <a class="pub-link" href="https://doi.org/10.3758/s13428-015-0600-5" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/s13428-015-0600-5">DOI</a>
   </li>
+</ul>
+<h2 class="pubs-year">2015</h2>
+<ul class="pubs">
 <li>
     Im, H. Y., Bédard, P., &amp; Song, J.-H. (2015). Encoding attentional states during visuomotor adaptation.
-      <i>Journal of Vision</i>, <i>15</i>(8), 20.
-    <a href="https://doi.org/10.1167/15.8.20" target="_blank" rel="noopener noreferrer">https://doi.org/10.1167/15.8.20</a>
+      <span class="pub-journal">Journal of Vision</span>, <i>15</i>(8), 20.
+    <a class="pub-link" href="https://doi.org/10.1167/15.8.20" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1167/15.8.20">DOI</a>
   </li>
 <li>
     Im, H. Y., Park, W. J., &amp; Chong, S. C. (2015). Ensemble statistics as units of selection.
-      <i>Journal of Cognitive Psychology</i>, <i>27</i>(1), 114-127.
-    <a href="https://doi.org/10.1080/20445911.2014.985301" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/20445911.2014.985301</a>
-  </li>
-<li>
-    Im, H. Y., &amp; Chong, S. C. (2014). Mean Size as a Unit of Visual Working Memory.
-      <i>Perception</i>, <i>43</i>(7), 663-676.
-    <a href="https://doi.org/10.1068/p7719" target="_blank" rel="noopener noreferrer">https://doi.org/10.1068/p7719</a>
-  </li>
-<li>
-    Im, H. Y., &amp; Halberda, J. (2013). The effects of sampling and internal noise on the representation of ensemble average size.
-      <i>Attention, Perception, &amp; Psychophysics</i>, <i>75</i>(2), 278-286.
-    <a href="https://doi.org/10.3758/s13414-012-0399-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/s13414-012-0399-4</a>
-  </li>
-<li>
-    Im, H. Y., &amp; Chong, S. C. (2009). Computation of mean size is based on perceived size.
-      <i>Attention, Perception &amp; Psychophysics</i>, <i>71</i>(2), 375-384.
-    <a href="https://doi.org/10.3758/app.71.2.375" target="_blank" rel="noopener noreferrer">https://doi.org/10.3758/app.71.2.375</a>
-  </li>
-<li>
-    Park, K. M., Cha, O., Kim, S., Im, H. Y., &amp; Chong, S. C. (2007). The Influence of Depth Context on Blind Spot Filling-in.
-      <i>Korean Journal of Cognitive Science</i>, <i>18</i>(4), 351-370.
-    <a href="https://doi.org/10.19066/cogsci.2007.18.4.002" target="_blank" rel="noopener noreferrer">https://doi.org/10.19066/cogsci.2007.18.4.002</a>
+      <span class="pub-journal">Journal of Cognitive Psychology</span>, <i>27</i>(1), 114-127.
+    <a class="pub-link" href="https://doi.org/10.1080/20445911.2014.985301" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1080/20445911.2014.985301">DOI</a>
   </li>
 </ul>
+<h2 class="pubs-year">2014</h2>
+<ul class="pubs">
+<li>
+    Im, H. Y., &amp; Chong, S. C. (2014). Mean Size as a Unit of Visual Working Memory.
+      <span class="pub-journal">Perception</span>, <i>43</i>(7), 663-676.
+    <a class="pub-link" href="https://doi.org/10.1068/p7719" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.1068/p7719">DOI</a>
+  </li>
+</ul>
+<h2 class="pubs-year">2013</h2>
+<ul class="pubs">
+<li>
+    Im, H. Y., &amp; Halberda, J. (2013). The effects of sampling and internal noise on the representation of ensemble average size.
+      <span class="pub-journal">Attention, Perception, &amp; Psychophysics</span>, <i>75</i>(2), 278-286.
+    <a class="pub-link" href="https://doi.org/10.3758/s13414-012-0399-4" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/s13414-012-0399-4">DOI</a>
+  </li>
+</ul>
+<h2 class="pubs-year">2009</h2>
+<ul class="pubs">
+<li>
+    Im, H. Y., &amp; Chong, S. C. (2009). Computation of mean size is based on perceived size.
+      <span class="pub-journal">Attention, Perception &amp; Psychophysics</span>, <i>71</i>(2), 375-384.
+    <a class="pub-link" href="https://doi.org/10.3758/app.71.2.375" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.3758/app.71.2.375">DOI</a>
+  </li>
+</ul>
+<h2 class="pubs-year">2007</h2>
+<ul class="pubs">
+<li>
+    Park, K. M., Cha, O., Kim, S., Im, H. Y., &amp; Chong, S. C. (2007). The Influence of Depth Context on Blind Spot Filling-in.
+      <span class="pub-journal">Korean Journal of Cognitive Science</span>, <i>18</i>(4), 351-370.
+    <a class="pub-link" href="https://doi.org/10.19066/cogsci.2007.18.4.002" target="_blank" rel="noopener noreferrer" title="https://doi.org/10.19066/cogsci.2007.18.4.002">DOI</a>
+  </li>
+</ul>
+</div>
   </section>
 
 
@@ -636,7 +710,7 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address

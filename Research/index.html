@@ -86,7 +86,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Public+Sans:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Open+Sans:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -372,7 +372,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')">
+<header class="background">
   <a href="/" class="home">
     
       <span class="logo">
@@ -448,11 +448,17 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="research">
+    <style>
+  /* tighter gap between one section's figure and the next section's title */
+  main > section > .figure:last-child { margin-bottom: 10px; }
+  main > section > h2:first-of-type { margin-top: 10px; }
+</style>
+
+<h1 id="research">
 <i class="icon fa-solid fa-microscope"></i>Research</h1>
 
 <p><br> 
-<span style="font-size:1.25em;"> 1. <a href="#1-ensemble-coding-for-fast-vision%E2%80%93action-interactions">Ensemble coding for fast vision–action interactions</a> <br> <br> 2. <a href="#2-joint-visuomotor-movements-in-real-world-settings-working-with-human-or-robot-co-workers-for-common-action-goals-in-construction-sites">Joint visuomotor movements in real world settings: Working with human or robot co-workers for common goals</a> <br><br> 3. <a href="#3-visuomotor-abilities-in-children-development-of-vision-and-action-links-and-impacts-of-early-neurodevelopment-disordersx">Visuomotor abilities in children</a> <br><br> 4. <a href="#4-multimodal-neuroimaging-for-a-better-understanding-of-temporal-and-spatial-properties-of-brain-dynamics-during-visually-guided-movements">Multimodal neuroimaging for a better understanding of temporal and spatial properties of brain dynamics</a></span></p>
+<span style="font-size:1.25em;"> 1. <a href="#ensemble-coding">Ensemble coding for fast vision–action interactions</a> <br><br> 2. <a href="#children">Visuomotor abilities in children</a> <br><br> 3. <a href="#multimodal-neuroimaging">Spatiotemporal brain dynamics with multimodal neuroimaging</a> <br><br> 4. <a href="#joint-action">Joint visuomotor action in real-world settings</a></span></p>
   </section>
 
   
@@ -466,7 +472,7 @@
   size: ;
 -->
 
-<h2 id="1-ensemble-coding-for-fast-visionaction-interactions"><strong>(1) Ensemble coding for fast vision–action interactions</strong></h2>
+<h2 id="ensemble-coding"><strong>(1) Ensemble coding for fast vision–action interactions</strong></h2>
 
 <p style="font-size:17px">
 You never see the same world twice: Visual inputs from the world constantly change, and our actions are continually in motion (at least our eyes) even when trying to remain still. Everytime we open our eyes,  our brain receives a barrage of new information from the complex and cluttered visual environment. Our brain manages this surprisingly well; It condenses and reconstructs images by grouping parts (e.g., objects) into meaningful sets (e.g., ensembles), relying on similarity, redundancy, or structural regularity in the images. <i> Ensemble coding </i> operates to dilute high-level descriptions into "summary representations."
@@ -513,7 +519,97 @@ We are currently studying how different parts of the brain work during this dyna
   size: ;
 -->
 
-<h2 id="2-joint-visuomotor-movements-in-real-world-settings-working-with-human-or-robot-co-workers-for-common-action-goals-in-construction-sites"><strong>(2) Joint visuomotor movements in real-world settings: Working with human or robot co-workers for common action goals in construction sites</strong></h2>
+<h2 id="children"><strong>(2) Visuomotor abilities in children</strong></h2>
+
+<p style="font-size:17px">
+Visuomotor experiences during childhood play a significant role in wiring the brain and shaping lifetime interactions with the world. Learning to coordinate our eyes and body's (especially our hands and feet) by adjusting movements in response to visual feedback is an important developmental milestone for children to acquire gross and fine motor skills, such as writing, tying shoe laces, walking, and artistic or athletic activities. We study the developmental patterns of such vision and action links in children of a wide age range, from 5 to 18 years old, to better understand how early visuomotor experiences impact the way their developing brains wire and create neural connections to build "functional networks.”
+</p>
+<p><br></p>
+
+<p style="font-size:17px">
+Using neuroimaging devices that are non-invasive and suitable for testing children (mainly magnetoencephalography [MEG], but we use some other devices too!), we measure detailed time series of brain activities and the brain's rhythmic patterns. These measurements provide insight into how vision and action links unfold over time across different brain regions in young children with typical development or with neurodevelopment disorders. Our animated, aquarium-themed tasks are designed to be entertaining and easy enough for children to perform. The task allows us to record a rich set of continuous hand movement data over time while the children's brain activities are recorded with MEG. Combining the hand movement data and the brain time-course recordings, we are currently exploring how and when the visual and motor systems communicate during successful versus unsuccessful movements and how excitatory and inhibitory connections among different brain regions coordinate goal-directed actions.
+</p>
+<p><br></p>
+
+<p style="font-size:17px">
+Because children's brains are still plastic, disruption in one function (e.g., vision) will likely have far-reaching and lasting consequences on the ways that the brain's functional specialization is shaped and established in the long run. This motivates our recent projects on visuomotor skill learning in children who have reduced vision due to a neurodevelopment disorder called amblyopia (also called lazy eye) early in life. We study how reduced vision during early childhood is associated with a cascade of impacts on visuomotor abilities and subsequent changes in a range of brain functions, which must be acquired and matured during this critical period for brain and behaviour development. 
+</p>
+<p><br></p>
+
+<p><em>*This work is funded by the BC Children’s Hospital Research Institute, Brain, Behaviour, and Development Theme and UBC Health.</em>
+<br></p>
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/Fig3-Research.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      
+
+    </figcaption>
+  
+</figure>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="multimodal-neuroimaging"><strong>(3) Spatiotemporal brain dynamics with multimodal neuroimaging</strong></h2>
+
+<p style="font-size:17px">
+Brain recording and functional neuroimaging techniques (e.g., magnetoencephalography [MEG] and functional MRI [fMRI]) are powerful and noninvasive tools to examine typical and atypical brain function and development, informing researchers of neural mechanisms underlying behaviours and possible neural anomalies due to disorders. However, none of these methods directly measure neuroelectrical or neurochemical processes mediating brain function. Brain "activity" must be inferred from other metrics such as magnetic fields (e.g., MEG) or hemodynamics (e.g., fMRI). To overcome this limitation, multimodal approaches combining neuroimaging devices such as fMRI and MEG can be useful, providing complementary information. fMRI can characterize brain activity with sub-millimetre spatial resolution, but has limited temporal resolution; MEG can characterize neural activity on the millisecond timescale at which the brain operates but with a limited spatial resolution. Combining MEG and fMRI has great potential for providing insights into the dynamic brain function underlying behaviours and neurocognitive biomarkers of pathological brain changes. 
+
+<br>
+<br>
+
+For the fusion of MEG and fMRI to be useful in obtaining high spatial and temporal resolution, the two signals should reflect the same underlying neural events. Previous work has suggested that neuromagnetic (MEG) and hemodynamic (fMRI) signals originate from post-synaptic currents and tend to correlate with each other. Our previous work also provided evidence for similar, overlapping patterns of whole-brain MEG and fMRI activations in healthy adults during face perception. We are currently exploring robust approaches to combining time-course MEG and fMRI data from the same participants who perform the same tasks in the MEG and MRI scanners in separate sessions. We hope that this work will provide a comprehensive understanding of when and where neural activity occurs during cognitive and motor tasks. 
+
+<br>
+<br>
+For mobile studies using our recent virtual reality setup, we alternatively use electroencephalography (EEG; better temporal resolution) combined with functional near-infrared spectroscopy (fNIRS; better spatial resolution), instead of huge MEG (better temporal resolution) and fMRI (better spatial resolution) scanners, so that participants can make movements with more freedom in less restricted settings. 
+</p>
+<p><br></p>
+
+<p><em>*This work is funded by the Djavad Mowafaghian Centre for Brain Health and the Social Sciences and Humanities Research Council.</em></p>
+<figure class="figure">
+  <a class="figure-image" aria-label="figure link">
+    <img src="/images/Fig4-Research.png" style="
+        width: auto;
+        max-height: unset;
+      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+  
+    <figcaption class="figure-caption">
+      
+
+    </figcaption>
+  
+</figure>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="joint-action"><strong>(4) Joint visuomotor action in real-world settings</strong></h2>
 
 <p style="font-size:17px">
 We often make goal-directed movements, not by ourselves, but in collaboration with others, such as lifting and moving a heavy object or hanging a big picture frame on the wall. We study how the human brain works to mediate interactive and collaborative visuomotor movements. For joint movements, not all actions are performed by one person; a series of complex movements is often partitioned into discrete and simpler segments, then different portions are assigned to each person. From one person's perspective, their individual actions wouldn't make up a meaningful set of continuous movements: Instead, there should be discontinuity, pauses, or rushes to temporally coordinate different actions and synchronize work dynamics with others. For joint movements, therefore, they must be able to understand others' minds, action intentions, goals, and current progress, relying on cognitive, behavioural, emotional, and linguistic cues. 
@@ -549,104 +645,12 @@ Now that the construction industry is becoming more futuristic (!!), with WALL-E
 </figure>
   </section>
 
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
-
-<h2 id="3-visuomotor-abilities-in-children-development-of-vision-and-action-links-and-impacts-of-early-neurodevelopmental-disorders"><strong>(3) Visuomotor abilities in children: development of vision and action links and impacts of early neurodevelopmental disorders</strong></h2>
-
-<p style="font-size:17px">
-Visuomotor experiences during childhood play a significant role in wiring the brain and shaping lifetime interactions with the world. Learning to coordinate our eyes and body's (especially our hands and feet) by adjusting movements in response to visual feedback is an important developmental milestone for children to acquire gross and fine motor skills, such as writing, tying shoe laces, walking, and artistic or athletic activities. We study the developmental patterns of such vision and action links in children of a wide age range, from 5 to 18 years old, to better understand how early visuomotor experiences impact the way their developing brains wire and create neural connections to build "functional networks.”
-</p>
-<p><br></p>
-
-<p style="font-size:17px">
-Using neuroimaging devices that are non-invasive and suitable for testing children (mainly magnetoencephalography [MEG], but we use some other devices too!), we measure detailed time series of brain activities and the brain's rhythmic patterns. These measurements provide insight into how vision and action links unfold over time across different brain regions in young children with typical development or with neurodevelopment disorders. Our animated, aquarium-themed tasks are designed to be entertaining and easy enough for children to perform. The task allows us to record a rich set of continuous hand movement data over time while the children's brain activities are recorded with MEG. Combining the hand movement data and the brain time-course recordings, we are currently exploring how and when the visual and motor systems communicate during successful versus unsuccessful movements and how excitatory and inhibitory connections among different brain regions coordinate goal-directed actions.
-</p>
-<p><br></p>
-
-<p style="font-size:17px">
-Because children's brains are still plastic, disruption in one function (e.g., vision) will likely have far-reaching and lasting consequences on the ways that the brain's functional specialization is shaped and established in the long run. This motivates our recent projects on visuomotor skill learning in children who have reduced vision due to a neurodevelopment disorder called amblyopia (also called lazy eye) early in life. We study how reduced vision during early childhood is associated with a cascade of impacts on visuomotor abilities and subsequent changes in a range of brain functions, which must be acquired and matured during this critical period for brain and behaviour development. 
-</p>
-<p><br></p>
-
-<p><em>*This work is funded by the BC Children’s Hospital Research Institute, Brain, Behaviour, and Development Theme and UBC Health.</em>
-<br></p>
-<figure class="figure">
-  <a class="figure-image" aria-label="figure link">
-    <img src="/images/Fig3-Research.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      
-
-    </figcaption>
-  
-</figure>
-
-<p><br></p>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
-
-<h2 id="4-multimodal-neuroimaging-for-a-better-understanding-of-temporal-and-spatial-properties-of-brain-dynamics-during-visually-guided-movements"><strong>(4) Multimodal neuroimaging for a better understanding of temporal and spatial properties of brain dynamics during visually-guided movements</strong></h2>
-
-<p style="font-size:17px">
-Brain recording and functional neuroimaging techniques (e.g., magnetoencephalography [MEG] and functional MRI [fMRI]) are powerful and noninvasive tools to examine typical and atypical brain function and development, informing researchers of neural mechanisms underlying behaviours and possible neural anomalies due to disorders. However, none of these methods directly measure neuroelectrical or neurochemical processes mediating brain function. Brain "activity" must be inferred from other metrics such as magnetic fields (e.g., MEG) or hemodynamics (e.g., fMRI). To overcome this limitation, multimodal approaches combining neuroimaging devices such as fMRI and MEG can be useful, providing complementary information. fMRI can characterize brain activity with sub-millimetre spatial resolution, but has limited temporal resolution; MEG can characterize neural activity on the millisecond timescale at which the brain operates but with a limited spatial resolution. Combining MEG and fMRI has great potential for providing insights into the dynamic brain function underlying behaviours and neurocognitive biomarkers of pathological brain changes. 
-
-<br>
-<br>
-
-For the fusion of MEG and fMRI to be useful in obtaining high spatial and temporal resolution, the two signals should reflect the same underlying neural events. Previous work has suggested that neuromagnetic (MEG) and hemodynamic (fMRI) signals originate from post-synaptic currents and tend to correlate with each other. Our previous work also provided evidence for similar, overlapping patterns of whole-brain MEG and fMRI activations in healthy adults during face perception. We are currently exploring robust approaches to combining time-course MEG and fMRI data from the same participants who perform the same tasks in the MEG and MRI scanners in separate sessions. We hope that this work will provide a comprehensive understanding of when and where neural activity occurs during cognitive and motor tasks. 
-
-<br>
-<br>
-For mobile studies using our recent virtual reality setup, we alternatively use electroencephalography (EEG; better temporal resolution) combined with functional near-infrared spectroscopy (fNIRS; better spatial resolution), instead of huge MEG (better temporal resolution) and fMRI (better spatial resolution) scanners, so that participants can make movements with more freedom in less restricted settings. 
-</p>
-<p><br></p>
-
-<p><em>*This work is funded by the Djavad Mowafaghian Centre for Brain Health and the Social Sciences and Humanities Research Council.</em></p>
-<figure class="figure">
-  <a class="figure-image" aria-label="figure link">
-    <img src="/images/Fig4-Research.png" style="
-        width: auto;
-        max-height: unset;
-      " alt="figure image" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      
-
-    </figcaption>
-  
-</figure>
-  </section>
-
 
     </main>
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address

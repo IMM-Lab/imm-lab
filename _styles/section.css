@@ -32,4 +32,8 @@ main > section:nth-of-type(even) {
   background: var(--background-alt);
 }
 
+main > section:first-of-type > :first-child {
+  margin-top: 0;
+}
+
 /*# sourceMappingURL=section.css.map */
