@@ -16,8 +16,7 @@ We use magnetoencephalography (MEG) and functional neuroimaging (fMRI) to measur
 
 
 <!-- Lab photo image -->
-<br>
-![lab-photo](/images/lab-spring-2026.jpg)
+<p style="margin-top: 3rem;"><img src="{{ '/images/lab-spring-2026.jpg' | relative_url }}" alt="IMM Lab group photo, spring 2026"></p>
 
 {% comment %}
 Highlights section, hidden for now. To bring it back, move this block
