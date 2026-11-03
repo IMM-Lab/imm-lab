@@ -5,6 +5,12 @@ nav:
   tooltip: Research aims and studies
 ---
 
+<style>
+  /* tighter gap between one section's figure and the next section's title */
+  main > section > .figure:last-child { margin-bottom: 10px; }
+  main > section > h2:first-of-type { margin-top: 10px; }
+</style>
+
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
 <br> 
@@ -57,7 +63,6 @@ _*This work is funded by the BC Children's Hospital Research Institute, Brain, B
 <br>
 {% include figure.html image="images/Fig3-Research.png" caption="" %}
 
-<br>
 {% include section.html %}
 
 ## **(3) Spatiotemporal brain dynamics with multimodal neuroimaging** {#multimodal-neuroimaging}
