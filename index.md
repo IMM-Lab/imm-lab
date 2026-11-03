@@ -15,6 +15,13 @@ Our broad aim is to understand how we see and interact with the world around us.
 We use magnetoencephalography (MEG) and functional neuroimaging (fMRI) to measure the human brain. We also use behavioural methods to measure human perceptual, cognitive, and motor capacities. Combining different techniques (mostly MEG+fMRI, but sometimes EEG+fNIRS to allow participants to make more active and less-constrained movements), we focus on the dynamic time courses of neural activities occurring in different parts of the brain.
 
 
+<!-- Lab photo image -->
+<p style="margin-top: 3rem;"><img src="{{ '/images/lab-spring-2026.jpg' | relative_url }}" alt="IMM Lab group photo, spring 2026"></p>
+
+{% comment %}
+Highlights section, hidden for now. To bring it back, move this block
+(and the section break) above the lab photo and delete the comment tags.
+
 <!-- Section break -->
 {% include section.html %}
 
@@ -86,9 +93,7 @@ We use magnetoencephalography (MEG) and functional neuroimaging (fMRI) to measur
   title="People"
   text=text
 %}
-
-<!-- Lab photo image -->
-![lab-photo](/images/lab-spring-2026.jpg)
+{% endcomment %}
 
 
 <!--     nokogiri (1.13.10)

@@ -1,8 +1,8 @@
 # site properties and page defaults
 title: IMM Laboratory
 show-title: false
-header: images/background.jpg
-footer: images/background.jpg
+# header: images/background.jpg  # no header image: plain white banner
+# footer: images/background.jpg  # no footer image
 header-dark: false
 
 # site social media and other links

@@ -37,3 +37,8 @@ main > section:nth-of-type(odd) {
 main > section:nth-of-type(even) {
   background: var(--background-alt);
 }
+
+// start each page's content closer to the banner
+main > section:first-of-type > :first-child {
+  margin-top: 0;
+}

@@ -1,4 +1,4 @@
-{% assign image = page.header | default: site.header | relative_url %}
+{% assign header_image = page.header | default: site.header %}
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
 {% assign jpg = "images/logo.jpg" | file_exists %}
@@ -6,7 +6,9 @@
 
 <header
   class="background"
-  style="--image: url('{{ image }}')"
+  {% if header_image %}
+    style="--image: url('{{ header_image | relative_url }}')"
+  {% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
