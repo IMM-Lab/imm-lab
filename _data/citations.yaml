@@ -562,14 +562,25 @@
   orcid: 0000-0001-9379-1347
   plugin: orcid.py
   file: orcid.yaml
-- title: 'Neural dynamics of top-down and stimulus-evoked activity during global and
-    local visual processing of Navon letter stimuli: a multivariate magnetoencephalography
+- id: doi:10.3758/s13415-026-01509-y
+  title: 'Neural dynamics of top-down and stimulus-evoked activity during global and
+    local visual processing of Navon letter stimuli: A multivariate magnetoencephalography
     (MEG) decoding study'
-  authors_apa: Hajela, A.*, Kim, P.*, Cho, H., Yoo, S.-A., Joo, S., Chong, S. C.,
-    & Im, H. Y.
-  publisher: Cognitive, Affective, & Behavioral Neuroscience
-  date: '2026-10-14'
-  in_press: true
+  authors:
+  - Advitya Hajela
+  - Peter Kim
+  - Sang-Ah Yoo
+  - Sung Jun Joo
+  - Sang Chul Chong
+  - Hee-Yeon Im
+  authors_apa: Hajela, A.*, Kim, P.*, Yoo, S.-A., Joo, S. J., Chong, S. C., & Im,
+    H. Y.
+  volume: ''
+  issue: ''
+  pages: ''
+  publisher: Cognitive, Affective, &amp; Behavioral Neuroscience
+  date: '2026-11-04'
+  link: https://doi.org/hcq7kz
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.3758/s13414-026-03344-2
